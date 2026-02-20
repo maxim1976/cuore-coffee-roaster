@@ -21,8 +21,7 @@
     <!-- Demo Disclaimer Banner -->
     <div class="demo-banner">
         <div class="container">
-            <p>🚧 <strong>Demo Site</strong> - 此為技術展示網站，非官方商業用途。僅供學習參考。
-            <span class="en">This is a demo website for technical demonstration only. Not for commercial use.</span></p>
+            <p data-i18n="demo.banner">🚧 <strong>Demo Site</strong> - 此為技術展示網站，非官方商業用途。僅供學習參考。</p>
         </div>
     </div>
 
@@ -40,14 +39,19 @@
                 <span class="hamburger"></span>
             </button>
             <ul class="nav-links">
-                <li><a href="#home">首頁</a></li>
-                <li><a href="#about">關於我們</a></li>
-                <li><a href="#single-origin">單品咖啡</a></li>
-                <li><a href="#espresso">義式咖啡</a></li>
-                <li><a href="#drinks">其他飲品</a></li>
-                <li><a href="#dessert">點心</a></li>
-                <li><a href="#contact">聯絡我們</a></li>
+                <li><a href="#home" data-i18n="nav.home">首頁</a></li>
+                <li><a href="#about" data-i18n="nav.about">關於我們</a></li>
+                <li><a href="#single-origin" data-i18n="nav.single-origin">單品咖啡</a></li>
+                <li><a href="#espresso" data-i18n="nav.espresso">義式咖啡</a></li>
+                <li><a href="#drinks" data-i18n="nav.drinks">其他飲品</a></li>
+                <li><a href="#dessert" data-i18n="nav.dessert">點心</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">聯絡我們</a></li>
             </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="zh-TW">中文</button>
+                <button class="lang-btn" data-lang="ja">日本語</button>
+                <button class="lang-btn" data-lang="ko">한국어</button>
+            </div>
         </div>
     </nav>
 
@@ -62,10 +66,10 @@
                     <rect x="40" y="105" width="20" height="5" fill="currentColor"/>
                 </svg>
             </div>
-            <h1>科雷精品咖啡館</h1>
-            <p class="hero-subtitle">CUORE COFFEE ROASTER</p>
-            <p class="hero-tagline">用心烘焙・品味生活</p>
-            <a href="#single-origin" class="btn btn-primary">瀏覽菜單</a>
+            <h1 data-i18n="hero.title">科雷精品咖啡館</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">CUORE COFFEE ROASTER</p>
+            <p class="hero-tagline" data-i18n="hero.tagline">用心烘焙・品味生活</p>
+            <a href="#single-origin" class="btn btn-primary" data-i18n="hero.cta">瀏覽菜單</a>
         </div>
         <div class="scroll-indicator">
             <span></span>
@@ -77,27 +81,27 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2 class="section-title">關於科雷 <span>About Us</span></h2>
-                    <p class="about-description">
+                    <h2 class="section-title"><span data-i18n="about.title">關於科雷</span> <span data-i18n="about.title.en">About Us</span></h2>
+                    <p class="about-description" data-i18n="about.desc1">
                         科雷精品咖啡館座落於花蓮，是一間專注於精品咖啡的自家烘焙咖啡館。
                         我們甄選來自世界各地的優質生豆，以專業的烘焙技術呈現每支咖啡獨特的風味。
                     </p>
-                    <p class="about-description">
+                    <p class="about-description" data-i18n="about.desc2">
                         無論是追求果香花香的淺焙單品，或是醇厚濃郁的中深焙豆，
                         在科雷都能找到適合您的那一杯。
                     </p>
                     <div class="about-features">
                         <div class="feature">
                             <i class="fas fa-seedling"></i>
-                            <span>精選產區</span>
+                            <span data-i18n="about.feature1">精選產區</span>
                         </div>
                         <div class="feature">
                             <i class="fas fa-fire"></i>
-                            <span>自家烘焙</span>
+                            <span data-i18n="about.feature2">自家烘焙</span>
                         </div>
                         <div class="feature">
                             <i class="fas fa-hand-holding-heart"></i>
-                            <span>用心沖煮</span>
+                            <span data-i18n="about.feature3">用心沖煮</span>
                         </div>
                     </div>
                 </div>
@@ -113,8 +117,8 @@
     <!-- Single Origin Section -->
     <section id="single-origin" class="menu-section section">
         <div class="container">
-            <h2 class="section-title">單品咖啡 <span>Single Origin</span></h2>
-            <p class="section-subtitle">手沖冰鎮 Iced Pour-Over +NT$20</p>
+            <h2 class="section-title"><span data-i18n="single-origin.title">單品咖啡</span> <span data-i18n="single-origin.title.en">Single Origin</span></h2>
+            <p class="section-subtitle" data-i18n="single-origin.iced-note">手沖冰鎮 Iced Pour-Over +NT$20</p>
             
             <!-- Standard Menu -->
             <div class="menu-category">
@@ -128,27 +132,27 @@
                     <div class="coffee-card" data-aos="fade-up">
                         <div class="card-header">
                             <span class="coffee-id">A</span>
-                            <div class="roast-level light">淺焙</div>
+                            <div class="roast-level light" data-i18n="roast.light">淺焙</div>
                         </div>
                         <div class="card-body">
-                            <h4 class="coffee-name">科雷獨寶——《2025 西夏之花》</h4>
+                            <h4 class="coffee-name" data-i18n="coffee.a.name">科雷獨寶——《2025 西夏之花》</h4>
                             <p class="coffee-name-en">Cuore Special Blend Coffee</p>
                             <div class="coffee-details">
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>衣索比亞 西達摩、夏奇索</span>
+                                    <span data-i18n="coffee.a.origin">衣索比亞 西達摩、夏奇索</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-cog"></i>
-                                    <span>水洗、日曬</span>
+                                    <span data-i18n="coffee.a.process">水洗、日曬</span>
                                 </div>
                             </div>
                             <div class="flavor-notes">
-                                <span class="flavor-tag">甜瓜</span>
-                                <span class="flavor-tag">蜜桃</span>
-                                <span class="flavor-tag">佛手柑</span>
-                                <span class="flavor-tag">莓果</span>
-                                <span class="flavor-tag">紫羅蘭</span>
+                                <span class="flavor-tag" data-i18n="flavor.melon">甜瓜</span>
+                                <span class="flavor-tag" data-i18n="flavor.peach">蜜桃</span>
+                                <span class="flavor-tag" data-i18n="flavor.bergamot">佛手柑</span>
+                                <span class="flavor-tag" data-i18n="flavor.berry">莓果</span>
+                                <span class="flavor-tag" data-i18n="flavor.violet">紫羅蘭</span>
                             </div>
                         </div>
                     </div>
@@ -157,26 +161,26 @@
                     <div class="coffee-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="card-header">
                             <span class="coffee-id">B</span>
-                            <div class="roast-level medium">中焙</div>
+                            <div class="roast-level medium" data-i18n="roast.medium">中焙</div>
                         </div>
                         <div class="card-body">
-                            <h4 class="coffee-name">《安提瓜 經典花神》</h4>
+                            <h4 class="coffee-name" data-i18n="coffee.b.name">《安提瓜 經典花神》</h4>
                             <p class="coffee-name-en">Guatemala Antigua Bella Carmona Classico</p>
                             <div class="coffee-details">
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>瓜地馬拉 安提瓜 貝拉卡摩娜莊園</span>
+                                    <span data-i18n="coffee.b.origin">瓜地馬拉 安提瓜 貝拉卡摩娜莊園</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-cog"></i>
-                                    <span>經典水洗</span>
+                                    <span data-i18n="coffee.b.process">經典水洗</span>
                                 </div>
                             </div>
                             <div class="flavor-notes">
-                                <span class="flavor-tag">淡雅花香</span>
-                                <span class="flavor-tag">巧克力</span>
-                                <span class="flavor-tag">柑橘</span>
-                                <span class="flavor-tag">炒花生</span>
+                                <span class="flavor-tag" data-i18n="flavor.floral">淡雅花香</span>
+                                <span class="flavor-tag" data-i18n="flavor.chocolate">巧克力</span>
+                                <span class="flavor-tag" data-i18n="flavor.citrus">柑橘</span>
+                                <span class="flavor-tag" data-i18n="flavor.peanut">炒花生</span>
                             </div>
                         </div>
                     </div>
@@ -185,27 +189,27 @@
                     <div class="coffee-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="card-header">
                             <span class="coffee-id">C</span>
-                            <div class="roast-level light-medium">淺中焙</div>
+                            <div class="roast-level light-medium" data-i18n="roast.light-medium">淺中焙</div>
                         </div>
                         <div class="card-body">
-                            <h4 class="coffee-name">《肯亞 AA 涅里 蔚藍》</h4>
+                            <h4 class="coffee-name" data-i18n="coffee.c.name">《肯亞 AA 涅里 蔚藍》</h4>
                             <p class="coffee-name-en">Kenya Nyeri Wakamata Washed AA</p>
                             <div class="coffee-details">
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>肯亞｜SL28、SL34</span>
+                                    <span data-i18n="coffee.c.origin">肯亞｜SL28、SL34</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-cog"></i>
-                                    <span>傳統肯亞式水洗</span>
+                                    <span data-i18n="coffee.c.process">傳統肯亞式水洗</span>
                                 </div>
                             </div>
                             <div class="flavor-notes">
-                                <span class="flavor-tag">黑莓</span>
-                                <span class="flavor-tag">葡萄柚</span>
-                                <span class="flavor-tag">仙楂</span>
-                                <span class="flavor-tag">洛神</span>
-                                <span class="flavor-tag">紅糖</span>
+                                <span class="flavor-tag" data-i18n="flavor.blackberry">黑莓</span>
+                                <span class="flavor-tag" data-i18n="flavor.grapefruit">葡萄柚</span>
+                                <span class="flavor-tag" data-i18n="flavor.hawthorn">仙楂</span>
+                                <span class="flavor-tag" data-i18n="flavor.roselle">洛神</span>
+                                <span class="flavor-tag" data-i18n="flavor.brown.sugar">紅糖</span>
                             </div>
                         </div>
                     </div>
@@ -214,29 +218,29 @@
                     <div class="coffee-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="card-header">
                             <span class="coffee-id">D</span>
-                            <div class="roast-level medium">中焙</div>
+                            <div class="roast-level medium" data-i18n="roast.medium">中焙</div>
                         </div>
                         <div class="card-body">
-                            <h4 class="coffee-name">《迦佐黃金曼特寧》20目</h4>
+                            <h4 class="coffee-name" data-i18n="coffee.d.name">《迦佐黃金曼特寧》20目</h4>
                             <p class="coffee-name-en">Indonesia Sumatra Gayo Golden Mandheling</p>
                             <div class="coffee-details">
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>印尼 蘇門答臘 亞齊 迦佐</span>
+                                    <span data-i18n="coffee.d.origin">印尼 蘇門答臘 亞齊 迦佐</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-cog"></i>
-                                    <span>濕剝法</span>
+                                    <span data-i18n="coffee.d.process">濕剝法</span>
                                 </div>
                             </div>
                             <div class="flavor-notes">
-                                <span class="flavor-tag">焦糖</span>
-                                <span class="flavor-tag">杏仁</span>
-                                <span class="flavor-tag">黑巧克力</span>
-                                <span class="flavor-tag">奶油</span>
-                                <span class="flavor-tag">仙草乾</span>
+                                <span class="flavor-tag" data-i18n="flavor.caramel">焦糖</span>
+                                <span class="flavor-tag" data-i18n="flavor.almond">杏仁</span>
+                                <span class="flavor-tag" data-i18n="flavor.dark.chocolate">黑巧克力</span>
+                                <span class="flavor-tag" data-i18n="flavor.butter">奶油</span>
+                                <span class="flavor-tag" data-i18n="flavor.grass.jelly">仙草乾</span>
                             </div>
-                            <p class="flavor-description">濃醇的奶香與堅果</p>
+                            <p class="flavor-description" data-i18n="coffee.d.desc">濃醇的奶香與堅果</p>
                         </div>
                     </div>
 
@@ -244,26 +248,26 @@
                     <div class="coffee-card" data-aos="fade-up" data-aos-delay="400">
                         <div class="card-header">
                             <span class="coffee-id">E</span>
-                            <div class="roast-level light">淺焙</div>
+                            <div class="roast-level light" data-i18n="roast.light">淺焙</div>
                         </div>
                         <div class="card-body">
-                            <h4 class="coffee-name">《柏娜小珍珠》74110</h4>
+                            <h4 class="coffee-name" data-i18n="coffee.e.name">《柏娜小珍珠》74110</h4>
                             <p class="coffee-name-en">Ethiopia Sidamo Bona Zuria 74110 G1 Specialized Washed</p>
                             <div class="coffee-details">
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>衣索比亞 西達摩 柏娜</span>
+                                    <span data-i18n="coffee.e.origin">衣索比亞 西達摩 柏娜</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-cog"></i>
-                                    <span>山泉水洗</span>
+                                    <span data-i18n="coffee.e.process">山泉水洗</span>
                                 </div>
                             </div>
                             <div class="flavor-notes">
-                                <span class="flavor-tag">草莓</span>
-                                <span class="flavor-tag">白桃</span>
-                                <span class="flavor-tag">熱帶水果</span>
-                                <span class="flavor-tag">花香</span>
+                                <span class="flavor-tag" data-i18n="flavor.strawberry">草莓</span>
+                                <span class="flavor-tag" data-i18n="flavor.white.peach">白桃</span>
+                                <span class="flavor-tag" data-i18n="flavor.tropical">熱帶水果</span>
+                                <span class="flavor-tag" data-i18n="flavor.flower">花香</span>
                             </div>
                         </div>
                     </div>
@@ -276,39 +280,39 @@
                     <i class="fas fa-star"></i>
                     季節限定・稀有競標 <span class="en">Seasonal Special</span>
                 </h3>
-                <p class="category-note">手沖冰鎮 Iced Pour-Over +NT$20</p>
+                <p class="category-note" data-i18n="single-origin.iced-note">手沖冰鎮 Iced Pour-Over +NT$20</p>
                 
                 <div class="coffee-cards special">
                     <!-- Special 1 -->
                     <div class="coffee-card special" data-aos="fade-up">
                         <div class="card-header">
                             <span class="coffee-id">1</span>
-                            <div class="roast-level light">淺焙</div>
+                            <div class="roast-level light" data-i18n="roast.light">淺焙</div>
                             <span class="price-tag">NT$ 250</span>
                         </div>
                         <div class="award-badge">
                             <i class="fas fa-trophy"></i>
-                            <span>2025 非洲水洗組冠軍</span>
+                            <span data-i18n="special.1.award">2025 非洲水洗組冠軍</span>
                         </div>
                         <div class="card-body">
-                            <h4 class="coffee-name">《古吉 布穀瓦特》</h4>
+                            <h4 class="coffee-name" data-i18n="special.1.name">《古吉 布穀瓦特》</h4>
                             <p class="coffee-name-en">Ethiopia Guji Dimtu Hambella Wate Buku G1 Washed</p>
                             <div class="coffee-details">
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>衣索比亞 古吉</span>
+                                    <span data-i18n="special.1.origin">衣索比亞 古吉</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-cog"></i>
-                                    <span>水洗</span>
+                                    <span data-i18n="special.1.process">水洗</span>
                                 </div>
                             </div>
                             <div class="flavor-notes">
-                                <span class="flavor-tag">茉莉花</span>
-                                <span class="flavor-tag">佛手柑</span>
-                                <span class="flavor-tag">雪梅</span>
-                                <span class="flavor-tag">蜂蜜</span>
-                                <span class="flavor-tag">巧克力奶油香氣</span>
+                                <span class="flavor-tag" data-i18n="flavor.jasmine">茉莉花</span>
+                                <span class="flavor-tag" data-i18n="flavor.bergamot">佛手柑</span>
+                                <span class="flavor-tag" data-i18n="flavor.plum">雪梅</span>
+                                <span class="flavor-tag" data-i18n="flavor.honey">蜂蜜</span>
+                                <span class="flavor-tag" data-i18n="flavor.choco.cream">巧克力奶油香氣</span>
                             </div>
                         </div>
                     </div>
@@ -317,32 +321,32 @@
                     <div class="coffee-card special" data-aos="fade-up" data-aos-delay="100">
                         <div class="card-header">
                             <span class="coffee-id">2</span>
-                            <div class="roast-level light">淺焙</div>
+                            <div class="roast-level light" data-i18n="roast.light">淺焙</div>
                             <span class="price-tag">NT$ 230</span>
                         </div>
                         <div class="award-badge">
                             <i class="fas fa-trophy"></i>
-                            <span>衣索比亞 日曬組年度冠軍</span>
+                            <span data-i18n="special.2.award">衣索比亞 日曬組年度冠軍</span>
                         </div>
                         <div class="card-body">
-                            <h4 class="coffee-name">《紫色克拉摩》</h4>
+                            <h4 class="coffee-name" data-i18n="special.2.name">《紫色克拉摩》</h4>
                             <p class="coffee-name-en">Ethiopia Sidamo Bensa Karamo Natural</p>
                             <div class="coffee-details">
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>衣索比亞 西達摩 斑莎</span>
+                                    <span data-i18n="special.2.origin">衣索比亞 西達摩 斑莎</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-cog"></i>
-                                    <span>日曬</span>
+                                    <span data-i18n="special.2.process">日曬</span>
                                 </div>
                             </div>
                             <div class="flavor-notes">
-                                <span class="flavor-tag">哈密瓜</span>
-                                <span class="flavor-tag">蔓越莓</span>
-                                <span class="flavor-tag">覆盆莓</span>
-                                <span class="flavor-tag">紫色花香</span>
-                                <span class="flavor-tag">酒香</span>
+                                <span class="flavor-tag" data-i18n="flavor.cantaloupe">哈密瓜</span>
+                                <span class="flavor-tag" data-i18n="flavor.cranberry">蔓越莓</span>
+                                <span class="flavor-tag" data-i18n="flavor.raspberry">覆盆莓</span>
+                                <span class="flavor-tag" data-i18n="flavor.purple.floral">紫色花香</span>
+                                <span class="flavor-tag" data-i18n="flavor.wine">酒香</span>
                             </div>
                         </div>
                     </div>
@@ -351,32 +355,32 @@
                     <div class="coffee-card special popular" data-aos="fade-up" data-aos-delay="200">
                         <div class="card-header">
                             <span class="coffee-id">3</span>
-                            <div class="roast-level light-medium">淺中焙</div>
+                            <div class="roast-level light-medium" data-i18n="roast.light-medium">淺中焙</div>
                             <span class="price-tag">NT$ 200</span>
                         </div>
                         <div class="popular-badge">
                             <i class="fas fa-heart"></i>
-                            <span>本館人氣冠軍</span>
+                            <span data-i18n="special.3.badge">本館人氣冠軍</span>
                         </div>
                         <div class="card-body">
-                            <h4 class="coffee-name">《艷夏花荔》</h4>
+                            <h4 class="coffee-name" data-i18n="special.3.name">《艷夏花荔》</h4>
                             <p class="coffee-name-en">Colombia Cauca Finca El Paraiso Double Anaerobic</p>
                             <div class="coffee-details">
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>哥倫比亞 考卡 天堂莊園</span>
+                                    <span data-i18n="special.3.origin">哥倫比亞 考卡 天堂莊園</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-cog"></i>
-                                    <span>雙重厭氧</span>
+                                    <span data-i18n="special.3.process">雙重厭氧</span>
                                 </div>
                             </div>
-                            <p class="iced-note"><i class="fas fa-snowflake"></i> 冰熱皆宜</p>
+                            <p class="iced-note"><i class="fas fa-snowflake"></i> <span data-i18n="special.3.note">冰熱皆宜</span></p>
                             <div class="flavor-notes">
-                                <span class="flavor-tag">荔枝</span>
-                                <span class="flavor-tag">水蜜桃</span>
-                                <span class="flavor-tag">乳酸飲料</span>
-                                <span class="flavor-tag">玫瑰香氣</span>
+                                <span class="flavor-tag" data-i18n="flavor.lychee">荔枝</span>
+                                <span class="flavor-tag" data-i18n="flavor.water.peach">水蜜桃</span>
+                                <span class="flavor-tag" data-i18n="flavor.yogurt">乳酸飲料</span>
+                                <span class="flavor-tag" data-i18n="flavor.rose">玫瑰香氣</span>
                             </div>
                         </div>
                     </div>
@@ -385,31 +389,31 @@
                     <div class="coffee-card special" data-aos="fade-up" data-aos-delay="300">
                         <div class="card-header">
                             <span class="coffee-id">4</span>
-                            <div class="roast-level light-medium">淺中焙</div>
+                            <div class="roast-level light-medium" data-i18n="roast.light-medium">淺中焙</div>
                             <span class="price-tag">NT$ 200</span>
                         </div>
                         <div class="award-badge">
                             <i class="fas fa-award"></i>
-                            <span>瓜地馬拉最常奪冠莊園</span>
+                            <span data-i18n="special.4.award">瓜地馬拉最常奪冠莊園</span>
                         </div>
                         <div class="card-body">
-                            <h4 class="coffee-name">《茵赫特 頂級波旁》</h4>
+                            <h4 class="coffee-name" data-i18n="special.4.name">《茵赫特 頂級波旁》</h4>
                             <p class="coffee-name-en">Guatemala Huehuetenango El Injerto Bourbon Washed</p>
                             <div class="coffee-details">
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>瓜地馬拉 微薇特南果 茵赫特莊園 SHB</span>
+                                    <span data-i18n="special.4.origin">瓜地馬拉 微薇特南果 茵赫特莊園 SHB</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-cog"></i>
-                                    <span>水洗</span>
+                                    <span data-i18n="special.4.process">水洗</span>
                                 </div>
                             </div>
                             <div class="flavor-notes">
-                                <span class="flavor-tag">黑嘉麗軟糖</span>
-                                <span class="flavor-tag">莓果</span>
-                                <span class="flavor-tag">榛果巧克力</span>
-                                <span class="flavor-tag">糖漿</span>
+                                <span class="flavor-tag" data-i18n="flavor.currant">黑嘉麗軟糖</span>
+                                <span class="flavor-tag" data-i18n="flavor.berry">莓果</span>
+                                <span class="flavor-tag" data-i18n="flavor.hazelnut">榛果巧克力</span>
+                                <span class="flavor-tag" data-i18n="flavor.syrup">糖漿</span>
                             </div>
                         </div>
                     </div>
@@ -418,28 +422,28 @@
                     <div class="coffee-card special" data-aos="fade-up" data-aos-delay="400">
                         <div class="card-header">
                             <span class="coffee-id">5</span>
-                            <div class="roast-level light-medium">淺中焙</div>
+                            <div class="roast-level light-medium" data-i18n="roast.light-medium">淺中焙</div>
                             <span class="price-tag">NT$ 200</span>
                         </div>
                         <div class="card-body">
-                            <h4 class="coffee-name">《艾爾托 大師之作》</h4>
+                            <h4 class="coffee-name" data-i18n="special.5.name">《艾爾托 大師之作》</h4>
                             <p class="coffee-name-en">Ethiopia Sidamo 74158 Natural</p>
-                            <p class="coffee-note">西達摩產區經典日曬豆</p>
+                            <p class="coffee-note" data-i18n="special.5.note">西達摩產區經典日曬豆</p>
                             <div class="coffee-details">
                                 <div class="detail-item">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>衣索比亞 西達摩｜品種：74158</span>
+                                    <span data-i18n="special.5.origin">衣索比亞 西達摩｜品種：74158</span>
                                 </div>
                                 <div class="detail-item">
                                     <i class="fas fa-cog"></i>
-                                    <span>日曬</span>
+                                    <span data-i18n="special.5.process">日曬</span>
                                 </div>
                             </div>
                             <div class="flavor-notes">
-                                <span class="flavor-tag">花香</span>
-                                <span class="flavor-tag">草莓</span>
-                                <span class="flavor-tag">熱帶水果</span>
-                                <span class="flavor-tag">巧克力</span>
+                                <span class="flavor-tag" data-i18n="flavor.flower">花香</span>
+                                <span class="flavor-tag" data-i18n="flavor.strawberry">草莓</span>
+                                <span class="flavor-tag" data-i18n="flavor.tropical">熱帶水果</span>
+                                <span class="flavor-tag" data-i18n="flavor.chocolate">巧克力</span>
                             </div>
                         </div>
                     </div>
@@ -451,37 +455,37 @@
     <!-- Espresso Section -->
     <section id="espresso" class="menu-section section alt-bg">
         <div class="container">
-            <h2 class="section-title">義式咖啡 <span>Espresso Based</span></h2>
+            <h2 class="section-title"><span data-i18n="espresso.title">義式咖啡</span> <span data-i18n="espresso.title.en">Espresso Based</span></h2>
             
             <div class="drink-grid">
                 <!-- Cold Brew -->
                 <div class="drink-card" data-aos="fade-up">
                     <div class="drink-header">
-                        <h4>精選冷萃</h4>
+                        <h4 data-i18n="drink.coldbrew">精選冷萃</h4>
                         <span class="drink-name-en">Cold Brew</span>
                     </div>
                     <div class="drink-price">
                         <span class="single-price">NT$ 200</span>
                     </div>
-                    <span class="drink-note">限量供應 Limited Supply</span>
+                    <span class="drink-note" data-i18n="common.limited">限量供應</span>
                 </div>
 
                 <!-- Milk Brew -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="50">
                     <div class="drink-header">
-                        <h4>奶萃咖啡</h4>
+                        <h4 data-i18n="drink.milkbrew">奶萃咖啡</h4>
                         <span class="drink-name-en">Milk Brew</span>
                     </div>
                     <div class="drink-price">
                         <span class="single-price">NT$ 220</span>
                     </div>
-                    <span class="drink-note">限量供應 Limited Supply</span>
+                    <span class="drink-note" data-i18n="common.limited">限量供應</span>
                 </div>
 
                 <!-- Americano -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="drink-header">
-                        <h4>美式咖啡</h4>
+                        <h4 data-i18n="drink.americano">美式咖啡</h4>
                         <span class="drink-name-en">Americano</span>
                     </div>
                     <div class="drink-price">
@@ -493,7 +497,7 @@
                 <!-- Shakerato -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="150">
                     <div class="drink-header">
-                        <h4>冰搖咖啡</h4>
+                        <h4 data-i18n="drink.shakerato">冰搖咖啡</h4>
                         <span class="drink-name-en">Shakerato</span>
                     </div>
                     <div class="drink-price">
@@ -504,43 +508,43 @@
                 <!-- Espresso -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="drink-header">
-                        <h4>濃縮咖啡</h4>
+                        <h4 data-i18n="drink.espresso">濃縮咖啡</h4>
                         <span class="drink-name-en">Espresso</span>
                     </div>
                     <div class="drink-price">
                         <span class="single-price">NT$ 60</span>
                     </div>
-                    <span class="drink-note">限內用 Dine-in Only</span>
+                    <span class="drink-note" data-i18n="common.dine-in">限內用</span>
                 </div>
 
                 <!-- Piccolo -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="250">
                     <div class="drink-header">
-                        <h4>短笛</h4>
+                        <h4 data-i18n="drink.piccolo">短笛</h4>
                         <span class="drink-name-en">Piccolo</span>
                     </div>
                     <div class="drink-price">
                         <span class="single-price">NT$ 110</span>
                     </div>
-                    <span class="drink-note">100ml 附餅乾，限內用</span>
+                    <span class="drink-note" data-i18n="drink.piccolo.note">100ml 附餅乾，限內用</span>
                 </div>
 
                 <!-- Cortado -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="drink-header">
-                        <h4>西班牙小拿鐵</h4>
+                        <h4 data-i18n="drink.cortado">西班牙小拿鐵</h4>
                         <span class="drink-name-en">Cortado</span>
                     </div>
                     <div class="drink-price">
                         <span class="single-price">NT$ 110</span>
                     </div>
-                    <span class="drink-note">100ml 附餅乾，限內用</span>
+                    <span class="drink-note" data-i18n="drink.cortado.note">100ml 附餅乾，限內用</span>
                 </div>
 
                 <!-- Cappuccino -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="350">
                     <div class="drink-header">
-                        <h4>卡布奇諾</h4>
+                        <h4 data-i18n="drink.cappuccino">卡布奇諾</h4>
                         <span class="drink-name-en">Cappuccino</span>
                     </div>
                     <div class="drink-price">
@@ -552,7 +556,7 @@
                 <!-- Single Origin Cappuccino -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="drink-header">
-                        <h4>單品卡布奇諾</h4>
+                        <h4 data-i18n="drink.cappuccino.so">單品卡布奇諾</h4>
                         <span class="drink-name-en">Cappuccino (Single Origin)</span>
                     </div>
                     <div class="drink-price">
@@ -564,7 +568,7 @@
                 <!-- Marbling Cappuccino -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="450">
                     <div class="drink-header">
-                        <h4>大理石卡布</h4>
+                        <h4 data-i18n="drink.cappuccino.marble">大理石卡布</h4>
                         <span class="drink-name-en">Marbling Cappuccino</span>
                     </div>
                     <div class="drink-price">
@@ -575,7 +579,7 @@
                 <!-- Flat White -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="500">
                     <div class="drink-header">
-                        <h4>澳白</h4>
+                        <h4 data-i18n="drink.flatwhite">澳白</h4>
                         <span class="drink-name-en">Flat White</span>
                     </div>
                     <div class="drink-price">
@@ -586,7 +590,7 @@
                 <!-- Latte -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="550">
                     <div class="drink-header">
-                        <h4>拿鐵</h4>
+                        <h4 data-i18n="drink.latte">拿鐵</h4>
                         <span class="drink-name-en">Coffee Latte</span>
                     </div>
                     <div class="drink-price">
@@ -598,7 +602,7 @@
                 <!-- Single Origin Latte -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="600">
                     <div class="drink-header">
-                        <h4>單品拿鐵</h4>
+                        <h4 data-i18n="drink.latte.so">單品拿鐵</h4>
                         <span class="drink-name-en">Coffee Latte (Single Origin)</span>
                     </div>
                     <div class="drink-price">
@@ -610,7 +614,7 @@
                 <!-- Honey Latte -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="650">
                     <div class="drink-header">
-                        <h4>蜂蜜咖啡拿鐵</h4>
+                        <h4 data-i18n="drink.latte.honey">蜂蜜咖啡拿鐵</h4>
                         <span class="drink-name-en">Cafe Latte Con Miel</span>
                     </div>
                     <div class="drink-price">
@@ -622,7 +626,7 @@
                 <!-- Espresso Romano -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="700">
                     <div class="drink-header">
-                        <h4>橙香西西里</h4>
+                        <h4 data-i18n="drink.romano">橙香西西里</h4>
                         <span class="drink-name-en">Espresso Romano</span>
                     </div>
                     <div class="drink-price">
@@ -633,7 +637,7 @@
                 <!-- Osmanthus Café au Lait -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="750">
                     <div class="drink-header">
-                        <h4>桂花咖啡歐蕾</h4>
+                        <h4 data-i18n="drink.osmanthus">桂花咖啡歐蕾</h4>
                         <span class="drink-name-en">Osmanthus Café au Lait</span>
                     </div>
                     <div class="drink-price">
@@ -648,13 +652,13 @@
     <!-- Other Drinks Section -->
     <section id="drinks" class="menu-section section">
         <div class="container">
-            <h2 class="section-title">其他飲品 <span>Other Drinks</span></h2>
+            <h2 class="section-title"><span data-i18n="drinks.title">其他飲品</span> <span data-i18n="drinks.title.en">Other Drinks</span></h2>
             
             <div class="drink-grid">
                 <!-- Chocolate Milk -->
                 <div class="drink-card" data-aos="fade-up">
                     <div class="drink-header">
-                        <h4>可可</h4>
+                        <h4 data-i18n="drink.chocolate">可可</h4>
                         <span class="drink-name-en">Chocolate Milk</span>
                     </div>
                     <div class="drink-price">
@@ -666,19 +670,19 @@
                 <!-- Taiwan High Mountain Tea -->
                 <div class="drink-card featured" data-aos="fade-up" data-aos-delay="100">
                     <div class="drink-header">
-                        <h4>台灣高山茶</h4>
+                        <h4 data-i18n="drink.taiwan.tea">台灣高山茶</h4>
                         <span class="drink-name-en">Taiwan High Mountain Tea</span>
                     </div>
                     <div class="drink-price">
                         <span class="single-price">NT$ 220</span>
                     </div>
-                    <span class="drink-note">阿里山金萱、杉林溪凍頂烏龍</span>
+                    <span class="drink-note" data-i18n="drink.taiwan.tea.note">阿里山金萱、杉林溪凍頂烏龍</span>
                 </div>
 
                 <!-- Hualien Wuhe Tea -->
                 <div class="drink-card featured" data-aos="fade-up" data-aos-delay="150">
                     <div class="drink-header">
-                        <h4>舞鶴蜜香紅茶</h4>
+                        <h4 data-i18n="drink.wuhe.tea">舞鶴蜜香紅茶</h4>
                         <span class="drink-name-en">Hualien Wuhe Honey Scented Black Tea</span>
                     </div>
                     <div class="drink-price">
@@ -689,7 +693,7 @@
                 <!-- Matcha Latte -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="drink-header">
-                        <h4>抹茶拿鐵</h4>
+                        <h4 data-i18n="drink.matcha">抹茶拿鐵</h4>
                         <span class="drink-name-en">Matcha Latte</span>
                     </div>
                     <div class="drink-price">
@@ -701,7 +705,7 @@
                 <!-- Hojicha Latte -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="250">
                     <div class="drink-header">
-                        <h4>焙茶拿鐵</h4>
+                        <h4 data-i18n="drink.hojicha">焙茶拿鐵</h4>
                         <span class="drink-name-en">Hojicha Latte</span>
                     </div>
                     <div class="drink-price">
@@ -713,13 +717,13 @@
                 <!-- Apple Sparkling -->
                 <div class="drink-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="drink-header">
-                        <h4>蘋果氣泡飲</h4>
+                        <h4 data-i18n="drink.apple">蘋果氣泡飲</h4>
                         <span class="drink-name-en">Apple Sparkling</span>
                     </div>
                     <div class="drink-price">
                         <span class="single-price">NT$ 110</span>
                     </div>
-                    <span class="drink-note">限內用 Dine-in Only</span>
+                    <span class="drink-note" data-i18n="common.dine-in">限內用</span>
                 </div>
             </div>
         </div>
@@ -728,13 +732,13 @@
     <!-- Dessert Section -->
     <section id="dessert" class="menu-section section alt-bg">
         <div class="container">
-            <h2 class="section-title">點心 <span>Dessert</span></h2>
+            <h2 class="section-title"><span data-i18n="dessert.title">點心</span> <span data-i18n="dessert.title.en">Dessert</span></h2>
             
             <div class="dessert-grid">
                 <!-- Cheese Cake -->
                 <div class="dessert-card" data-aos="fade-up">
                     <div class="dessert-icon">🧀</div>
-                    <h4>烤乳酪蛋糕</h4>
+                    <h4 data-i18n="dessert.cheesecake">烤乳酪蛋糕</h4>
                     <span class="dessert-name-en">Cheese Cake</span>
                     <span class="dessert-price">NT$ 80</span>
                 </div>
@@ -742,7 +746,7 @@
                 <!-- Passion Fruit Cheese Cake -->
                 <div class="dessert-card" data-aos="fade-up" data-aos-delay="50">
                     <div class="dessert-icon">🍰</div>
-                    <h4>百香果起司蛋糕</h4>
+                    <h4 data-i18n="dessert.cheesecake.passion">百香果起司蛋糕</h4>
                     <span class="dessert-name-en">Cheese Cake (Passion Fruit)</span>
                     <span class="dessert-price">NT$ 95</span>
                 </div>
@@ -750,7 +754,7 @@
                 <!-- Bagel Cheese -->
                 <div class="dessert-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="dessert-icon">🥯</div>
-                    <h4>貝果 (起司)</h4>
+                    <h4 data-i18n="dessert.bagel.cheese">貝果 (起司)</h4>
                     <span class="dessert-name-en">Bagel (Cheese)</span>
                     <span class="dessert-price">NT$ 80</span>
                 </div>
@@ -758,7 +762,7 @@
                 <!-- Bagel Black Sesame -->
                 <div class="dessert-card" data-aos="fade-up" data-aos-delay="150">
                     <div class="dessert-icon">🥯</div>
-                    <h4>貝果 (黑芝麻)</h4>
+                    <h4 data-i18n="dessert.bagel.sesame">貝果 (黑芝麻)</h4>
                     <span class="dessert-name-en">Bagel (Black Sesame)</span>
                     <span class="dessert-price">NT$ 80</span>
                 </div>
@@ -766,7 +770,7 @@
                 <!-- Bagel Grains -->
                 <div class="dessert-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="dessert-icon">🥯</div>
-                    <h4>貝果 (雜糧)</h4>
+                    <h4 data-i18n="dessert.bagel.grains">貝果 (雜糧)</h4>
                     <span class="dessert-name-en">Bagel (Grains)</span>
                     <span class="dessert-price">NT$ 70</span>
                 </div>
@@ -774,7 +778,7 @@
                 <!-- Croissant -->
                 <div class="dessert-card" data-aos="fade-up" data-aos-delay="250">
                     <div class="dessert-icon">🥐</div>
-                    <h4>可頌</h4>
+                    <h4 data-i18n="dessert.croissant">可頌</h4>
                     <span class="dessert-name-en">Croissant</span>
                     <span class="dessert-price">NT$ 85</span>
                 </div>
@@ -782,7 +786,7 @@
                 <!-- Cinnamon Roll -->
                 <div class="dessert-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="dessert-icon">🍩</div>
-                    <h4>肉桂卷</h4>
+                    <h4 data-i18n="dessert.cinnamon">肉桂卷</h4>
                     <span class="dessert-name-en">Cinnamon Roll</span>
                     <span class="dessert-price">NT$ 95</span>
                 </div>
@@ -790,7 +794,7 @@
                 <!-- Quiche -->
                 <div class="dessert-card" data-aos="fade-up" data-aos-delay="350">
                     <div class="dessert-icon">🥧</div>
-                    <h4>鹹派</h4>
+                    <h4 data-i18n="dessert.quiche">鹹派</h4>
                     <span class="dessert-name-en">Quiche</span>
                     <span class="dessert-price">NT$ 110</span>
                 </div>
@@ -798,7 +802,7 @@
                 <!-- Palmiers -->
                 <div class="dessert-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="dessert-icon">🦋</div>
-                    <h4>手工蝴蝶酥</h4>
+                    <h4 data-i18n="dessert.palmiers">手工蝴蝶酥</h4>
                     <span class="dessert-name-en">Handmade Palmiers</span>
                     <span class="dessert-price">NT$ 60</span>
                 </div>
@@ -809,28 +813,28 @@
     <!-- Contact Section -->
     <section id="contact" class="contact section">
         <div class="container">
-            <h2 class="section-title">聯絡我們 <span>Contact</span></h2>
+            <h2 class="section-title"><span data-i18n="contact.title">聯絡我們</span> <span data-i18n="contact.title.en">Contact</span></h2>
             
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>地址</h4>
-                            <p>花蓮市中山路XXX號</p>
+                            <h4 data-i18n="contact.address">地址</h4>
+                            <p data-i18n="contact.address.value">花蓮市中山路XXX號</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-clock"></i>
                         <div>
-                            <h4>營業時間</h4>
-                            <p>週一至週日 10:00 - 18:00</p>
+                            <h4 data-i18n="contact.hours">營業時間</h4>
+                            <p data-i18n="contact.hours.value">週一至週日 10:00 - 18:00</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4>電話</h4>
+                            <h4 data-i18n="contact.phone">電話</h4>
                             <p>03-XXX-XXXX</p>
                         </div>
                     </div>
@@ -865,9 +869,9 @@
                 </div>
                 <p class="copyright">© 2026 Cuore Coffee Roaster. All Rights Reserved.</p>
             </div>
-            <div class="footer-disclaimer">
-                <p>⚠️ <strong>免責聲明 Disclaimer:</strong> 本網站為技術展示用途，與實際店家無正式關聯。所有商標與品牌名稱歸其所有者所有。</p>
-                <p class="en">This website is for demonstration purposes only and is not officially affiliated with the actual business. All trademarks and brand names belong to their respective owners.</p>
+                <div class="footer-disclaimer">
+                <p data-i18n="footer.disclaimer">⚠️ <strong>免責聲明 Disclaimer:</strong> 本網站為技術展示用途，與實際店家無正式關聯。所有商標與品牌名稱歸其所有者所有。</p>
+                <p class="en" data-i18n="footer.disclaimer.en">This website is for demonstration purposes only and is not officially affiliated with the actual business. All trademarks and brand names belong to their respective owners.</p>
             </div>
         </div>
     </footer>
@@ -878,6 +882,7 @@
     </a>
 
     <!-- Scripts -->
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
