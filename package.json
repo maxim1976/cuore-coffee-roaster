@@ -1,0 +1,11 @@
+{
+  "name": "cuore-coffee-roaster",
+  "version": "1.0.0",
+  "description": "科雷精品咖啡館 Cuore Coffee Roaster Website",
+  "scripts": {
+    "start": "npx serve -s . -l $PORT"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
