@@ -1,6 +1,6 @@
 /**
  * Cuore Coffee Roaster - Internationalization (i18n)
- * Supports: Traditional Chinese (zh-TW), Japanese (ja), Korean (ko)
+ * Supports: Traditional Chinese (zh-TW), English (en), Japanese (ja), Korean (ko)
  */
 
 const translations = {
@@ -194,6 +194,198 @@ const translations = {
         "flavor.currant": "黑嘉麗軟糖",
         "flavor.hazelnut": "榛果巧克力",
         "flavor.syrup": "糖漿"
+    },
+
+    "en": {
+        // Navigation
+        "nav.home": "Home",
+        "nav.about": "About",
+        "nav.single-origin": "Single Origin",
+        "nav.espresso": "Espresso",
+        "nav.drinks": "Drinks",
+        "nav.dessert": "Dessert",
+        "nav.contact": "Contact",
+
+        // Demo Banner
+        "demo.banner": "🚧 <strong>Demo Site</strong> - This is a demo website for technical demonstration only. Not for commercial use.",
+        "demo.banner.en": "This is a demo website for technical demonstration only. Not for commercial use.",
+
+        // Hero
+        "hero.title": "Cuore Coffee Roaster",
+        "hero.subtitle": "CUORE COFFEE ROASTER",
+        "hero.tagline": "Roasted with Heart, Crafted with Soul",
+        "hero.cta": "View Menu",
+
+        // About
+        "about.title": "About Us",
+        "about.title.en": "About Us",
+        "about.desc1": "Cuore Coffee Roaster is a specialty coffee roastery nestled in Hualien, dedicated to sourcing premium green beans from around the world and bringing out each coffee's unique character through expert roasting.",
+        "about.desc2": "Whether you crave the fruity, floral notes of a light-roasted single origin or the rich depth of a medium-dark roast, you'll find your perfect cup at Cuore.",
+        "about.feature1": "Select Origins",
+        "about.feature2": "In-House Roasting",
+        "about.feature3": "Brewed with Care",
+
+        // Single Origin
+        "single-origin.title": "Single Origin",
+        "single-origin.title.en": "Single Origin",
+        "single-origin.iced-note": "Iced Pour-Over +NT$20",
+        "single-origin.category": "Select Single Origin",
+        "single-origin.seasonal": "Seasonal Special",
+        "single-origin.seasonal.en": "Seasonal Special",
+
+        // Single Origin Coffee Names
+        "coffee.a.name": "Cuore Special Blend Coffee",
+        "coffee.a.origin": "Ethiopia Sidamo (Washed), Shakiso (Natural)",
+        "coffee.a.process": "Washed / Natural",
+        "coffee.b.name": "Guatemala Antigua Bella Carmona Classico",
+        "coffee.b.origin": "Guatemala Antigua",
+        "coffee.b.process": "Washed",
+        "coffee.c.name": "Kenya Nyeri Wakamata Washed AA",
+        "coffee.c.origin": "Kenya, Variety: SL28, SL34",
+        "coffee.c.process": "Washed AA",
+        "coffee.d.name": "Indonesia Sumatra Gayo Golden Mandheling",
+        "coffee.d.origin": "Indonesia Sumatra",
+        "coffee.d.process": "Giling Basah",
+        "coffee.d.desc": "Rich milky aroma with nutty notes",
+        "coffee.e.name": "Ethiopia Sidamo Bona Zuria 74110 G1",
+        "coffee.e.origin": "Ethiopia Sidamo",
+        "coffee.e.process": "Specialized Washed",
+
+        // Seasonal Specials
+        "special.1.name": "Ethiopia Guji Dimtu Hambella Wate Buku G1",
+        "special.1.award": "2025 Africa Washed Category Champion",
+        "special.1.origin": "Ethiopia Guji",
+        "special.1.process": "Washed",
+        "special.2.name": "Ethiopia Sidamo Bensa Karamo Natural",
+        "special.2.award": "Ethiopia Natural Category Annual Champion",
+        "special.2.origin": "Ethiopia Sidamo Bensa",
+        "special.2.process": "Natural",
+        "special.3.name": "Colombia Cauca Finca El Paraiso",
+        "special.3.badge": "House Favorite",
+        "special.3.origin": "Colombia Cauca",
+        "special.3.process": "Double Anaerobic",
+        "special.3.note": "Great hot or iced",
+        "special.4.name": "Guatemala El Injerto Top Bourbon",
+        "special.4.award": "Guatemala's most awarded estate",
+        "special.4.origin": "Guatemala Huehuetenango El Injerto SHB",
+        "special.4.process": "Bourbon Washed",
+        "special.5.name": "Ethiopia Sidamo 74158 Natural",
+        "special.5.note": "Classic Sidamo natural process",
+        "special.5.origin": "Ethiopia Sidamo",
+        "special.5.process": "Natural",
+
+        // Espresso
+        "espresso.title": "Espresso",
+        "espresso.title.en": "Espresso Based",
+
+        // Espresso Drinks
+        "drink.coldbrew": "Cold Brew",
+        "drink.milkbrew": "Milk Brew",
+        "drink.americano": "Americano",
+        "drink.shakerato": "Shakerato",
+        "drink.espresso": "Espresso",
+        "drink.piccolo": "Piccolo",
+        "drink.cortado": "Cortado",
+        "drink.cappuccino": "Cappuccino",
+        "drink.cappuccino.so": "Cappuccino (Single Origin)",
+        "drink.cappuccino.marble": "Marbling Cappuccino",
+        "drink.flatwhite": "Flat White",
+        "drink.latte": "Coffee Latte",
+        "drink.latte.so": "Coffee Latte (Single Origin)",
+        "drink.latte.honey": "Cafe Latte Con Miel",
+        "drink.romano": "Espresso Romano",
+        "drink.osmanthus": "Osmanthus Cafe au Lait",
+        "drink.piccolo.note": "100ml with cookies, Dine-in Only",
+        "drink.cortado.note": "100ml with cookies, Dine-in Only",
+
+        // Other Drinks
+        "drinks.title": "Drinks",
+        "drinks.title.en": "Other Drinks",
+        "drink.chocolate": "Chocolate Milk",
+        "drink.taiwan.tea": "Taiwan High Mountain Tea",
+        "drink.taiwan.tea.note": "Alishan Jinxuan, Shanlinxi Frozen Top Oolong",
+        "drink.wuhe.tea": "Hualien Wuhe Honey Scented Black Tea",
+        "drink.matcha": "Matcha Latte",
+        "drink.hojicha": "Hojicha Latte",
+        "drink.apple": "Apple Sparkling",
+
+        // Dessert
+        "dessert.title": "Dessert",
+        "dessert.title.en": "Dessert",
+        "dessert.cheesecake": "Cheese Cake",
+        "dessert.cheesecake.passion": "Cheese Cake (Passion Fruit)",
+        "dessert.bagel.cheese": "Bagel (Cheese)",
+        "dessert.bagel.sesame": "Bagel (Black Sesame)",
+        "dessert.bagel.grains": "Bagel (Grains)",
+        "dessert.croissant": "Croissant",
+        "dessert.cinnamon": "Cinnamon Roll",
+        "dessert.quiche": "Quiche",
+        "dessert.palmiers": "Handmade Palmiers",
+
+        // Contact
+        "contact.title": "Contact",
+        "contact.title.en": "Contact",
+        "contact.address": "Address",
+        "contact.address.value": "No. XXX, Zhongshan Rd., Hualien City",
+        "contact.hours": "Hours",
+        "contact.hours.value": "Mon - Sun 10:00 - 18:00",
+        "contact.phone": "Phone",
+
+        // Footer
+        "footer.disclaimer": "⚠️ <strong>Disclaimer:</strong> This website is for demonstration purposes only and is not officially affiliated with the actual business. All trademarks and brand names belong to their respective owners.",
+        "footer.disclaimer.en": "This website is for demonstration purposes only and is not officially affiliated with the actual business. All trademarks and brand names belong to their respective owners.",
+
+        // Common
+        "common.limited": "Limited Supply",
+        "common.dine-in": "Dine-in Only",
+        "common.hot-cold": "Great hot or iced",
+        "common.popular": "House Favorite",
+
+        // Roast Levels
+        "roast.light": "Light",
+        "roast.light-medium": "Light-Medium",
+        "roast.medium": "Medium",
+
+        // Flavor Notes
+        "flavor.melon": "Melon",
+        "flavor.peach": "Peach",
+        "flavor.bergamot": "Bergamot",
+        "flavor.berry": "Berry",
+        "flavor.violet": "Violet",
+        "flavor.floral": "Floral",
+        "flavor.chocolate": "Chocolate",
+        "flavor.citrus": "Citrus",
+        "flavor.peanut": "Peanut",
+        "flavor.blackberry": "Blackberry",
+        "flavor.grapefruit": "Grapefruit",
+        "flavor.hawthorn": "Hawthorn",
+        "flavor.roselle": "Roselle",
+        "flavor.brown.sugar": "Brown Sugar",
+        "flavor.caramel": "Caramel",
+        "flavor.almond": "Almond",
+        "flavor.dark.chocolate": "Dark Chocolate",
+        "flavor.butter": "Butter",
+        "flavor.grass.jelly": "Grass Jelly",
+        "flavor.strawberry": "Strawberry",
+        "flavor.white.peach": "White Peach",
+        "flavor.water.peach": "Peach",
+        "flavor.tropical": "Tropical Fruits",
+        "flavor.flower": "Floral",
+        "flavor.jasmine": "Jasmine",
+        "flavor.plum": "Plum",
+        "flavor.honey": "Honey",
+        "flavor.choco.cream": "Chocolate Cream",
+        "flavor.cantaloupe": "Cantaloupe",
+        "flavor.cranberry": "Cranberry",
+        "flavor.raspberry": "Raspberry",
+        "flavor.purple.floral": "Purple Floral",
+        "flavor.wine": "Winey",
+        "flavor.lychee": "Lychee",
+        "flavor.yogurt": "Lactic Acid Drink",
+        "flavor.rose": "Rose",
+        "flavor.currant": "Blackcurrant",
+        "flavor.hazelnut": "Hazelnut Chocolate",
+        "flavor.syrup": "Syrup"
     },
 
     "ja": {
@@ -586,7 +778,7 @@ let currentLang = localStorage.getItem('cuore-lang') || 'zh-TW';
 
 /**
  * Set the current language and update all translated elements
- * @param {string} lang - Language code (zh-TW, ja, ko)
+ * @param {string} lang - Language code (zh-TW, en, ja, ko)
  */
 function setLanguage(lang) {
     if (!translations[lang]) {
@@ -619,6 +811,7 @@ function setLanguage(lang) {
     // Update document title based on language
     const titles = {
         'zh-TW': '科雷精品咖啡館 Cuore Coffee Roaster',
+        'en': 'Cuore Coffee Roaster | Specialty Coffee in Hualien',
         'ja': 'クオーレ スペシャルティコーヒー | Cuore Coffee Roaster',
         'ko': '쿠오레 스페셜티 커피 | Cuore Coffee Roaster'
     };
@@ -647,6 +840,8 @@ function initI18n() {
     
     if (savedLang && translations[savedLang]) {
         initialLang = savedLang;
+    } else if (browserLang.startsWith('en')) {
+        initialLang = 'en';
     } else if (browserLang.startsWith('ja')) {
         initialLang = 'ja';
     } else if (browserLang.startsWith('ko')) {

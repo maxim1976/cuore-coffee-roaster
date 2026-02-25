@@ -28,6 +28,14 @@
     
     --color-accent-gold: #C9A227;
     --color-accent-red: #B54A4A;
+
+    /* Card palette (earthy coffee tones) */
+    --card-burnt-orange: #C26A32;
+    --card-warm-tan: #ADA18B;
+    --card-dark-olive: #4A5638;
+    --card-dark-teal: #1E4D47;
+    --card-warm-amber: #C8922E;
+    --card-deep-rust: #7E3628;
     
     --font-primary: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
     --font-display: 'Playfair Display', serif;
@@ -528,6 +536,7 @@ body:has(.demo-banner) .navbar {
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -546,6 +555,7 @@ body:has(.demo-banner) .navbar {
     color: var(--color-gray-light);
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .price-badge {
@@ -586,6 +596,73 @@ body:has(.demo-banner) .navbar {
 
 .coffee-card.popular {
     border: 2px solid var(--color-accent-gold);
+}
+
+/* Earthy card backgrounds */
+.coffee-card.card-burnt-orange,
+.coffee-card.special.card-burnt-orange  { background: var(--card-burnt-orange); border-color: var(--card-burnt-orange); }
+.coffee-card.card-warm-tan,
+.coffee-card.special.card-warm-tan      { background: var(--card-warm-tan);     border-color: var(--card-warm-tan); }
+.coffee-card.card-dark-olive,
+.coffee-card.special.card-dark-olive    { background: var(--card-dark-olive);   border-color: var(--card-dark-olive); }
+.coffee-card.card-dark-teal,
+.coffee-card.special.card-dark-teal     { background: var(--card-dark-teal);    border-color: var(--card-dark-teal); }
+.coffee-card.card-warm-amber,
+.coffee-card.special.card-warm-amber    { background: var(--card-warm-amber);   border-color: var(--card-warm-amber); }
+.coffee-card.card-deep-rust,
+.coffee-card.special.card-deep-rust     { background: var(--card-deep-rust);    border-color: var(--card-deep-rust); }
+
+/* Light text on colored cards */
+.coffee-card[class*="card-"] .card-body h4,
+.coffee-card[class*="card-"] .coffee-name-en,
+.coffee-card[class*="card-"] .coffee-details .detail-item,
+.coffee-card[class*="card-"] .detail-item i,
+.coffee-card[class*="card-"] .flavor-description,
+.coffee-card[class*="card-"] .coffee-note,
+.coffee-card[class*="card-"] .award-badge,
+.coffee-card[class*="card-"] .popular-badge {
+    color: rgba(255,255,255,0.85);
+}
+
+.coffee-card[class*="card-"] .card-body h4 {
+    color: #FFFFFF;
+}
+
+.coffee-card[class*="card-"] .coffee-id {
+    background: rgba(255,255,255,0.2);
+    color: #FFFFFF;
+}
+
+.coffee-card[class*="card-"] .roast-level {
+    background: rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.9);
+}
+
+.coffee-card[class*="card-"] .price-tag {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.coffee-card[class*="card-"] .flavor-tag {
+    background: rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.9);
+}
+
+.coffee-card[class*="card-"] .award-badge {
+    background: rgba(255,255,255,0.2);
+    color: #FFD700;
+}
+
+.coffee-card[class*="card-"] .popular-badge {
+    background: rgba(255,255,255,0.2);
+    color: #FFFFFF;
+}
+
+.coffee-card[class*="card-"]:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    filter: brightness(1.08);
+    border-color: rgba(255,255,255,0.3);
 }
 
 .card-header {
@@ -769,6 +846,15 @@ body:has(.demo-banner) .navbar {
     background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
     border: 1px solid var(--color-primary-light);
 }
+
+/* Subtle left-border accents cycling through earthy palette */
+.drink-card { border-left: 3px solid transparent; }
+.drink-grid .drink-card:nth-child(6n+1) { border-left-color: var(--card-burnt-orange); }
+.drink-grid .drink-card:nth-child(6n+2) { border-left-color: var(--card-warm-tan); }
+.drink-grid .drink-card:nth-child(6n+3) { border-left-color: var(--card-dark-olive); }
+.drink-grid .drink-card:nth-child(6n+4) { border-left-color: var(--card-dark-teal); }
+.drink-grid .drink-card:nth-child(6n+5) { border-left-color: var(--card-warm-amber); }
+.drink-grid .drink-card:nth-child(6n+6) { border-left-color: var(--card-deep-rust); }
 
 .drink-header h4 {
     font-size: 1.1rem;
@@ -1185,13 +1271,19 @@ body:has(.demo-banner) .navbar {
 /* ==========================================================================
    Language Switcher
    ========================================================================== */
+.nav-lang-item {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-left: 1.5rem;
+    border-left: 1px solid var(--color-cream-dark);
+    list-style: none;
+}
+
 .language-switcher {
     display: flex;
     align-items: center;
     gap: 4px;
-    margin-left: 1.5rem;
-    padding-left: 1.5rem;
-    border-left: 1px solid var(--color-cream-dark);
 }
 
 .lang-btn {
@@ -1217,16 +1309,26 @@ body:has(.demo-banner) .navbar {
     border-color: var(--color-primary);
 }
 
+/* Hide English subtitles when English is active (redundant) */
+html[lang="en"] .coffee-name-en,
+html[lang="en"] .drink-name-en,
+html[lang="en"] .dessert-name-en,
+html[lang="en"] .category-title .en,
+html[lang="en"] .section-title [data-i18n$=".title.en"],
+html[lang="en"] .footer-disclaimer .en {
+    display: none;
+}
+
 /* Mobile language switcher */
 @media (max-width: 768px) {
-    .language-switcher {
+    .nav-lang-item {
         margin-left: 0;
         padding-left: 0;
         border-left: none;
-        justify-content: center;
-        margin-top: 1rem;
-        padding-top: 1rem;
         border-top: 1px solid var(--color-cream-dark);
+        justify-content: center;
+        width: 100%;
+        padding: 1rem 2rem;
     }
 }
 

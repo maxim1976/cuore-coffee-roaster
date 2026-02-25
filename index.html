@@ -46,12 +46,15 @@
                 <li><a href="#drinks" data-i18n="nav.drinks">其他飲品</a></li>
                 <li><a href="#dessert" data-i18n="nav.dessert">點心</a></li>
                 <li><a href="#contact" data-i18n="nav.contact">聯絡我們</a></li>
+                <li class="nav-lang-item">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="zh-TW">中文</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="ja">日本語</button>
+                        <button class="lang-btn" data-lang="ko">한국어</button>
+                    </div>
+                </li>
             </ul>
-            <div class="language-switcher">
-                <button class="lang-btn active" data-lang="zh-TW">中文</button>
-                <button class="lang-btn" data-lang="ja">日本語</button>
-                <button class="lang-btn" data-lang="ko">한국어</button>
-            </div>
         </div>
     </nav>
 
@@ -123,16 +126,16 @@
             <!-- Standard Menu -->
             <div class="menu-category">
                 <h3 class="category-title">
-                    <span class="price-badge">NT$ 170</span>
-                    精選單品
+                    <span data-i18n="single-origin.category">精選單品</span>
                 </h3>
                 
                 <div class="coffee-cards">
                     <!-- Coffee A -->
-                    <div class="coffee-card" data-aos="fade-up">
+                    <div class="coffee-card card-burnt-orange" data-aos="fade-up">
                         <div class="card-header">
                             <span class="coffee-id">A</span>
                             <div class="roast-level light" data-i18n="roast.light">淺焙</div>
+                            <span class="price-tag">NT$ 170</span>
                         </div>
                         <div class="card-body">
                             <h4 class="coffee-name" data-i18n="coffee.a.name">科雷獨寶——《2025 西夏之花》</h4>
@@ -158,10 +161,11 @@
                     </div>
 
                     <!-- Coffee B -->
-                    <div class="coffee-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="coffee-card card-warm-tan" data-aos="fade-up" data-aos-delay="100">
                         <div class="card-header">
                             <span class="coffee-id">B</span>
                             <div class="roast-level medium" data-i18n="roast.medium">中焙</div>
+                            <span class="price-tag">NT$ 170</span>
                         </div>
                         <div class="card-body">
                             <h4 class="coffee-name" data-i18n="coffee.b.name">《安提瓜 經典花神》</h4>
@@ -186,10 +190,11 @@
                     </div>
 
                     <!-- Coffee C -->
-                    <div class="coffee-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="coffee-card card-dark-olive" data-aos="fade-up" data-aos-delay="200">
                         <div class="card-header">
                             <span class="coffee-id">C</span>
                             <div class="roast-level light-medium" data-i18n="roast.light-medium">淺中焙</div>
+                            <span class="price-tag">NT$ 170</span>
                         </div>
                         <div class="card-body">
                             <h4 class="coffee-name" data-i18n="coffee.c.name">《肯亞 AA 涅里 蔚藍》</h4>
@@ -215,10 +220,11 @@
                     </div>
 
                     <!-- Coffee D -->
-                    <div class="coffee-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="coffee-card card-dark-teal" data-aos="fade-up" data-aos-delay="300">
                         <div class="card-header">
                             <span class="coffee-id">D</span>
                             <div class="roast-level medium" data-i18n="roast.medium">中焙</div>
+                            <span class="price-tag">NT$ 170</span>
                         </div>
                         <div class="card-body">
                             <h4 class="coffee-name" data-i18n="coffee.d.name">《迦佐黃金曼特寧》20目</h4>
@@ -245,10 +251,11 @@
                     </div>
 
                     <!-- Coffee E -->
-                    <div class="coffee-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="coffee-card card-warm-amber" data-aos="fade-up" data-aos-delay="400">
                         <div class="card-header">
                             <span class="coffee-id">E</span>
                             <div class="roast-level light" data-i18n="roast.light">淺焙</div>
+                            <span class="price-tag">NT$ 170</span>
                         </div>
                         <div class="card-body">
                             <h4 class="coffee-name" data-i18n="coffee.e.name">《柏娜小珍珠》74110</h4>
@@ -278,13 +285,13 @@
             <div class="menu-category seasonal">
                 <h3 class="category-title">
                     <i class="fas fa-star"></i>
-                    季節限定・稀有競標 <span class="en">Seasonal Special</span>
+                    <span data-i18n="single-origin.seasonal">季節限定・稀有競標</span> <span class="en" data-i18n="single-origin.seasonal.en">Seasonal Special</span>
                 </h3>
                 <p class="category-note" data-i18n="single-origin.iced-note">手沖冰鎮 Iced Pour-Over +NT$20</p>
                 
                 <div class="coffee-cards special">
                     <!-- Special 1 -->
-                    <div class="coffee-card special" data-aos="fade-up">
+                    <div class="coffee-card special card-deep-rust" data-aos="fade-up">
                         <div class="card-header">
                             <span class="coffee-id">1</span>
                             <div class="roast-level light" data-i18n="roast.light">淺焙</div>
@@ -318,7 +325,7 @@
                     </div>
 
                     <!-- Special 2 -->
-                    <div class="coffee-card special" data-aos="fade-up" data-aos-delay="100">
+                    <div class="coffee-card special card-dark-olive" data-aos="fade-up" data-aos-delay="100">
                         <div class="card-header">
                             <span class="coffee-id">2</span>
                             <div class="roast-level light" data-i18n="roast.light">淺焙</div>
@@ -352,7 +359,7 @@
                     </div>
 
                     <!-- Special 3 -->
-                    <div class="coffee-card special popular" data-aos="fade-up" data-aos-delay="200">
+                    <div class="coffee-card special popular card-warm-amber" data-aos="fade-up" data-aos-delay="200">
                         <div class="card-header">
                             <span class="coffee-id">3</span>
                             <div class="roast-level light-medium" data-i18n="roast.light-medium">淺中焙</div>
@@ -386,7 +393,7 @@
                     </div>
 
                     <!-- Special 4 -->
-                    <div class="coffee-card special" data-aos="fade-up" data-aos-delay="300">
+                    <div class="coffee-card special card-dark-teal" data-aos="fade-up" data-aos-delay="300">
                         <div class="card-header">
                             <span class="coffee-id">4</span>
                             <div class="roast-level light-medium" data-i18n="roast.light-medium">淺中焙</div>
@@ -419,7 +426,7 @@
                     </div>
 
                     <!-- Special 5 -->
-                    <div class="coffee-card special" data-aos="fade-up" data-aos-delay="400">
+                    <div class="coffee-card special card-warm-tan" data-aos="fade-up" data-aos-delay="400">
                         <div class="card-header">
                             <span class="coffee-id">5</span>
                             <div class="roast-level light-medium" data-i18n="roast.light-medium">淺中焙</div>
