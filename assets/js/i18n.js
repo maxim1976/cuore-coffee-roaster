@@ -13,6 +13,7 @@ const translations = {
         "nav.drinks": "其他飲品",
         "nav.dessert": "點心",
         "nav.contact": "聯絡我們",
+        "nav.shop": "網路商店",
 
         // Demo Banner
         "demo.banner": "🚧 <strong>Demo Site</strong> - 此為技術展示網站，非官方商業用途。僅供學習參考。",
@@ -193,7 +194,43 @@ const translations = {
         "flavor.rose": "玫瑰香氣",
         "flavor.currant": "黑嘉麗軟糖",
         "flavor.hazelnut": "榛果巧克力",
-        "flavor.syrup": "糖漿"
+        "flavor.syrup": "糖漿",
+
+        // Shop page
+        "shop.back-home": "回首頁",
+        "shop.hero.label": "精選咖啡豆",
+        "shop.hero.title": "咖啡豆專區",
+        "shop.hero.sub": "自家烘焙・每包 200g（綜合款 500g）・滿 NT$1,500 免運",
+        "shop.cart.title": "購物車",
+        "shop.cart.empty": "購物車是空的",
+        "shop.cart.subtotal": "小計",
+        "shop.cart.shipping": "運費",
+        "shop.cart.total": "合計",
+        "shop.cart.free": "免運",
+        "shop.cart.free-ok": "已達免運門檻！",
+        "shop.cart.free-note": "再加購 NT$ {diff} 即可免運",
+        "shop.checkout.title": "收件資訊",
+        "shop.checkout.name": "姓名 *",
+        "shop.checkout.phone": "手機 *",
+        "shop.checkout.email": "電子郵件 *",
+        "shop.checkout.shipping-method": "配送方式 *",
+        "shop.checkout.delivery": "宅配到府 NT$100",
+        "shop.checkout.cvs": "超商取貨 NT$60",
+        "shop.checkout.store": "店取 免費",
+        "shop.checkout.address": "收件地址 *",
+        "shop.checkout.cvs-store": "超商門市 *",
+        "shop.checkout.cvs-select": "-- 請選擇超商 --",
+        "shop.checkout.note": "備註",
+        "shop.checkout.btn": "前往付款",
+        "shop.checkout.processing": "處理中...",
+        "shop.checkout.ecpay": "付款由 綠界 ECPay 處理・支援信用卡、ATM、超商付款、LINE Pay",
+        "shop.product.grind": "研磨",
+        "shop.product.add": "加入購物車",
+        "shop.product.sold-out": "已售完",
+        "shop.grind.whole_bean": "原豆",
+        "shop.grind.coarse": "粗研磨（法壓/冷萃）",
+        "shop.grind.medium": "中研磨（手沖）",
+        "shop.grind.fine": "細研磨（義式）"
     },
 
     "en": {
@@ -205,6 +242,7 @@ const translations = {
         "nav.drinks": "Drinks",
         "nav.dessert": "Dessert",
         "nav.contact": "Contact",
+        "nav.shop": "Online Shop",
 
         // Demo Banner
         "demo.banner": "🚧 <strong>Demo Site</strong> - This is a demo website for technical demonstration only. Not for commercial use.",
@@ -385,7 +423,43 @@ const translations = {
         "flavor.rose": "Rose",
         "flavor.currant": "Blackcurrant",
         "flavor.hazelnut": "Hazelnut Chocolate",
-        "flavor.syrup": "Syrup"
+        "flavor.syrup": "Syrup",
+
+        // Shop page
+        "shop.back-home": "Back to Home",
+        "shop.hero.label": "Select Coffee Beans",
+        "shop.hero.title": "Coffee Beans",
+        "shop.hero.sub": "In-house roasted · 200g per bag (Blend: 500g) · Free shipping over NT$1,500",
+        "shop.cart.title": "Cart",
+        "shop.cart.empty": "Your cart is empty",
+        "shop.cart.subtotal": "Subtotal",
+        "shop.cart.shipping": "Shipping",
+        "shop.cart.total": "Total",
+        "shop.cart.free": "Free",
+        "shop.cart.free-ok": "Free shipping applied!",
+        "shop.cart.free-note": "Add NT$ {diff} more for free shipping",
+        "shop.checkout.title": "Shipping Info",
+        "shop.checkout.name": "Name *",
+        "shop.checkout.phone": "Mobile *",
+        "shop.checkout.email": "Email *",
+        "shop.checkout.shipping-method": "Delivery Method *",
+        "shop.checkout.delivery": "Home Delivery NT$100",
+        "shop.checkout.cvs": "CVS Pickup NT$60",
+        "shop.checkout.store": "In-store Pickup Free",
+        "shop.checkout.address": "Delivery Address *",
+        "shop.checkout.cvs-store": "Convenience Store *",
+        "shop.checkout.cvs-select": "-- Select store --",
+        "shop.checkout.note": "Notes",
+        "shop.checkout.btn": "Proceed to Pay",
+        "shop.checkout.processing": "Processing...",
+        "shop.checkout.ecpay": "Payment by ECPay · Credit card, ATM, CVS payment, LINE Pay",
+        "shop.product.grind": "Grind",
+        "shop.product.add": "Add to Cart",
+        "shop.product.sold-out": "Sold Out",
+        "shop.grind.whole_bean": "Whole Bean",
+        "shop.grind.coarse": "Coarse (French Press / Cold Brew)",
+        "shop.grind.medium": "Medium (Pour Over)",
+        "shop.grind.fine": "Fine (Espresso)"
     },
 
     "ja": {
@@ -397,6 +471,7 @@ const translations = {
         "nav.drinks": "その他のドリンク",
         "nav.dessert": "デザート",
         "nav.contact": "お問い合わせ",
+        "nav.shop": "オンラインショップ",
 
         // Demo Banner
         "demo.banner": "🚧 <strong>デモサイト</strong> - 技術デモ用のウェブサイトです。商用目的ではありません。",
@@ -589,6 +664,7 @@ const translations = {
         "nav.drinks": "기타 음료",
         "nav.dessert": "디저트",
         "nav.contact": "연락처",
+        "nav.shop": "온라인 쇼핑",
 
         // Demo Banner
         "demo.banner": "🚧 <strong>데모 사이트</strong> - 기술 시연용 웹사이트입니다. 상업적 용도가 아닙니다.",
@@ -816,6 +892,9 @@ function setLanguage(lang) {
         'ko': '쿠오레 스페셜티 커피 | Cuore Coffee Roaster'
     };
     document.title = titles[lang] || titles['zh-TW'];
+
+    // Notify other scripts (e.g. cart.js) that the language changed
+    window.dispatchEvent(new CustomEvent('cuore-lang-change', { detail: { lang } }));
 }
 
 /**

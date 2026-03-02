@@ -2,10 +2,12 @@
   "name": "cuore-coffee-roaster",
   "version": "1.0.0",
   "description": "科雷精品咖啡館 Cuore Coffee Roaster Website",
+  "main": "server.js",
   "scripts": {
-    "start": "npx serve -s . -l $PORT"
+    "start": "node server.js",
+    "dev": "node --watch server.js"
   },
   "dependencies": {
-    "serve": "^14.2.0"
+    "express": "^4.19.2"
   }
 }
