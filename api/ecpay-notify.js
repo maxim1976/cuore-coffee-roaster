@@ -2,7 +2,8 @@
 // ECPay POSTs here after payment; must reply "1|OK" on success or "0|ErrorMsg" on failure
 const express = require('express');
 const crypto  = require('crypto');
-const { updateOrder } = require('./orders');
+const { updateOrder, getOrder } = require('./orders');
+const { sendOrderNotification } = require('./mailer');
 
 const router = express.Router();
 
@@ -43,12 +44,14 @@ router.post('/', async (req, res) => {
     const { MerchantTradeNo, RtnCode, RtnMsg } = params;
     const paid = RtnCode === '1';
 
-    await updateOrder(MerchantTradeNo, {
+    const updated = await updateOrder(MerchantTradeNo, {
       status:       paid ? 'paid' : 'failed',
       ecpayRtnCode: RtnCode,
       ecpayRtnMsg:  RtnMsg,
       paidAt:       paid ? new Date().toISOString() : null,
     });
+
+    if (paid) sendOrderNotification(updated).catch(console.error);
 
     console.log(`[ECPay notify] ${MerchantTradeNo} → ${paid ? 'PAID' : 'FAILED'} (${RtnMsg})`);
     res.send('1|OK');
