@@ -9,7 +9,7 @@ const MERCHANT_ID  = process.env.ECPAY_MERCHANT_ID  || '2000132';
 const HASH_KEY     = process.env.ECPAY_HASH_KEY      || '5294y06JbISpM5x9';
 const HASH_IV      = process.env.ECPAY_HASH_IV       || 'v77hoKGq4kWxNNIS';
 const ECPAY_URL    = process.env.ECPAY_API_URL        || 'https://payment-stage.ecpay.com.tw/Cashier/AioCheckout/V5';
-const SITE_URL     = process.env.SITE_URL             || 'http://localhost:3000';
+const SITE_URL     = (process.env.SITE_URL || 'http://localhost:3000').replace(/\/$/, '');
 
 // Unique trade number: CC + yyMMddHHmmss + 4 random alphanum = 18 chars
 function generateTradeNo() {
