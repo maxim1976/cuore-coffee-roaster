@@ -15,10 +15,6 @@ const translations = {
         "nav.contact": "聯絡我們",
         "nav.shop": "網路商店",
 
-        // Demo Banner
-        "demo.banner": "🚧 <strong>Demo Site</strong> - 此為技術展示網站，非官方商業用途。僅供學習參考。",
-        "demo.banner.en": "This is a demo website for technical demonstration only. Not for commercial use.",
-
         // Hero
         "hero.title": "科雷精品咖啡館",
         "hero.subtitle": "CUORE COFFEE ROASTER",
@@ -52,7 +48,7 @@ const translations = {
         "coffee.c.name": "《肯亞 AA 涅里 蔚藍》",
         "coffee.c.origin": "肯亞｜SL28、SL34",
         "coffee.c.process": "傳統肯亞式水洗",
-        "coffee.d.name": "《迦佐黃金曼特寧》20目",
+        "coffee.d.name": "《迦佑黃金曼特寧》20目",
         "coffee.d.origin": "印尼 蘇門答臘 亞齊 迦佐",
         "coffee.d.process": "濕剝法",
         "coffee.d.desc": "濃醇的奶香與堅果",
@@ -135,14 +131,10 @@ const translations = {
         "contact.title": "聯絡我們",
         "contact.title.en": "Contact",
         "contact.address": "地址",
-        "contact.address.value": "花蓮市中山路XXX號",
+        "contact.address.value": "花蓮縣花蓮市中美路19號",
         "contact.hours": "營業時間",
-        "contact.hours.value": "週一至週日 10:00 - 18:00",
+        "contact.hours.value": "10:00～18:00（每週二店休）",
         "contact.phone": "電話",
-
-        // Footer
-        "footer.disclaimer": "⚠️ <strong>免責聲明 Disclaimer:</strong> 本網站為技術展示用途，與實際店家無正式關聯。所有商標與品牌名稱歸其所有者所有。",
-        "footer.disclaimer.en": "This website is for demonstration purposes only and is not officially affiliated with the actual business. All trademarks and brand names belong to their respective owners.",
 
         // Common
         "common.limited": "限量供應",
@@ -245,9 +237,6 @@ const translations = {
         "nav.shop": "Online Shop",
 
         // Demo Banner
-        "demo.banner": "🚧 <strong>Demo Site</strong> - This is a demo website for technical demonstration only. Not for commercial use.",
-        "demo.banner.en": "This is a demo website for technical demonstration only. Not for commercial use.",
-
         // Hero
         "hero.title": "Cuore Coffee Roaster",
         "hero.subtitle": "CUORE COFFEE ROASTER",
@@ -364,14 +353,10 @@ const translations = {
         "contact.title": "Contact",
         "contact.title.en": "Contact",
         "contact.address": "Address",
-        "contact.address.value": "No. XXX, Zhongshan Rd., Hualien City",
+        "contact.address.value": "No. 19, Zhongmei Rd., Hualien City, Hualien County",
         "contact.hours": "Hours",
-        "contact.hours.value": "Mon - Sun 10:00 - 18:00",
+        "contact.hours.value": "10:00–18:00 (Closed on Tuesdays)",
         "contact.phone": "Phone",
-
-        // Footer
-        "footer.disclaimer": "⚠️ <strong>Disclaimer:</strong> This website is for demonstration purposes only and is not officially affiliated with the actual business. All trademarks and brand names belong to their respective owners.",
-        "footer.disclaimer.en": "This website is for demonstration purposes only and is not officially affiliated with the actual business. All trademarks and brand names belong to their respective owners.",
 
         // Common
         "common.limited": "Limited Supply",
@@ -474,9 +459,6 @@ const translations = {
         "nav.shop": "オンラインショップ",
 
         // Demo Banner
-        "demo.banner": "🚧 <strong>デモサイト</strong> - 技術デモ用のウェブサイトです。商用目的ではありません。",
-        "demo.banner.en": "This is a demo website for technical demonstration only. Not for commercial use.",
-
         // Hero
         "hero.title": "クオーレ スペシャルティコーヒー",
         "hero.subtitle": "CUORE COFFEE ROASTER",
@@ -593,14 +575,10 @@ const translations = {
         "contact.title": "お問い合わせ",
         "contact.title.en": "Contact",
         "contact.address": "住所",
-        "contact.address.value": "花蓮市中山路XXX号",
+        "contact.address.value": "花蓮縣花蓮市中美路19號",
         "contact.hours": "営業時間",
-        "contact.hours.value": "月曜〜日曜 10:00 - 18:00",
+        "contact.hours.value": "10:00 - 18:00（毎週火曜定休）",
         "contact.phone": "電話",
-
-        // Footer
-        "footer.disclaimer": "⚠️ <strong>免責事項：</strong> このウェブサイトは技術デモ用であり、実際の店舗とは公式な関係はありません。すべての商標およびブランド名は、それぞれの所有者に帰属します。",
-        "footer.disclaimer.en": "This website is for demonstration purposes only and is not officially affiliated with the actual business. All trademarks and brand names belong to their respective owners.",
 
         // Common
         "common.limited": "数量限定",
@@ -667,9 +645,6 @@ const translations = {
         "nav.shop": "온라인 쇼핑",
 
         // Demo Banner
-        "demo.banner": "🚧 <strong>데모 사이트</strong> - 기술 시연용 웹사이트입니다. 상업적 용도가 아닙니다.",
-        "demo.banner.en": "This is a demo website for technical demonstration only. Not for commercial use.",
-
         // Hero
         "hero.title": "쿠오레 스페셜티 커피",
         "hero.subtitle": "CUORE COFFEE ROASTER",
@@ -786,14 +761,10 @@ const translations = {
         "contact.title": "연락처",
         "contact.title.en": "Contact",
         "contact.address": "주소",
-        "contact.address.value": "화롄시 중산로 XXX번지",
+        "contact.address.value": "화롄현 화롄시 중메이로 19번지",
         "contact.hours": "영업시간",
-        "contact.hours.value": "월요일~일요일 10:00 - 18:00",
+        "contact.hours.value": "10:00 - 18:00 (매주 화요일 정기휴무)",
         "contact.phone": "전화",
-
-        // Footer
-        "footer.disclaimer": "⚠️ <strong>면책조항:</strong> 이 웹사이트는 기술 시연 목적으로만 제작되었으며, 실제 매장과 공식적인 관계가 없습니다. 모든 상표 및 브랜드명은 각각의 소유자에게 귀속됩니다.",
-        "footer.disclaimer.en": "This website is for demonstration purposes only and is not officially affiliated with the actual business. All trademarks and brand names belong to their respective owners.",
 
         // Common
         "common.limited": "한정 수량",

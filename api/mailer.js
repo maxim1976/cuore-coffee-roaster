@@ -5,7 +5,7 @@
 
 const { Resend } = require('resend');
 
-const resend     = new Resend(process.env.RESEND_API_KEY);
+const resend     = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 const NOTIFY_TO  = process.env.NOTIFY_EMAIL;
 const FROM       = process.env.NOTIFY_FROM || 'Cuore Coffee Orders <onboarding@resend.dev>';
 
