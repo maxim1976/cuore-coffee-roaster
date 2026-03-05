@@ -327,8 +327,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cuore-logo {
-    width: 80px;
-    height: 96px;
+    width: 70px;
+    height: auto;
     color: var(--color-wood);
 }
 

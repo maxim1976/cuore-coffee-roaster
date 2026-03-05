@@ -235,4 +235,13 @@ Standard Visa/Mastercard test numbers (`4242 4242...`) do **not** work on ECPay 
 
 ---
 
+ECpay test cards creds
+ Use the correct ECPay staging test card:
+
+Field	Value
+Card number	4311-9522-2222-2222
+Expiry	12/26 (any future date)
+CVV	222
+Card holder name	anything
+
 © 2026 Cuore Coffee Roaster · Hualien, Taiwan
