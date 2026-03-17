@@ -3,11 +3,23 @@
    Requires env vars: RESEND_API_KEY, NOTIFY_EMAIL
    ============================================================ */
 
-const { Resend } = require('resend');
+const { Resend } = require("resend");
 
-const resend     = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
-const NOTIFY_TO  = process.env.NOTIFY_EMAIL;
-const FROM       = process.env.NOTIFY_FROM || 'Cuore Coffee Orders <onboarding@resend.dev>';
+const resend = process.env.RESEND_API_KEY
+  ? new Resend(process.env.RESEND_API_KEY)
+  : null;
+const NOTIFY_TO = process.env.NOTIFY_EMAIL;
+const FROM =
+  process.env.NOTIFY_FROM || "Cuore Coffee Orders <onboarding@resend.dev>";
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
 
 /**
  * Send order confirmation to shop owner after successful payment.
@@ -15,25 +27,34 @@ const FROM       = process.env.NOTIFY_FROM || 'Cuore Coffee Orders <onboarding@r
  */
 async function sendOrderNotification(order) {
   if (!process.env.RESEND_API_KEY || !NOTIFY_TO) {
-    console.log('[mailer] RESEND_API_KEY or NOTIFY_EMAIL not set — skipping email');
+    console.log(
+      "[mailer] RESEND_API_KEY or NOTIFY_EMAIL not set — skipping email",
+    );
     return;
   }
 
-  const { tradeNo, customer, shipping, items, total, paidAt } = order;
+  const { tradeNo, customer, shipping, items, paidAt } = order;
+  const pricing = order.pricing || {};
+  const total = pricing.total || order.total || 0;
+  const shippingCost = pricing.shippingCost || 0;
 
-  const itemRows = items.map(i =>
-    `<tr>
-      <td style="padding:6px 12px;border-bottom:1px solid #f0ebe4">${i.name}</td>
+  const itemRows = items
+    .map(
+      (i) =>
+        `<tr>
+      <td style="padding:6px 12px;border-bottom:1px solid #f0ebe4">${escapeHtml(i.name)}</td>
       <td style="padding:6px 12px;border-bottom:1px solid #f0ebe4;text-align:center">${i.qty}</td>
-      <td style="padding:6px 12px;border-bottom:1px solid #f0ebe4;text-align:right">NT$ ${(i.price * i.qty).toLocaleString()}</td>
-    </tr>`
-  ).join('');
+      <td style="padding:6px 12px;border-bottom:1px solid #f0ebe4;text-align:right">NT$ ${(i.subtotal || i.price * i.qty || 0).toLocaleString()}</td>
+    </tr>`,
+    )
+    .join("");
 
-  const shippingLine = shipping.method === 'delivery'
-    ? `宅配到府 — ${shipping.address}`
-    : shipping.method === 'cvs'
-    ? `超商取貨 — ${shipping.cvsStore} ${shipping.cvsStoreName}`
-    : '店取';
+  const shippingLine =
+    shipping.method === "delivery"
+      ? `宅配到府 — ${escapeHtml(shipping.address)}`
+      : shipping.method === "cvs"
+        ? `超商取貨 — ${escapeHtml(shipping.cvsStore)} ${escapeHtml(shipping.cvsStoreName)}`
+        : "店取";
 
   const html = `
 <!DOCTYPE html>
@@ -52,7 +73,7 @@ async function sendOrderNotification(order) {
       <p style="margin:0 0 20px;font-size:16px;font-family:monospace;color:#3a3228">${tradeNo}</p>
 
       <p style="margin:0 0 4px;font-size:13px;color:#8a7b6e">付款時間</p>
-      <p style="margin:0 0 20px;font-size:14px">${new Date(paidAt).toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' })}</p>
+      <p style="margin:0 0 20px;font-size:14px">${new Date(paidAt).toLocaleString("zh-TW", { timeZone: "Asia/Taipei" })}</p>
 
       <!-- Items -->
       <table style="width:100%;border-collapse:collapse;margin-bottom:8px">
@@ -65,15 +86,16 @@ async function sendOrderNotification(order) {
         </thead>
         <tbody>${itemRows}</tbody>
       </table>
+      <p style="text-align:right;font-size:13px;margin:4px 0;color:#8a7b6e">運費 NT$ ${shippingCost.toLocaleString()}</p>
       <p style="text-align:right;font-size:16px;font-weight:700;margin:4px 0 24px;color:#3a3228">合計 NT$ ${total.toLocaleString()}</p>
 
       <!-- Customer -->
       <div style="background:#faf8f5;border-radius:8px;padding:16px 20px;margin-bottom:16px">
         <p style="margin:0 0 8px;font-size:13px;font-weight:600;color:#3a3228">顧客資料</p>
         <p style="margin:0;font-size:13px;line-height:1.9;color:#5a4f47">
-          姓名：${customer.name}<br>
-          手機：${customer.phone}<br>
-          Email：${customer.email}${customer.note ? `<br>備註：${customer.note}` : ''}
+          姓名：${escapeHtml(customer.name)}<br>
+          手機：${escapeHtml(customer.phone)}<br>
+          Email：${escapeHtml(customer.email)}${customer.note ? `<br>備註：${escapeHtml(customer.note)}` : ""}
         </p>
       </div>
 
@@ -93,15 +115,15 @@ async function sendOrderNotification(order) {
 
   try {
     const { error } = await resend.emails.send({
-      from:    FROM,
-      to:      NOTIFY_TO,
+      from: FROM,
+      to: NOTIFY_TO,
       subject: `☕ 新訂單 ${tradeNo} — NT$${total.toLocaleString()}`,
       html,
     });
-    if (error) console.error('[mailer] Resend error:', error);
-    else       console.log(`[mailer] Order notification sent for ${tradeNo}`);
+    if (error) console.error("[mailer] Resend error:", error);
+    else console.log(`[mailer] Order notification sent for ${tradeNo}`);
   } catch (err) {
-    console.error('[mailer] Unexpected error:', err);
+    console.error("[mailer] Unexpected error:", err);
   }
 }
 

@@ -2,13 +2,16 @@
   "name": "cuore-coffee-roaster",
   "version": "1.0.0",
   "description": "科雷精品咖啡館 Cuore Coffee Roaster Website",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js"
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
   },
   "dependencies": {
     "express": "^4.19.2",
-    "resend": "^6.9.3"
+    "express-rate-limit": "^8.3.1",
+    "helmet": "^8.1.0",
+    "resend": "^6.9.3",
+    "zod": "^4.3.6"
   }
 }

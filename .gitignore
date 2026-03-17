@@ -1,4 +1,7 @@
 node_modules/
-orders/
+storage/orders/*.json
+!storage/orders/.gitkeep
 .env
-for_cloud.txt
+.claude/
+.playwright-mcp/
+tmpclaude-*/
