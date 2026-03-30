@@ -191,6 +191,15 @@
   background: #1463cc;
   transform: translateY(-1px);
 }
+
+/* Shop page footer */
+.shop-footer {
+  background: var(--color-dark, #1a1a1a);
+  color: var(--color-gray-lighter, #aaa);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.85rem;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;

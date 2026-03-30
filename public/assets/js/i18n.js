@@ -19,7 +19,7 @@ const translations = {
     "hero.title": "科雷精品咖啡館",
     "hero.subtitle": "CUORE COFFEE ROASTER",
     "hero.tagline": "用心烘焙・品味生活",
-    "hero.cta": "瀏覽菜單",
+    "hero.cta": "選購咖啡豆",
 
     // About
     "about.title": "關於科雷",
@@ -197,6 +197,8 @@ const translations = {
     "shop.hero.sub": "自家烘焙・每包 200g・滿 NT$1,500 免運",
     "shop.fb.latest": "查看最新豆單 · Latest Bean Updates",
     "shop.product.coming-soon": "敬請期待線上選購",
+    "footer.credit":
+      '網站設計：<a href="https://hualienvibe.com" target="_blank" rel="noopener noreferrer">HualienVibe 數位工作室</a>',
     "shop.cart.title": "購物車",
     "shop.cart.empty": "購物車是空的",
     "shop.cart.subtotal": "小計",
@@ -246,7 +248,7 @@ const translations = {
     "hero.title": "Cuore Coffee Roaster",
     "hero.subtitle": "CUORE COFFEE ROASTER",
     "hero.tagline": "Roasted with Heart, Crafted with Soul",
-    "hero.cta": "View Menu",
+    "hero.cta": "Shop Coffee Beans",
 
     // About
     "about.title": "About Us",
@@ -426,6 +428,8 @@ const translations = {
       "In-house roasted · 200g per bag · Free shipping over NT$1,500",
     "shop.fb.latest": "Latest Bean Updates on Facebook",
     "shop.product.coming-soon": "Coming Soon",
+    "footer.credit":
+      'Designed by <a href="https://hualienvibe.com" target="_blank" rel="noopener noreferrer">HualienVibe Digital Studio</a>',
     "shop.cart.title": "Cart",
     "shop.cart.empty": "Your cart is empty",
     "shop.cart.subtotal": "Subtotal",
@@ -475,7 +479,7 @@ const translations = {
     "hero.title": "クオーレ スペシャルティコーヒー",
     "hero.subtitle": "CUORE COFFEE ROASTER",
     "hero.tagline": "心を込めて焙煎・味わう暮らし",
-    "hero.cta": "メニューを見る",
+    "hero.cta": "コーヒー豆を購入",
 
     // About
     "about.title": "クオーレについて",
@@ -663,7 +667,7 @@ const translations = {
     "hero.title": "쿠오레 스페셜티 커피",
     "hero.subtitle": "CUORE COFFEE ROASTER",
     "hero.tagline": "정성을 담아 로스팅・삶의 맛",
-    "hero.cta": "메뉴 보기",
+    "hero.cta": "원두 구매하기",
 
     // About
     "about.title": "쿠오레 소개",
