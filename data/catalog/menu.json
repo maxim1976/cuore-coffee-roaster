@@ -389,11 +389,7 @@
         "type": "retail",
         "currency": "NTD",
         "shipping": {
-          "methods_zh": [
-            "超商取貨付款",
-            "宅配到府",
-            "店取"
-          ],
+          "methods_zh": ["超商取貨付款", "宅配到府", "店取"],
           "methods_en": [
             "Convenience Store Pickup",
             "Home Delivery",
@@ -402,11 +398,7 @@
           "free_shipping_threshold_NTD": 1500
         },
         "payment": {
-          "providers": [
-            "ECPay",
-            "LINE Pay",
-            "Credit Card"
-          ],
+          "providers": ["ECPay", "LINE Pay", "Credit Card"],
           "einvoice": true,
           "einvoice_note": "電子發票依法開立"
         }
@@ -414,18 +406,18 @@
       "items": [
         {
           "id": "01",
-          "name_zh": "茵赫特 頂級波旁 SHB",
-          "name_en": "El Injerto Top Bourbon SHB",
-          "origin_zh": "瓜地馬拉 薇薇特南果 茵赫特莊園",
-          "origin_en": "Guatemala Huehuetenango El Injerto Estate",
-          "process_zh": "處理法：水洗　焙度：淺中焙",
-          "process_en": "Process: Washed  Roast: Light-Medium",
-          "flavor_zh": "糖漿般甜香氣、水果軟糖、莓果、黑李、榛果巧克力，酸甜平衡、口感乾淨、尾韻持久。",
-          "flavor_en": "Syrupy sweetness, fruit candy, berry, black plum, hazelnut chocolate. Balanced, clean, long finish.",
-          "price_NTD": 750,
+          "name_zh": "《拉斯瑪麗亞》頂級藝妓",
+          "name_en": "Las Marías Top Geisha",
+          "origin_zh": "哥倫比亞 拉斯瑪麗亞",
+          "origin_en": "Colombia Las Marías",
+          "process_zh": "處理法：水洗　焙度：淺焙",
+          "process_en": "Process: Washed  Roast: Light",
+          "flavor_zh": "茉莉花香、蘋果、荔枝、柑橘、焦糖",
+          "flavor_en": "Jasmine, Apple, Lychee, Citrus, Caramel",
+          "price_NTD": 1680,
           "weight_g": 200,
-          "roast_level": "light_medium",
-          "roast_level_zh": "淺中焙",
+          "roast_level": "light",
+          "roast_level_zh": "淺焙",
           "image": "assets/images/beans/bean-01.jpg",
           "brew_temp_c": 90,
           "sku_base": "CUORE-BEAN-01",
@@ -439,7 +431,7 @@
               "grind_zh": "原豆",
               "grind_en": "Whole Bean",
               "weight_g": 200,
-              "price_NTD": 750,
+              "price_NTD": 1680,
               "in_stock": true,
               "stock_qty": 10
             },
@@ -449,7 +441,7 @@
               "grind_zh": "粗研磨（法壓/冷萃）",
               "grind_en": "Coarse (French Press / Cold Brew)",
               "weight_g": 200,
-              "price_NTD": 750,
+              "price_NTD": 1680,
               "in_stock": true,
               "stock_qty": 10
             },
@@ -459,7 +451,7 @@
               "grind_zh": "中研磨（手沖）",
               "grind_en": "Medium (Pour Over)",
               "weight_g": 200,
-              "price_NTD": 750,
+              "price_NTD": 1680,
               "in_stock": true,
               "stock_qty": 10
             },
@@ -469,32 +461,103 @@
               "grind_zh": "細研磨（義式）",
               "grind_en": "Fine (Espresso)",
               "weight_g": 200,
-              "price_NTD": 750,
+              "price_NTD": 1680,
               "in_stock": true,
               "stock_qty": 10
             }
           ],
           "ecpay": {
-            "ItemName": "茵赫特 頂級波旁 SHB",
-            "ItemDesc": "糖漿般甜香氣、水果軟糖、莓果、黑李、榛果巧克力，酸甜平衡、口感乾淨、尾韻持久。",
+            "ItemName": "拉斯瑪麗亞 頂級藝妓",
+            "ItemDesc": "茉莉花香、蘋果、荔枝、柑橘、焦糖",
+            "Unit": "包",
+            "Currency": "NTD"
+          }
+        },
+        {
+          "id": "A",
+          "name_zh": "《2026 西夏之花》",
+          "name_en": "2026 Summer Bloom",
+          "origin_zh": "衣索比亞 西達摩、古吉 夏奇索",
+          "origin_en": "Ethiopia Sidamo (Washed), Guji Shakiso (Natural)",
+          "process_zh": "處理法：水洗、日曬　焙度：淺焙",
+          "process_en": "Process: Washed & Natural  Roast: Light",
+          "flavor_zh": "酸甜平衡明亮，甜瓜、蜜桃、佛手柑、莓果及紅茶調性，茉莉香氣",
+          "flavor_en": "Bright and balanced. Melon, peach, bergamot, berry, black tea notes, jasmine",
+          "promo_zh": "四月份「加價購」優惠：加選任一款折抵 $200。選購兩包「西夏之花」只要 $1,000 元",
+          "promo_en": "April promo: Add any item → NT$200 off. Two bags for NT$1,000",
+          "price_NTD": 700,
+          "weight_g": 200,
+          "roast_level": "light",
+          "roast_level_zh": "淺焙",
+          "image": "assets/images/beans/bean-a.jpg",
+          "brew_temp_c": 90,
+          "sku_base": "CUORE-BEAN-A",
+          "in_stock": true,
+          "stock_qty": 10,
+          "category": "coffee_beans",
+          "variants": [
+            {
+              "sku": "CUORE-BEAN-A-200G-WHOLE_BEAN",
+              "grind": "whole_bean",
+              "grind_zh": "原豆",
+              "grind_en": "Whole Bean",
+              "weight_g": 200,
+              "price_NTD": 700,
+              "in_stock": true,
+              "stock_qty": 10
+            },
+            {
+              "sku": "CUORE-BEAN-A-200G-COARSE",
+              "grind": "coarse",
+              "grind_zh": "粗研磨（法壓/冷萃）",
+              "grind_en": "Coarse (French Press / Cold Brew)",
+              "weight_g": 200,
+              "price_NTD": 700,
+              "in_stock": true,
+              "stock_qty": 10
+            },
+            {
+              "sku": "CUORE-BEAN-A-200G-MEDIUM",
+              "grind": "medium",
+              "grind_zh": "中研磨（手沖）",
+              "grind_en": "Medium (Pour Over)",
+              "weight_g": 200,
+              "price_NTD": 700,
+              "in_stock": true,
+              "stock_qty": 10
+            },
+            {
+              "sku": "CUORE-BEAN-A-200G-FINE",
+              "grind": "fine",
+              "grind_zh": "細研磨（義式）",
+              "grind_en": "Fine (Espresso)",
+              "weight_g": 200,
+              "price_NTD": 700,
+              "in_stock": true,
+              "stock_qty": 10
+            }
+          ],
+          "ecpay": {
+            "ItemName": "2026 西夏之花",
+            "ItemDesc": "酸甜平衡明亮，甜瓜、蜜桃、佛手柑、莓果及紅茶調性，茉莉香氣",
             "Unit": "包",
             "Currency": "NTD"
           }
         },
         {
           "id": "02",
-          "name_zh": "紫色克拉摩",
-          "name_en": "Purple Karamo",
-          "origin_zh": "衣索比亞 西達摩 斑莎",
-          "origin_en": "Ethiopia Sidamo Bensa",
-          "process_zh": "處理法：日曬　焙度：淺焙",
-          "process_en": "Process: Natural  Roast: Light",
-          "flavor_zh": "哈密瓜、藍莓、深色水果、紫色花香，層次明顯而豐富，果汁般的口感，酸甜平衡，尾韻帶有微微酒香。",
-          "flavor_en": "Honeydew, blueberry, dark fruit, purple floral. Rich and layered, juicy, balanced, winey finish.",
-          "price_NTD": 800,
+          "name_zh": "《肯亞 Kii 基里尼亞加》",
+          "name_en": "Kenya Kii Kirinyaga",
+          "origin_zh": "肯亞 基里尼亞加",
+          "origin_en": "Kenya Kirinyaga",
+          "process_zh": "處理法：肯亞式水洗　焙度：淺中焙",
+          "process_en": "Process: Kenya Washed  Roast: Light-Medium",
+          "flavor_zh": "葡萄柚、黑柿番茄、黑醋栗、紅糖與可可",
+          "flavor_en": "Grapefruit, heirloom tomato, blackcurrant, red sugar and cocoa",
+          "price_NTD": 700,
           "weight_g": 200,
-          "roast_level": "light",
-          "roast_level_zh": "淺焙",
+          "roast_level": "light_medium",
+          "roast_level_zh": "淺中焙",
           "image": "assets/images/beans/bean-02.jpg",
           "brew_temp_c": 90,
           "sku_base": "CUORE-BEAN-02",
@@ -508,7 +571,7 @@
               "grind_zh": "原豆",
               "grind_en": "Whole Bean",
               "weight_g": 200,
-              "price_NTD": 800,
+              "price_NTD": 700,
               "in_stock": true,
               "stock_qty": 10
             },
@@ -518,7 +581,7 @@
               "grind_zh": "粗研磨（法壓/冷萃）",
               "grind_en": "Coarse (French Press / Cold Brew)",
               "weight_g": 200,
-              "price_NTD": 800,
+              "price_NTD": 700,
               "in_stock": true,
               "stock_qty": 10
             },
@@ -528,7 +591,7 @@
               "grind_zh": "中研磨（手沖）",
               "grind_en": "Medium (Pour Over)",
               "weight_g": 200,
-              "price_NTD": 800,
+              "price_NTD": 700,
               "in_stock": true,
               "stock_qty": 10
             },
@@ -538,34 +601,34 @@
               "grind_zh": "細研磨（義式）",
               "grind_en": "Fine (Espresso)",
               "weight_g": 200,
-              "price_NTD": 800,
+              "price_NTD": 700,
               "in_stock": true,
               "stock_qty": 10
             }
           ],
           "ecpay": {
-            "ItemName": "紫色克拉摩",
-            "ItemDesc": "哈密瓜、藍莓、深色水果、紫色花香，層次明顯而豐富，果汁般的口感，酸甜平衡，尾韻帶有微微酒香。",
+            "ItemName": "肯亞 Kii 基里尼亞加",
+            "ItemDesc": "葡萄柚、黑柿番茄、黑醋栗、紅糖與可可",
             "Unit": "包",
             "Currency": "NTD"
           }
         },
         {
           "id": "03",
-          "name_zh": "肯亞AA 涅里 蔚藍 TOP",
-          "name_en": "Kenya AA Nyeri Wakamata TOP",
-          "origin_zh": "品種：SL28、SL34",
-          "origin_en": "Variety: SL28, SL34",
-          "process_zh": "處理法：傳統肯亞式水洗　焙度：淺中焙",
-          "process_en": "Process: Traditional Kenya Washed  Roast: Light-Medium",
-          "flavor_zh": "黑莓、黃色水果、葡萄柚、仙楂、帶乳脂感，口感厚實平衡，尾韻飽滿。",
-          "flavor_en": "Blackberry, yellow fruit, grapefruit, hawthorn, creamy. Full-bodied and balanced, rich finish.",
+          "name_zh": "《迦佑黃金曼特寧》20目",
+          "name_en": "Gayo Golden Mandheling Grade 20",
+          "origin_zh": "印尼 蘇門答臘 亞齊 迦佑",
+          "origin_en": "Indonesia Sumatra Aceh Gayo",
+          "process_zh": "處理法：濕剝法　焙度：中焙",
+          "process_en": "Process: Giling Basah  Roast: Medium",
+          "flavor_zh": "焦糖、杏仁、黑巧克力、奶油、仙草乾",
+          "flavor_en": "Caramel, Almond, Dark Chocolate, Butter, Grass Jelly",
           "price_NTD": 650,
           "weight_g": 200,
-          "roast_level": "light_medium",
-          "roast_level_zh": "淺中焙",
+          "roast_level": "medium",
+          "roast_level_zh": "中焙",
           "image": "assets/images/beans/bean-03.jpg",
-          "brew_temp_c": 90,
+          "brew_temp_c": 88,
           "sku_base": "CUORE-BEAN-03",
           "in_stock": true,
           "stock_qty": 10,
@@ -613,560 +676,8 @@
             }
           ],
           "ecpay": {
-            "ItemName": "肯亞AA 涅里 蔚藍 TOP",
-            "ItemDesc": "黑莓、黃色水果、葡萄柚、仙楂、帶乳脂感，口感厚實平衡，尾韻飽滿。",
-            "Unit": "包",
-            "Currency": "NTD"
-          }
-        },
-        {
-          "id": "04",
-          "name_zh": "提波波卡 水仙",
-          "name_en": "Tippi Boka Narcissus",
-          "origin_zh": "衣索比亞 古吉 烏啦嘎",
-          "origin_en": "Ethiopia Guji Uraga",
-          "process_zh": "處理法：蜜處理　焙度：淺焙",
-          "process_en": "Process: Honey  Roast: Light",
-          "flavor_zh": "水蜜桃、荔枝、可爾必思、龍眼花蜜、佛手柑、柚子茶、茉莉與橙花般馥郁白花香氣，柔滑細緻，甜美飽滿。",
-          "flavor_en": "Peach, lychee, Calpis, longan blossom, bergamot, yuzu tea, jasmine and orange blossom. Silky smooth, sweetly full.",
-          "price_NTD": 600,
-          "weight_g": 200,
-          "roast_level": "light",
-          "roast_level_zh": "淺焙",
-          "image": "assets/images/beans/bean-04.jpg",
-          "brew_temp_c": 90,
-          "sku_base": "CUORE-BEAN-04",
-          "in_stock": true,
-          "stock_qty": 10,
-          "category": "coffee_beans",
-          "variants": [
-            {
-              "sku": "CUORE-BEAN-04-200G-WHOLE_BEAN",
-              "grind": "whole_bean",
-              "grind_zh": "原豆",
-              "grind_en": "Whole Bean",
-              "weight_g": 200,
-              "price_NTD": 600,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-04-200G-COARSE",
-              "grind": "coarse",
-              "grind_zh": "粗研磨（法壓/冷萃）",
-              "grind_en": "Coarse (French Press / Cold Brew)",
-              "weight_g": 200,
-              "price_NTD": 600,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-04-200G-MEDIUM",
-              "grind": "medium",
-              "grind_zh": "中研磨（手沖）",
-              "grind_en": "Medium (Pour Over)",
-              "weight_g": 200,
-              "price_NTD": 600,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-04-200G-FINE",
-              "grind": "fine",
-              "grind_zh": "細研磨（義式）",
-              "grind_en": "Fine (Espresso)",
-              "weight_g": 200,
-              "price_NTD": 600,
-              "in_stock": true,
-              "stock_qty": 10
-            }
-          ],
-          "ecpay": {
-            "ItemName": "提波波卡 水仙",
-            "ItemDesc": "水蜜桃、荔枝、可爾必思、龍眼花蜜、佛手柑、柚子茶、茉莉與橙花般馥郁白花香氣，柔滑細緻，甜美飽滿。",
-            "Unit": "包",
-            "Currency": "NTD"
-          }
-        },
-        {
-          "id": "05",
-          "name_zh": "南方旭日",
-          "name_en": "Southern Sunrise",
-          "origin_zh": "哥斯大黎加 塔拉珠 南方莊園",
-          "origin_en": "Costa Rica Tarrazu Southern Estate",
-          "process_zh": "處理法：日曬　焙度：淺中焙",
-          "process_en": "Process: Natural  Roast: Light-Medium",
-          "flavor_zh": "黑莓、葡萄香，中後段浮現太妃糖、芒果乾與可可餘韻，強勁扎實。",
-          "flavor_en": "Blackberry, grape, mid-to-late toffee, dried mango and cocoa finish. Bold and solid.",
-          "price_NTD": 600,
-          "weight_g": 200,
-          "roast_level": "light_medium",
-          "roast_level_zh": "淺中焙",
-          "image": "assets/images/beans/bean-05.jpg",
-          "brew_temp_c": 90,
-          "sku_base": "CUORE-BEAN-05",
-          "in_stock": true,
-          "stock_qty": 10,
-          "category": "coffee_beans",
-          "variants": [
-            {
-              "sku": "CUORE-BEAN-05-200G-WHOLE_BEAN",
-              "grind": "whole_bean",
-              "grind_zh": "原豆",
-              "grind_en": "Whole Bean",
-              "weight_g": 200,
-              "price_NTD": 600,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-05-200G-COARSE",
-              "grind": "coarse",
-              "grind_zh": "粗研磨（法壓/冷萃）",
-              "grind_en": "Coarse (French Press / Cold Brew)",
-              "weight_g": 200,
-              "price_NTD": 600,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-05-200G-MEDIUM",
-              "grind": "medium",
-              "grind_zh": "中研磨（手沖）",
-              "grind_en": "Medium (Pour Over)",
-              "weight_g": 200,
-              "price_NTD": 600,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-05-200G-FINE",
-              "grind": "fine",
-              "grind_zh": "細研磨（義式）",
-              "grind_en": "Fine (Espresso)",
-              "weight_g": 200,
-              "price_NTD": 600,
-              "in_stock": true,
-              "stock_qty": 10
-            }
-          ],
-          "ecpay": {
-            "ItemName": "南方旭日",
-            "ItemDesc": "黑莓、葡萄香，中後段浮現太妃糖、芒果乾與可可餘韻，強勁扎實。",
-            "Unit": "包",
-            "Currency": "NTD"
-          }
-        },
-        {
-          "id": "06",
-          "name_zh": "2025 西夏之花",
-          "name_en": "2025 Summer Bloom",
-          "origin_zh": "衣索比亞 西達摩 古吉夏奇索",
-          "origin_en": "Ethiopia Sidamo Guji Shakiso",
-          "process_zh": "處理法：水洗、日曬　焙度：淺焙",
-          "process_en": "Process: Washed & Natural  Roast: Light",
-          "flavor_zh": "兩種不同特色的莊園級咖啡豆依比例混合烘焙。酸甜平衡明亮，甜瓜、水蜜桃、荔枝、佛手柑、莓果等水果調性，茉莉及紫羅蘭交疊著迷人香氣。層次多元、甜度高的淺焙手法。",
-          "flavor_en": "Blend of two estate-grade beans. Bright and balanced. Melon, peach, lychee, bergamot, berry, jasmine and violet.",
-          "price_NTD": 700,
-          "weight_g": 200,
-          "roast_level": "light",
-          "roast_level_zh": "淺焙",
-          "image": "assets/images/beans/bean-06.jpg",
-          "brew_temp_c": 90,
-          "sku_base": "CUORE-BEAN-06",
-          "in_stock": true,
-          "stock_qty": 10,
-          "category": "coffee_beans",
-          "variants": [
-            {
-              "sku": "CUORE-BEAN-06-200G-WHOLE_BEAN",
-              "grind": "whole_bean",
-              "grind_zh": "原豆",
-              "grind_en": "Whole Bean",
-              "weight_g": 200,
-              "price_NTD": 700,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-06-200G-COARSE",
-              "grind": "coarse",
-              "grind_zh": "粗研磨（法壓/冷萃）",
-              "grind_en": "Coarse (French Press / Cold Brew)",
-              "weight_g": 200,
-              "price_NTD": 700,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-06-200G-MEDIUM",
-              "grind": "medium",
-              "grind_zh": "中研磨（手沖）",
-              "grind_en": "Medium (Pour Over)",
-              "weight_g": 200,
-              "price_NTD": 700,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-06-200G-FINE",
-              "grind": "fine",
-              "grind_zh": "細研磨（義式）",
-              "grind_en": "Fine (Espresso)",
-              "weight_g": 200,
-              "price_NTD": 700,
-              "in_stock": true,
-              "stock_qty": 10
-            }
-          ],
-          "ecpay": {
-            "ItemName": "2025 西夏之花",
-            "ItemDesc": "兩種不同特色的莊園級咖啡豆依比例混合烘焙。酸甜平衡明亮，甜瓜、水蜜桃、荔枝、佛手柑、莓果等水果調性，...",
-            "Unit": "包",
-            "Currency": "NTD"
-          }
-        },
-        {
-          "id": "07",
-          "name_zh": "藍湖巴塔克 珍珠圓豆",
-          "name_en": "Blue Lake Batak Peaberry",
-          "origin_zh": "印尼 蘇門答臘 林東產區",
-          "origin_en": "Indonesia Sumatra Lintong Region",
-          "process_zh": "處理法：濕剝法　焙度：中焙",
-          "process_en": "Process: Giling Basah  Roast: Medium",
-          "flavor_zh": "青草、焦糖、奶油、甘草、黑巧克力，醇厚濃郁，具層次感，獨特強勁。",
-          "flavor_en": "Grass, caramel, butter, licorice, dark chocolate. Rich and full-bodied, layered and distinctively bold.",
-          "price_NTD": 650,
-          "weight_g": 200,
-          "roast_level": "medium",
-          "roast_level_zh": "中焙",
-          "image": "assets/images/beans/bean-07.jpg",
-          "brew_temp_c": 90,
-          "sku_base": "CUORE-BEAN-07",
-          "in_stock": true,
-          "stock_qty": 10,
-          "category": "coffee_beans",
-          "variants": [
-            {
-              "sku": "CUORE-BEAN-07-200G-WHOLE_BEAN",
-              "grind": "whole_bean",
-              "grind_zh": "原豆",
-              "grind_en": "Whole Bean",
-              "weight_g": 200,
-              "price_NTD": 650,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-07-200G-COARSE",
-              "grind": "coarse",
-              "grind_zh": "粗研磨（法壓/冷萃）",
-              "grind_en": "Coarse (French Press / Cold Brew)",
-              "weight_g": 200,
-              "price_NTD": 650,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-07-200G-MEDIUM",
-              "grind": "medium",
-              "grind_zh": "中研磨（手沖）",
-              "grind_en": "Medium (Pour Over)",
-              "weight_g": 200,
-              "price_NTD": 650,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-07-200G-FINE",
-              "grind": "fine",
-              "grind_zh": "細研磨（義式）",
-              "grind_en": "Fine (Espresso)",
-              "weight_g": 200,
-              "price_NTD": 650,
-              "in_stock": true,
-              "stock_qty": 10
-            }
-          ],
-          "ecpay": {
-            "ItemName": "藍湖巴塔克 珍珠圓豆",
-            "ItemDesc": "青草、焦糖、奶油、甘草、黑巧克力，醇厚濃郁，具層次感，獨特強勁。",
-            "Unit": "包",
-            "Currency": "NTD"
-          }
-        },
-        {
-          "id": "08",
-          "name_zh": "柏娜小珍珠",
-          "name_en": "Bona Pearl",
-          "origin_zh": "衣索比亞 西達摩 柏娜",
-          "origin_en": "Ethiopia Sidamo Bona",
-          "process_zh": "處理法：山泉水洗　焙度：淺焙",
-          "process_en": "Process: Spring Water Washed  Roast: Light",
-          "flavor_zh": "荔枝、草莓、白桃、熱帶水果、焦糖、奔放花香、多層次風味、尾韻甜美綿密。",
-          "flavor_en": "Lychee, strawberry, white peach, tropical fruit, caramel, vibrant floral. Multi-layered sweet finish.",
-          "price_NTD": 650,
-          "weight_g": 200,
-          "roast_level": "light",
-          "roast_level_zh": "淺焙",
-          "image": "assets/images/beans/bean-08.jpg",
-          "brew_temp_c": 89,
-          "sku_base": "CUORE-BEAN-08",
-          "in_stock": true,
-          "stock_qty": 10,
-          "category": "coffee_beans",
-          "variants": [
-            {
-              "sku": "CUORE-BEAN-08-200G-WHOLE_BEAN",
-              "grind": "whole_bean",
-              "grind_zh": "原豆",
-              "grind_en": "Whole Bean",
-              "weight_g": 200,
-              "price_NTD": 650,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-08-200G-COARSE",
-              "grind": "coarse",
-              "grind_zh": "粗研磨（法壓/冷萃）",
-              "grind_en": "Coarse (French Press / Cold Brew)",
-              "weight_g": 200,
-              "price_NTD": 650,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-08-200G-MEDIUM",
-              "grind": "medium",
-              "grind_zh": "中研磨（手沖）",
-              "grind_en": "Medium (Pour Over)",
-              "weight_g": 200,
-              "price_NTD": 650,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-08-200G-FINE",
-              "grind": "fine",
-              "grind_zh": "細研磨（義式）",
-              "grind_en": "Fine (Espresso)",
-              "weight_g": 200,
-              "price_NTD": 650,
-              "in_stock": true,
-              "stock_qty": 10
-            }
-          ],
-          "ecpay": {
-            "ItemName": "柏娜小珍珠",
-            "ItemDesc": "荔枝、草莓、白桃、熱帶水果、焦糖、奔放花香、多層次風味、尾韻甜美綿密。",
-            "Unit": "包",
-            "Currency": "NTD"
-          }
-        },
-        {
-          "id": "09",
-          "name_zh": "安提瓜 經典花神",
-          "name_en": "Antigua Classic Geisha",
-          "origin_zh": "瓜地馬拉 安提瓜 貝拉卡摩娜莊園",
-          "origin_en": "Guatemala Antigua Bella Carmona Estate",
-          "process_zh": "處理法：經典水洗　焙度：中淺焙",
-          "process_en": "Process: Classic Washed  Roast: Medium-Light",
-          "flavor_zh": "淡雅花香、巧克力、柑橘、楓糖，餘韻甜美，甘甜順口。",
-          "flavor_en": "Delicate floral, chocolate, citrus, maple syrup. Sweet and smooth finish.",
-          "price_NTD": 550,
-          "weight_g": 200,
-          "roast_level": "medium_light",
-          "roast_level_zh": "中淺焙",
-          "image": "assets/images/beans/bean-09.jpg",
-          "brew_temp_c": 90,
-          "sku_base": "CUORE-BEAN-09",
-          "in_stock": true,
-          "stock_qty": 10,
-          "category": "coffee_beans",
-          "variants": [
-            {
-              "sku": "CUORE-BEAN-09-200G-WHOLE_BEAN",
-              "grind": "whole_bean",
-              "grind_zh": "原豆",
-              "grind_en": "Whole Bean",
-              "weight_g": 200,
-              "price_NTD": 550,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-09-200G-COARSE",
-              "grind": "coarse",
-              "grind_zh": "粗研磨（法壓/冷萃）",
-              "grind_en": "Coarse (French Press / Cold Brew)",
-              "weight_g": 200,
-              "price_NTD": 550,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-09-200G-MEDIUM",
-              "grind": "medium",
-              "grind_zh": "中研磨（手沖）",
-              "grind_en": "Medium (Pour Over)",
-              "weight_g": 200,
-              "price_NTD": 550,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-09-200G-FINE",
-              "grind": "fine",
-              "grind_zh": "細研磨（義式）",
-              "grind_en": "Fine (Espresso)",
-              "weight_g": 200,
-              "price_NTD": 550,
-              "in_stock": true,
-              "stock_qty": 10
-            }
-          ],
-          "ecpay": {
-            "ItemName": "安提瓜 經典花神",
-            "ItemDesc": "淡雅花香、巧克力、柑橘、楓糖，餘韻甜美，甘甜順口。",
-            "Unit": "包",
-            "Currency": "NTD"
-          }
-        },
-        {
-          "id": "10",
-          "name_zh": "塔皮恩島 綠寶石曼特寧 19目",
-          "name_en": "Tapping Island Emerald Mandheling Grade 19",
-          "origin_zh": "蘇門答臘 林東 托巴湖",
-          "origin_en": "Sumatra Lintong Lake Toba",
-          "process_zh": "處理法：濕剝法　焙度：中焙",
-          "process_en": "Process: Giling Basah  Roast: Medium",
-          "flavor_zh": "仙草蜜、巧克力、紅肉李、柑橘，果汁感、口感飽滿厚實、酸甜平衡、尾韻甜感佳。",
-          "flavor_en": "Grass jelly honey, chocolate, red plum, citrus. Juicy, full-bodied, balanced, sweet finish.",
-          "price_NTD": 600,
-          "weight_g": 200,
-          "roast_level": "medium",
-          "roast_level_zh": "中焙",
-          "image": "assets/images/beans/bean-10.jpg",
-          "brew_temp_c": 86,
-          "sku_base": "CUORE-BEAN-10",
-          "in_stock": true,
-          "stock_qty": 10,
-          "category": "coffee_beans",
-          "variants": [
-            {
-              "sku": "CUORE-BEAN-10-200G-WHOLE_BEAN",
-              "grind": "whole_bean",
-              "grind_zh": "原豆",
-              "grind_en": "Whole Bean",
-              "weight_g": 200,
-              "price_NTD": 600,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-10-200G-COARSE",
-              "grind": "coarse",
-              "grind_zh": "粗研磨（法壓/冷萃）",
-              "grind_en": "Coarse (French Press / Cold Brew)",
-              "weight_g": 200,
-              "price_NTD": 600,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-10-200G-MEDIUM",
-              "grind": "medium",
-              "grind_zh": "中研磨（手沖）",
-              "grind_en": "Medium (Pour Over)",
-              "weight_g": 200,
-              "price_NTD": 600,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-10-200G-FINE",
-              "grind": "fine",
-              "grind_zh": "細研磨（義式）",
-              "grind_en": "Fine (Espresso)",
-              "weight_g": 200,
-              "price_NTD": 600,
-              "in_stock": true,
-              "stock_qty": 10
-            }
-          ],
-          "ecpay": {
-            "ItemName": "塔皮恩島 綠寶石曼特寧 19目",
-            "ItemDesc": "仙草蜜、巧克力、紅肉李、柑橘，果汁感、口感飽滿厚實、酸甜平衡、尾韻甜感佳。",
-            "Unit": "包",
-            "Currency": "NTD"
-          }
-        },
-        {
-          "id": "11",
-          "name_zh": "科雷精品綜合咖啡",
-          "name_en": "Cuore Specialty Blend",
-          "origin_zh": "綜合產區",
-          "origin_en": "Multi-origin blend",
-          "process_zh": "處理法：水洗、日曬、濕剝　焙度：中焙～中深焙",
-          "process_en": "Process: Washed, Natural, Giling Basah  Roast: Medium to Medium-Dark",
-          "flavor_zh": "全數採莊園級精品咖啡豆，濃郁的咖啡風情。不苦澀，微酸甘甜。花香、莓果、堅果、焦糖，厚實滑順，回甘綿長。",
-          "flavor_en": "All estate-grade specialty beans. Rich, not bitter. Mildly acidic and sweet. Floral, berry, nutty, caramel. Smooth, long sweet aftertaste.",
-          "price_NTD": 700,
-          "weight_g": 500,
-          "roast_level": "medium_to_medium_dark",
-          "roast_level_zh": "中焙～中深焙",
-          "image": "assets/images/beans/bean-11.jpg",
-          "brew_temp_c": 90,
-          "sku_base": "CUORE-BEAN-11",
-          "in_stock": true,
-          "stock_qty": 10,
-          "category": "coffee_beans",
-          "variants": [
-            {
-              "sku": "CUORE-BEAN-11-500G-WHOLE_BEAN",
-              "grind": "whole_bean",
-              "grind_zh": "原豆",
-              "grind_en": "Whole Bean",
-              "weight_g": 500,
-              "price_NTD": 700,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-11-500G-COARSE",
-              "grind": "coarse",
-              "grind_zh": "粗研磨（法壓/冷萃）",
-              "grind_en": "Coarse (French Press / Cold Brew)",
-              "weight_g": 500,
-              "price_NTD": 700,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-11-500G-MEDIUM",
-              "grind": "medium",
-              "grind_zh": "中研磨（手沖）",
-              "grind_en": "Medium (Pour Over)",
-              "weight_g": 500,
-              "price_NTD": 700,
-              "in_stock": true,
-              "stock_qty": 10
-            },
-            {
-              "sku": "CUORE-BEAN-11-500G-FINE",
-              "grind": "fine",
-              "grind_zh": "細研磨（義式）",
-              "grind_en": "Fine (Espresso)",
-              "weight_g": 500,
-              "price_NTD": 700,
-              "in_stock": true,
-              "stock_qty": 10
-            }
-          ],
-          "ecpay": {
-            "ItemName": "科雷精品綜合咖啡",
-            "ItemDesc": "全數採莊園級精品咖啡豆，濃郁的咖啡風情。不苦澀，微酸甘甜。花香、莓果、堅果、焦糖，厚實滑順，回甘綿長...",
+            "ItemName": "迦佑黃金曼特寧 20目",
+            "ItemDesc": "焦糖、杏仁、黑巧克力、奶油、仙草乾",
             "Unit": "包",
             "Currency": "NTD"
           }

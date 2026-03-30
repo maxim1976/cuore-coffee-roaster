@@ -250,14 +250,15 @@ function renderCard(product, lang) {
         <p class="product-card__name-en">${nameSub}</p>
         <p class="product-card__origin">${origin}</p>
         <p class="product-card__flavor">${flavor}</p>
+        ${product.promo_zh ? `<p class="product-card__promo"><i class="fas fa-tag"></i> ${isEn ? product.promo_en || product.promo_zh : product.promo_zh}</p>` : ""}
         <div class="product-card__grind">
           <span class="product-card__grind-label">${grindLabel}</span>
           <div class="grind-options">${grindOptions}</div>
         </div>
         <div class="product-card__footer">
           <span class="product-card__price">NT$ ${dv.price_NTD.toLocaleString()}</span>
-          <button class="add-to-cart" data-sku="${dv.sku}" ${!product.in_stock ? "disabled" : ""}>
-            ${addLabel}
+          <button class="add-to-cart add-to-cart--coming-soon" data-sku="${dv.sku}" disabled>
+            <i class="fas fa-clock"></i> ${t("shop.product.coming-soon")}
           </button>
         </div>
       </div>
@@ -283,17 +284,7 @@ function wireCardEvents() {
     });
   });
 
-  // Add to cart
-  grid.querySelectorAll(".add-to-cart").forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      const card = e.currentTarget.closest(".product-card");
-      const prodId = card.dataset.productId;
-      const sku = e.currentTarget.dataset.sku;
-      const product = _products.find((p) => p.id === prodId);
-      const variant = product?.variants.find((v) => v.sku === sku);
-      if (product && variant) addItem(product, variant);
-    });
-  });
+  // Add to cart (currently disabled — online ordering not yet active)
 }
 
 // ── Cart sidebar toggle ───────────────────────────────────────
