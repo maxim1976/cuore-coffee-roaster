@@ -39,6 +39,8 @@ function toPublicProduct(product) {
     process_en: product.process_en,
     flavor_zh: product.flavor_zh,
     flavor_en: product.flavor_en,
+    promo_zh: product.promo_zh || null,
+    promo_en: product.promo_en || null,
     price_NTD: product.price_NTD,
     weight_g: product.weight_g,
     roast_level: product.roast_level,
