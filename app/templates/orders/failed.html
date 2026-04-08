@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if lang == 'zh-TW' %}付款未完成{% else %}Payment Failed{% endif %} | Cuore Coffee Roaster</title>
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <style>
+    body { background: var(--color-cream); display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem; }
+    .result-card { background: white; border-radius: 16px; padding: 3rem 2.5rem; text-align: center; max-width: 480px; width: 100%; box-shadow: var(--shadow-xl); }
+    .result-icon { font-size: 3.5rem; color: var(--color-accent-red); margin-bottom: 1.25rem; }
+    .result-title { font-family: var(--font-display); font-size: 1.75rem; color: var(--color-dark); margin: 0 0 0.75rem; }
+    .result-sub { color: var(--color-gray-light); font-size: 0.9rem; line-height: 1.7; margin: 0 0 0.5rem; }
+    .error-msg { font-size: 0.82rem; color: #dc2626; background: #fef2f2; border-radius: 6px; padding: 0.5rem 1rem; margin: 0.75rem 0 1.5rem; }
+    .result-actions { display: flex; flex-direction: column; gap: 0.75rem; }
+    .btn { display: block; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: opacity 0.2s; }
+    .btn:hover { opacity: 0.85; }
+    .btn-primary { background: var(--color-dark); color: white; }
+    .btn-outline { border: 1px solid var(--color-cream-dark); color: var(--color-gray); }
+  </style>
+</head>
+<body>
+  <div class="result-card">
+    <div class="result-icon"><i class="fas fa-circle-xmark"></i></div>
+    <h1 class="result-title">{{ "付款未完成" if lang == "zh-TW" else "Payment Not Completed" }}</h1>
+    <p class="result-sub">
+      {% if lang == "zh-TW" %}您的付款未成功，購物車內容仍保留，請再試一次。
+      {% else %}Your payment was not successful. Your cart has been saved — please try again.{% endif %}
+    </p>
+    {% if error_msg %}
+    <p class="error-msg">{{ error_msg }}</p>
+    {% endif %}
+    <div class="result-actions">
+      <a href="/shop" class="btn btn-primary">{{ "返回購物車" if lang == "zh-TW" else "Return to Cart" }}</a>
+      <a href="/" class="btn btn-outline">{{ "回首頁" if lang == "zh-TW" else "Back to Home" }}</a>
+    </div>
+  </div>
+</body>
+</html>

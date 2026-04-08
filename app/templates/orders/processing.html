@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if lang == 'zh-TW' %}確認付款中{% else %}Checking Payment{% endif %} | Cuore Coffee Roaster</title>
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <style>
+    body { background: var(--color-cream); display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem; }
+    .result-card { background: white; border-radius: 16px; padding: 3rem 2.5rem; text-align: center; max-width: 520px; width: 100%; box-shadow: var(--shadow-xl); }
+    .result-icon { font-size: 3.5rem; color: var(--color-primary); margin-bottom: 1.25rem; }
+    .result-title { font-family: var(--font-display); font-size: 1.75rem; color: var(--color-dark); margin: 0 0 0.75rem; }
+    .result-sub { color: var(--color-gray-light); font-size: 0.92rem; line-height: 1.7; margin: 0 0 0.5rem; }
+    .order-no { font-family: monospace; font-size: 0.85rem; color: var(--color-gray-lighter); margin: 0.75rem 0 1rem; }
+    .status-note { color: var(--color-gray); font-size: 0.85rem; line-height: 1.7; background: #faf8f5; border-radius: 8px; padding: 0.85rem 1rem; margin: 0 0 1.5rem; }
+    .result-actions { display: flex; flex-direction: column; gap: 0.75rem; }
+    .btn { display: block; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: opacity 0.2s; }
+    .btn:hover { opacity: 0.85; }
+    .btn-primary { background: var(--color-dark); color: white; }
+    .btn-outline { border: 1px solid var(--color-cream-dark); color: var(--color-gray); }
+  </style>
+</head>
+<body>
+  <div class="result-card">
+    <div class="result-icon"><i class="fas fa-spinner fa-spin"></i></div>
+    <h1 class="result-title">{{ "正在確認付款狀態" if lang == "zh-TW" else "Checking Your Payment" }}</h1>
+    <p class="result-sub">
+      {% if lang == "zh-TW" %}我們正在向金流服務確認您的付款結果，通常只需要幾秒鐘。
+      {% else %}We are confirming your payment with the payment provider. This usually takes a few seconds.{% endif %}
+    </p>
+    {% if trade_no %}
+    <p class="order-no">{{ "訂單編號：" if lang == "zh-TW" else "Order No.: " }}{{ trade_no }}</p>
+    {% endif %}
+    <p class="status-note" id="statusNote">
+      {{ "請稍候，頁面會在付款確認後自動更新。" if lang == "zh-TW" else "Please wait. This page will update automatically once payment is confirmed." }}
+    </p>
+    <div class="result-actions">
+      <a href="/shop" class="btn btn-primary">{{ "返回購物頁" if lang == "zh-TW" else "Return to Shop" }}</a>
+      <a href="/" class="btn btn-outline">{{ "回首頁" if lang == "zh-TW" else "Back to Home" }}</a>
+    </div>
+  </div>
+
+  <script>
+    const COPY = {
+      waiting:  {{ ("請稍候，頁面會在付款確認後自動更新。" if lang == "zh-TW" else "Please wait. This page will update automatically once payment is confirmed.") | tojson }},
+      missing:  {{ ("找不到這筆訂單資料，請回到購物頁重新確認。" if lang == "zh-TW" else "We could not find this order. Please return to the shop and try again.") | tojson }},
+      denied:   {{ ("這筆訂單無法在目前瀏覽器中驗證，請用原本結帳的瀏覽器重新開啟。" if lang == "zh-TW" else "This order cannot be verified in the current browser. Please reopen it from the browser used for checkout.") | tojson }},
+      timeout:  {{ ("付款狀態尚未回傳。您可以稍後重新整理此頁，或聯絡店家協助確認。" if lang == "zh-TW" else "Payment confirmation has not arrived yet. Please refresh this page later or contact the shop for help.") | tojson }},
+    };
+    const TRADE_NO = {{ trade_no | tojson }};
+    const statusEl = document.getElementById("statusNote");
+
+    if (!TRADE_NO) {
+      statusEl.textContent = COPY.missing;
+    } else {
+      pollStatus(TRADE_NO);
+    }
+
+    function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+    async function pollStatus(tradeNo) {
+      const timeoutAt = Date.now() + 60_000;
+      while (Date.now() < timeoutAt) {
+        try {
+          const res = await fetch(`/orders/${encodeURIComponent(tradeNo)}/status`, {
+            cache: "no-store",
+            headers: { Accept: "application/json" }
+          });
+          if (res.status === 403) { statusEl.textContent = COPY.denied; return; }
+          if (res.status === 404) { statusEl.textContent = COPY.missing; return; }
+          if (res.ok) {
+            const data = await res.json();
+            if (data.status === "paid") {
+              localStorage.removeItem("cuore_cart");
+              location.replace(`/order-success?order=${encodeURIComponent(tradeNo)}`);
+              return;
+            }
+            if (data.status === "failed") {
+              const suffix = data.message ? `&msg=${encodeURIComponent(data.message)}` : "";
+              location.replace(`/order-failed?order=${encodeURIComponent(tradeNo)}${suffix}`);
+              return;
+            }
+          }
+        } catch (e) { console.error("[order-processing] poll failed", e); }
+        await sleep(2000);
+      }
+      statusEl.textContent = COPY.timeout;
+    }
+  </script>
+</body>
+</html>

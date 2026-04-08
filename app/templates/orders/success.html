@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if lang == 'zh-TW' %}付款成功{% else %}Payment Successful{% endif %} | Cuore Coffee Roaster</title>
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <style>
+    body { background: var(--color-cream); display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem; }
+    .result-card { background: white; border-radius: 16px; padding: 3rem 2.5rem; text-align: center; max-width: 480px; width: 100%; box-shadow: var(--shadow-xl); }
+    .result-icon { font-size: 3.5rem; color: var(--color-primary); margin-bottom: 1.25rem; }
+    .result-title { font-family: var(--font-display); font-size: 1.75rem; color: var(--color-dark); margin: 0 0 0.75rem; }
+    .result-sub { color: var(--color-gray-light); font-size: 0.9rem; line-height: 1.7; margin: 0 0 0.5rem; white-space: pre-line; }
+    .order-no { font-family: monospace; font-size: 0.85rem; color: var(--color-gray-lighter); margin: 0.5rem 0 2rem; }
+    .result-actions { display: flex; flex-direction: column; gap: 0.75rem; }
+    .btn { display: block; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: opacity 0.2s; }
+    .btn:hover { opacity: 0.85; }
+    .btn-primary { background: var(--color-dark); color: white; }
+    .btn-outline { border: 1px solid var(--color-cream-dark); color: var(--color-gray); }
+  </style>
+</head>
+<body>
+  <div class="result-card">
+    <div class="result-icon"><i class="fas fa-circle-check"></i></div>
+    <h1 class="result-title">{{ "付款成功！" if lang == "zh-TW" else "Payment Successful!" }}</h1>
+    <p class="result-sub">
+      {% if lang == "zh-TW" %}感謝您購買科雷精品咖啡豆。
+我們將盡快為您烘焙並出貨，請留意簡訊通知。{% else %}Thank you for purchasing Cuore specialty coffee beans.
+We'll roast and ship your order soon — watch for an SMS notification.{% endif %}
+    </p>
+    {% if trade_no %}
+    <p class="order-no">{{ "訂單編號：" if lang == "zh-TW" else "Order No.: " }}{{ trade_no }}</p>
+    {% endif %}
+    <div class="result-actions">
+      <a href="/shop" class="btn btn-primary">{{ "繼續選購" if lang == "zh-TW" else "Continue Shopping" }}</a>
+      <a href="/" class="btn btn-outline">{{ "回首頁" if lang == "zh-TW" else "Back to Home" }}</a>
+    </div>
+  </div>
+</body>
+</html>
