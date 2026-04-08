@@ -86,7 +86,7 @@
   <!-- Shipping config for cart.js -->
   <script>
     window.shippingConfig = {
-      freeShippingThreshold: 1500,
+      freeShippingThreshold: {{ (shipping.free_shipping_threshold if shipping is defined else 1500) }},
       costs: { delivery: 100, cvs: 60, store: 0 }
     };
     window.siteLang = {{ lang | tojson }};
