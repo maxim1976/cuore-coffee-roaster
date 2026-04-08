@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}咖啡豆 | Cuore Coffee Roaster{% endblock %}
+
+{% block content %}
+<!-- HERO -->
+<section class="shop-hero">
+  <div class="shop-hero__inner">
+    <p class="shop-hero__label">{{ t("shop.hero.label") }}</p>
+    <h1 class="shop-hero__title">{{ t("shop.hero.title") }}</h1>
+    <p class="shop-hero__sub">{{ t("shop.hero.sub") }}</p>
+  </div>
+</section>
+
+<!-- PRODUCT GRID -->
+<main class="shop-main">
+  <div class="container">
+    <input type="hidden" name="lang" id="langInput" value="{{ lang }}" />
+    <div id="productGrid"
+         class="product-grid"
+         hx-get="/catalog/fragment?lang={{ lang }}"
+         hx-trigger="load"
+         hx-swap="innerHTML">
+      <!-- Loaded by HTMX -->
+    </div>
+
+    <div class="shop-fb-banner">
+      <a href="https://www.facebook.com/profile.php?id=100047026513728"
+         target="_blank" rel="noopener noreferrer" class="shop-fb-link">
+        <i class="fab fa-facebook"></i>
+        <span>{{ t("shop.fb.latest") }}</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</main>
+{% endblock %}
+
+{% block cart_form %}
+<!-- Checkout form injected by checkout.js (unchanged) -->
+{% endblock %}

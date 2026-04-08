@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Coffee Beans | Cuore Coffee Roaster{% endblock %}</title>
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/shop.css') }}" />
+  <script src="https://unpkg.com/htmx.org@2.0.4" defer></script>
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <!-- NAV -->
+  <header class="shop-nav">
+    <div class="shop-nav__inner">
+      <a href="/" class="shop-nav__logo">
+        <span class="shop-nav__logo-zh">科雷精品咖啡館</span>
+        <span class="shop-nav__logo-en">Cuore Coffee Roaster</span>
+      </a>
+      <nav class="shop-nav__links">
+        <a href="/"><i class="fas fa-home"></i> {{ t("shop.back-home") }}</a>
+      </nav>
+      <div class="shop-lang">
+        <button class="lang-btn {% if lang == 'zh-TW' %}active{% endif %}" data-lang="zh-TW">中文</button>
+        <button class="lang-btn {% if lang == 'en' %}active{% endif %}" data-lang="en">EN</button>
+      </div>
+      <button class="cart-toggle" id="cartToggle" aria-label="Cart">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-count" id="cartCount" style="display:none">0</span>
+      </button>
+    </div>
+  </header>
+
+  {% block content %}{% endblock %}
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-sidebar__header">
+      <h2>
+        {{ t("shop.cart.title") }}
+        <span class="cart-count" id="cartCountSidebar" style="display:none">0</span>
+      </h2>
+      <button class="cart-close" id="cartClose" aria-label="Close cart">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="cart-sidebar__body">
+      <div class="cart-empty" id="cartEmpty">
+        <i class="fas fa-coffee"></i>
+        <p>{{ t("shop.cart.empty") }}</p>
+      </div>
+      <ul class="cart-items" id="cartItems" style="display:none"></ul>
+      <div class="cart-summary" id="cartSummary" style="display:none">
+        <div class="cart-summary__row">
+          <span>{{ t("shop.cart.subtotal") }}</span>
+          <span id="cartSubtotal">NT$ 0</span>
+        </div>
+        <div class="cart-summary__row cart-summary__row--shipping">
+          <span>{{ t("shop.cart.shipping") }}</span>
+          <span id="cartShipping">NT$ 100</span>
+        </div>
+        <div class="cart-summary__row cart-summary__row--total">
+          <span>{{ t("shop.cart.total") }}</span>
+          <strong id="cartTotal">NT$ 100</strong>
+        </div>
+        <p class="cart-summary__free" id="freeShippingNote"></p>
+      </div>
+      {% block cart_form %}{% endblock %}
+    </div>
+  </aside>
+
+  <footer class="shop-footer">
+    <p>&copy; 2026 Cuore Coffee Roaster. All Rights Reserved.</p>
+    <p class="footer-credit">
+      {{ t("footer.credit") }} —
+      <a href="https://hualienvibe.com" target="_blank" rel="noopener noreferrer">HualienVibe Digital Studio</a>
+    </p>
+  </footer>
+
+  <!-- Shipping config for cart.js -->
+  <script>
+    window.shippingConfig = {
+      freeShippingThreshold: 1500,
+      costs: { delivery: 100, cvs: 60, store: 0 }
+    };
+    window.siteLang = {{ lang | tojson }};
+  </script>
+  <script src="{{ url_for('static', filename='js/i18n.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/cart.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/checkout.js') }}"></script>
+
+  <!-- Language toggle via cookie (no full reload needed for grid) -->
+  <script>
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const lang = btn.dataset.lang;
+        document.cookie = `cuore-lang=${lang}; path=/; max-age=31536000; SameSite=Lax`;
+        document.querySelectorAll(".lang-btn").forEach(b =>
+          b.classList.toggle("active", b.dataset.lang === lang)
+        );
+        const input = document.getElementById("langInput");
+        if (input) input.value = lang;
+        htmx.ajax("GET", `/catalog/fragment?lang=${lang}`, {
+          target: "#productGrid",
+          swap: "innerHTML"
+        });
+      });
+    });
+  </script>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>

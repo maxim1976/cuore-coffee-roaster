@@ -1,0 +1,54 @@
+{% if products %}
+  {% for product in products %}
+  <article class="product-card" data-product-id="{{ product.id }}"
+           data-product="{{ product | tojson | e }}">
+    <div class="product-card__image-wrap">
+      <img src="{{ url_for('static', filename=product.image) }}"
+           alt="{{ product.name_zh if lang == 'zh-TW' else product.name_en }}"
+           class="product-card__image"
+           onerror="this.closest('.product-card__image-wrap').classList.add('product-card__image-wrap--placeholder')">
+      <span class="product-card__badge {{ product.roast_class }}">{{ product.roast_label_zh if lang == 'zh-TW' else product.roast_label_en }}</span>
+      <span class="product-card__weight">{{ product.weight_label }}</span>
+    </div>
+    <div class="product-card__body">
+      <h2 class="product-card__name-zh">{{ product.name_zh if lang == 'zh-TW' else product.name_en }}</h2>
+      <p class="product-card__name-en">{{ product.name_en if lang == 'zh-TW' else product.name_zh }}</p>
+      <p class="product-card__origin">{{ product.origin_zh if lang == 'zh-TW' else product.origin_en }}</p>
+      <p class="product-card__flavor">{{ product.flavor_zh if lang == 'zh-TW' else product.flavor_en }}</p>
+      {% if product.promo_zh %}
+      <p class="product-card__promo">
+        <i class="fas fa-tag"></i>
+        {{ product.promo_zh if lang == 'zh-TW' else (product.promo_en or product.promo_zh) }}
+      </p>
+      {% endif %}
+
+      <div class="product-card__grind">
+        <p class="product-card__grind-label">{{ t("shop.product.grind") }}</p>
+        {% for variant in product.variants %}
+        <label class="grind-option {% if loop.first %}grind-option--selected{% endif %}">
+          <input type="radio" name="grind_{{ product.id }}"
+                 value="{{ variant.sku }}"
+                 data-price="{{ variant.price }}"
+                 {% if loop.first %}checked{% endif %}>
+          <span>{{ t("shop.grind." + variant.grind) }}</span>
+        </label>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="product-card__footer">
+      <div class="product-card__price">
+        <span class="price-currency">NT$</span>
+        <span class="price-value">{{ product.variants[0].price }}</span>
+      </div>
+      <button class="btn-add-to-cart add-to-cart add-to-cart--coming-soon"
+              data-sku="{{ product.variants[0].sku }}"
+              disabled>
+        {{ t("shop.product.coming-soon") }}
+      </button>
+    </div>
+  </article>
+  {% endfor %}
+{% else %}
+  <p class="shop-catalog-error">Unable to load products right now. Please refresh the page.</p>
+{% endif %}
