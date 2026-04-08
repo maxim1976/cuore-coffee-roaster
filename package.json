@@ -13,5 +13,8 @@
     "helmet": "^8.1.0",
     "resend": "^6.9.3",
     "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
   }
 }
