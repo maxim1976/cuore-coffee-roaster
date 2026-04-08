@@ -1,8 +1,11 @@
 [build]
 builder = "nixpacks"
 
+[build.environment]
+FLASK_APP = "app"
+
 [deploy]
-startCommand = "flask db upgrade && gunicorn 'app:create_app()' --bind 0.0.0.0:$PORT --workers 2 --timeout 30"
+startCommand = "python -m flask db upgrade && gunicorn 'app:create_app()' --bind 0.0.0.0:$PORT --workers 2 --timeout 30"
 healthcheckPath = "/health"
 healthcheckTimeout = 100
 restartPolicyType = "on_failure"
