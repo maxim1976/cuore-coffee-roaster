@@ -71,7 +71,7 @@ def to_public_product(product):
         "flavor_en": product.get("flavor_en", ""),
         "promo_zh": product.get("promo_zh") or None,
         "promo_en": product.get("promo_en") or None,
-        "image": product.get("image", ""),
+        "image": product.get("image", "").removeprefix("assets/"),
         "roast_level": roast,
         "roast_class": ROAST_CLASSES.get(roast, ""),
         "roast_label_zh": zh_label,
