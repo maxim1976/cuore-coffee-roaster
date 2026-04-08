@@ -1,7 +1,10 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, send_from_directory
+from pathlib import Path
 from app.services.catalog import get_public_catalog
 
 bp = Blueprint("shop", __name__)
+
+PUBLIC_DIR = Path(__file__).parent.parent.parent / "public"
 
 
 @bp.get("/health")
@@ -10,7 +13,12 @@ def health():
 
 
 @bp.get("/")
+def index():
+    return send_from_directory(PUBLIC_DIR, "index.html")
+
+
 @bp.get("/shop")
+@bp.get("/shop.html")
 def shop():
     try:
         catalog = get_public_catalog()
