@@ -24,22 +24,23 @@
 
       <div class="product-card__grind">
         <p class="product-card__grind-label">{{ t("shop.product.grind") }}</p>
-        {% for variant in product.variants %}
-        <label class="grind-option {% if loop.first %}grind-option--selected{% endif %}">
-          <input type="radio" name="grind_{{ product.id }}"
-                 value="{{ variant.sku }}"
-                 data-price="{{ variant.price }}"
-                 {% if loop.first %}checked{% endif %}>
-          <span>{{ t("shop.grind." + variant.grind) }}</span>
-        </label>
-        {% endfor %}
+        <div class="product-card__grind-options">
+          {% for variant in product.variants %}
+          <label class="grind-option {% if loop.first %}grind-option--selected{% endif %}">
+            <input type="radio" name="grind_{{ product.id }}"
+                   value="{{ variant.sku }}"
+                   data-price="{{ variant.price }}"
+                   {% if loop.first %}checked{% endif %}>
+            <span>{{ t("shop.grind." + variant.grind) }}</span>
+          </label>
+          {% endfor %}
+        </div>
       </div>
     </div>
 
     <div class="product-card__footer">
       <div class="product-card__price">
-        <span class="price-currency">NT$</span>
-        <span class="price-value">{{ product.variants[0].price }}</span>
+        NT$<span class="price-value">{{ "{:,}".format(product.variants[0].price | int) }}</span>
       </div>
       <button class="btn-add-to-cart add-to-cart add-to-cart--coming-soon"
               data-sku="{{ product.variants[0].sku }}"
