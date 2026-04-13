@@ -195,7 +195,7 @@ const translations = {
     "shop.hero.label": "精選咖啡豆",
     "shop.hero.title": "咖啡豆專區",
     "shop.hero.sub": "自家烘焙・每包 200g・滿 NT$1,500 免運",
-    "shop.fb.latest": "查看最新豆單 · Latest Bean Updates",
+    "shop.fb.latest": "查看最新豆單",
     "shop.product.coming-soon": "敬請期待線上選購",
     "footer.credit":
       '網站設計：<a href="https://hualienvibe.com" target="_blank" rel="noopener noreferrer">HualienVibe 數位工作室</a>',
