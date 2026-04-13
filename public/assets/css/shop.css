@@ -138,7 +138,9 @@
 
 /* ── Shop hero ── */
 .shop-hero {
-  background: var(--color-dark);
+  background:
+    linear-gradient(rgba(15, 13, 11, 0.62), rgba(15, 13, 11, 0.62)),
+    url('../images/cup.jpg') center / cover no-repeat;
   padding: 3.5rem 1.5rem;
   text-align: center;
   border-bottom: 1px solid rgba(196, 165, 116, 0.2);
@@ -150,8 +152,8 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 70% at 15% 50%, rgba(196, 165, 116, 0.08) 0%, transparent 65%),
-    radial-gradient(ellipse 60% 90% at 85% 50%, rgba(45, 90, 74, 0.07) 0%, transparent 65%);
+    radial-gradient(ellipse 80% 70% at 15% 50%, rgba(196, 165, 116, 0.10) 0%, transparent 65%),
+    radial-gradient(ellipse 60% 90% at 85% 50%, rgba(45, 90, 74, 0.09) 0%, transparent 65%);
   pointer-events: none;
 }
 .shop-hero__inner {
