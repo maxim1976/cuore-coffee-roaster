@@ -14,6 +14,7 @@ const translations = {
     "nav.dessert": "點心",
     "nav.contact": "聯絡我們",
     "nav.shop": "網路商店",
+    "nav.beans": "咖啡豆",
 
     // Hero
     "hero.title": "科雷精品咖啡館",
@@ -230,6 +231,14 @@ const translations = {
     "shop.grind.coarse": "粗研磨（法壓/冷萃）",
     "shop.grind.medium": "中研磨（手沖）",
     "shop.grind.fine": "細研磨（義式）",
+
+    // Beans retail section
+    "beans.title": "咖啡豆零售",
+    "beans.title.en": "Coffee Beans",
+    "beans.subtitle": "自家烘焙・每包 200g・可指定研磨度",
+    "beans.order.text": "如需訂購，請透過以下方式聯繫我們",
+    "beans.order.note": "免運門檻 NT$1,500・超商取貨 NT$60・宅配到府 NT$100",
+    "beans.error": "無法載入豆單，請稍後再試",
   },
 
   en: {
@@ -242,6 +251,7 @@ const translations = {
     "nav.dessert": "Dessert",
     "nav.contact": "Contact",
     "nav.shop": "Online Shop",
+    "nav.beans": "Beans",
 
     // Demo Banner
     // Hero
@@ -461,6 +471,14 @@ const translations = {
     "shop.grind.coarse": "Coarse (French Press / Cold Brew)",
     "shop.grind.medium": "Medium (Pour Over)",
     "shop.grind.fine": "Fine (Espresso)",
+
+    // Beans retail section
+    "beans.title": "咖啡豆零售",
+    "beans.title.en": "Coffee Beans",
+    "beans.subtitle": "In-house roasted · 200g per bag · Custom grind available",
+    "beans.order.text": "To order, please contact us via",
+    "beans.order.note": "Free shipping over NT$1,500 · CVS pickup NT$60 · Home delivery NT$100",
+    "beans.error": "Could not load the catalog. Please try again later.",
   },
 
   ja: {
@@ -473,6 +491,7 @@ const translations = {
     "nav.dessert": "デザート",
     "nav.contact": "お問い合わせ",
     "nav.shop": "オンラインショップ",
+    "nav.beans": "コーヒー豆",
 
     // Demo Banner
     // Hero
@@ -649,6 +668,14 @@ const translations = {
     "flavor.currant": "カシス",
     "flavor.hazelnut": "ヘーゼルナッツチョコ",
     "flavor.syrup": "シロップ",
+
+    // Beans retail section
+    "beans.title": "コーヒー豆販売",
+    "beans.title.en": "Coffee Beans",
+    "beans.subtitle": "自家焙煎・200g/袋・挽き方指定可",
+    "beans.order.text": "ご注文はこちらからお問い合わせください",
+    "beans.order.note": "NT$1,500以上送料無料・コンビニ受取 NT$60・宅配 NT$100",
+    "beans.error": "豆リストを読み込めませんでした。後ほど再試行してください。",
   },
 
   ko: {
@@ -661,6 +688,7 @@ const translations = {
     "nav.dessert": "디저트",
     "nav.contact": "연락처",
     "nav.shop": "온라인 쇼핑",
+    "nav.beans": "원두",
 
     // Demo Banner
     // Hero
@@ -837,6 +865,14 @@ const translations = {
     "flavor.currant": "카시스",
     "flavor.hazelnut": "헤이즐넛 초콜릿",
     "flavor.syrup": "시럽",
+
+    // Beans retail section
+    "beans.title": "원두 판매",
+    "beans.title.en": "Coffee Beans",
+    "beans.subtitle": "자가 로스팅 · 200g/봉 · 분쇄도 지정 가능",
+    "beans.order.text": "주문하시려면 아래 채널로 문의해 주세요",
+    "beans.order.note": "NT$1,500 이상 무료배송 · 편의점 수령 NT$60 · 택배 NT$100",
+    "beans.error": "원두 목록을 불러올 수 없습니다. 잠시 후 다시 시도해 주세요.",
   },
 };
 

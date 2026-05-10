@@ -161,12 +161,8 @@
           <li><a href="#espresso" data-i18n="nav.espresso">義式咖啡</a></li>
           <li><a href="#drinks" data-i18n="nav.drinks">其他飲品</a></li>
           <li><a href="#dessert" data-i18n="nav.dessert">點心</a></li>
+          <li><a href="#beans" data-i18n="nav.beans">咖啡豆</a></li>
           <li><a href="#contact" data-i18n="nav.contact">聯絡我們</a></li>
-          <li>
-            <a href="shop.html" class="nav-shop-link" aria-label="Online Shop"
-              ><i class="fas fa-shopping-bag"></i
-            ></a>
-          </li>
           <li class="nav-lang-item">
             <div class="language-switcher">
               <button class="lang-btn active" data-lang="zh-TW">中文</button>
@@ -223,7 +219,7 @@
         <p class="hero-location">
           Specialty Coffee &amp; Roastery &middot; Hualien, Taiwan
         </p>
-        <a href="shop.html" class="btn btn-primary" data-i18n="hero.cta"
+        <a href="#beans" class="btn btn-primary" data-i18n="hero.cta"
           >選購咖啡豆</a
         >
       </div>
@@ -1195,6 +1191,40 @@
       </div>
     </section>
 
+    <!-- Coffee Beans Retail Section -->
+    <section id="beans" class="beans-section section alt-bg">
+      <div class="container">
+        <h2 class="section-title">
+          <span data-i18n="beans.title">咖啡豆零售</span>
+          <span data-i18n="beans.title.en">Coffee Beans</span>
+        </h2>
+        <p class="section-subtitle" data-i18n="beans.subtitle">
+          自家烘焙・每包 200g・可指定研磨度
+        </p>
+
+        <div id="beansPromo"></div>
+
+        <div id="beansGrid" class="beans-grid"></div>
+
+        <div class="beans-order-cta">
+          <p class="boc-text" data-i18n="beans.order.text">如需訂購，請透過以下方式聯繫我們</p>
+          <div class="boc-buttons">
+            <a href="https://www.facebook.com/profile.php?id=61565747011244"
+               target="_blank" rel="noopener noreferrer" class="boc-btn boc-btn--fb">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a href="https://line.me/R/ti/p/@cuorecoffee"
+               target="_blank" rel="noopener noreferrer" class="boc-btn boc-btn--line">
+              <i class="fab fa-line"></i> LINE
+            </a>
+          </div>
+          <p class="boc-note" data-i18n="beans.order.note">
+            免運門檻 NT$1,500・超商取貨 NT$60・宅配到府 NT$100
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact section">
       <div class="container">
@@ -1299,5 +1329,6 @@
     <!-- Scripts -->
     <script src="assets/js/i18n.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/beans.js"></script>
   </body>
 </html>
