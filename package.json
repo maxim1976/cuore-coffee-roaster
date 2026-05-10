@@ -4,15 +4,10 @@
   "description": "科雷精品咖啡館 Cuore Coffee Roaster Website",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "node --watch src/server.js"
+    "start": "serve public -l $PORT"
   },
   "dependencies": {
-    "express": "^4.19.2",
-    "express-rate-limit": "^8.3.1",
-    "helmet": "^8.1.0",
-    "resend": "^6.9.3",
-    "zod": "^4.3.6"
+    "serve": "^14.2.4"
   },
   "devDependencies": {
     "sharp": "^0.34.5"

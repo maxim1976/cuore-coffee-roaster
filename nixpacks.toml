@@ -1,8 +1,8 @@
 [phases.setup]
-nixPkgs = ["python312", "python312Packages.pip"]
+nixPkgs = ["nodejs_20"]
 
 [phases.install]
-cmds = ["pip install -r requirements.txt --break-system-packages --user"]
+cmds = ["npm install"]
 
 [start]
-cmd = "python -m flask db upgrade && python -m gunicorn 'app:create_app()' --bind 0.0.0.0:$PORT --workers 2 --timeout 30"
+cmd = "npm start"
