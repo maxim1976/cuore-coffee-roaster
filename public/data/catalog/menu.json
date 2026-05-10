@@ -405,11 +405,11 @@
       },
       "promotion": {
         "name_zh": "萱草感恩月",
-        "name_en": "Hemerocallis Appreciation Month",
+        "name_en": "Daylily Appreciation Month",
         "period_start": "2026-05-08",
         "period_end": "2026-05-31",
         "description_zh": "歡度《萱草感恩月》即日起至五月31日止，精品咖啡豆任選「兩件85折、三件8折」。",
-        "description_en": "Celebrate Hemerocallis Appreciation Month — buy 2 bags 15% off, buy 3 bags 20% off. Valid through May 31.",
+        "description_en": "Celebrate Daylily Appreciation Month — buy 2 bags 15% off, buy 3 bags 20% off. Valid through May 31.",
         "tiers": [
           { "qty": 2, "discount": 0.85, "label_zh": "兩件85折", "label_en": "2 items 15% off" },
           { "qty": 3, "discount": 0.80, "label_zh": "三件8折",  "label_en": "3 items 20% off" }
