@@ -1228,62 +1228,90 @@
     <!-- VIP Plan Section -->
     <section id="vip-plan" class="vip-section section">
       <div class="container">
-        <h2 class="section-title vip-section-title">
+
+        <!-- Section heading -->
+        <p class="vip-eyebrow" data-i18n="vip.title.en">VIP Annual Membership</p>
+        <h2 class="section-title">
           <span data-i18n="vip.title">2026年度VIP年繳制優惠方案</span>
-          <span data-i18n="vip.title.en">VIP Annual Membership</span>
         </h2>
 
-        <div class="vip-layout">
-          <!-- Left: price + dates card -->
-          <div class="vip-card vip-card--left">
-            <div class="vip-deadline-badge">
-              <span data-i18n="vip.signup.label">報名期間</span>
-              <strong data-i18n="vip.signup.value">即日起至 2026.06.25</strong>
+        <!-- Plan card -->
+        <div class="vip-card">
+
+          <!-- Header band -->
+          <div class="vip-card-header">
+            <div class="vip-card-header-left">
+              <p class="vip-plan-label" data-i18n="vip.price.label">年繳預付</p>
+              <p class="vip-plan-name">科雷精品咖啡 VIP 會員</p>
             </div>
             <div class="vip-price-block">
-              <span class="vip-price-label" data-i18n="vip.price.label">年繳預付</span>
-              <span class="vip-price">NT$11,000</span>
-            </div>
-            <div class="vip-period">
-              <span class="vip-period-label" data-i18n="vip.period.label">有效期間</span>
-              <span class="vip-period-value" data-i18n="vip.period.value">2026年7月 ～ 2027年6月（一年）</span>
+              <p class="vip-price-ann">Annual Fee</p>
+              <p class="vip-price">NT$&nbsp;11,000<span class="vip-price-unit">/ 年</span></p>
             </div>
           </div>
 
-          <!-- Right: benefits checklist -->
-          <div class="vip-card vip-card--right">
+          <!-- Meta row -->
+          <div class="vip-meta-row">
+            <div class="vip-meta-item">
+              <i class="fas fa-calendar-alt"></i>
+              <span><span data-i18n="vip.signup.label">報名期間</span>&ensp;<strong data-i18n="vip.signup.value">即日起至 2026.06.25</strong></span>
+            </div>
+            <div class="vip-meta-item">
+              <i class="fas fa-clock"></i>
+              <span><span data-i18n="vip.period.label">有效期間</span>&ensp;<strong data-i18n="vip.period.value">2026年7月 ～ 2027年6月（一年）</strong></span>
+            </div>
+          </div>
+
+          <!-- Card body -->
+          <div class="vip-card-body">
+            <p class="vip-benefits-label">Member Benefits</p>
+
             <ul class="vip-benefits">
               <li class="vip-benefit">
-                <span class="vip-check">✓</span>
-                <span data-i18n="vip.benefit.1">每月5號前公布5款精品咖啡（定價NT$600–$800），任選兩款，15日前寄出</span>
+                <span class="vip-benefit-icon"><i class="fas fa-check"></i></span>
+                <p class="vip-benefit-text" data-i18n="vip.benefit.1">每月5號前公布5款精品咖啡（定價NT$600–$800），任選兩款，15日前寄出</p>
               </li>
               <li class="vip-benefit">
-                <span class="vip-check">✓</span>
-                <span data-i18n="vip.benefit.2">生日當月收到驚喜生日禮</span>
+                <span class="vip-benefit-icon"><i class="fas fa-check"></i></span>
+                <p class="vip-benefit-text" data-i18n="vip.benefit.2">生日當月收到驚喜生日禮</p>
               </li>
               <li class="vip-benefit">
-                <span class="vip-check">✓</span>
-                <span data-i18n="vip.benefit.3">加選咖啡豆一律85折</span>
+                <span class="vip-benefit-icon"><i class="fas fa-check"></i></span>
+                <p class="vip-benefit-text" data-i18n="vip.benefit.3">加選咖啡豆一律85折</p>
               </li>
               <li class="vip-benefit">
-                <span class="vip-check">✓</span>
-                <span data-i18n="vip.benefit.4">免運費（7-11店到店 或 新瑞宅配到府）</span>
-              </li>
-              <li class="vip-benefit vip-benefit--caveat">
-                <span class="vip-check vip-check--caveat">※</span>
-                <span data-i18n="vip.benefit.5">不適用於年節禮採購及買五送一方案</span>
+                <span class="vip-benefit-icon"><i class="fas fa-check"></i></span>
+                <p class="vip-benefit-text" data-i18n="vip.benefit.4">免運費（7-11店到店 或 新瑞宅配到府）</p>
               </li>
             </ul>
+
+            <hr class="vip-divider" />
+
+            <!-- Disclaimer -->
+            <div class="vip-disclaimer">
+              <i class="fas fa-info-circle"></i>
+              <p data-i18n="vip.benefit.5">不適用於年節禮採購及買五送一方案</p>
+            </div>
+
+            <!-- CTA -->
+            <div class="vip-cta-row">
+              <a href="https://line.me/R/ti/p/@050gvmxr"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="vip-btn-line">
+                <i class="fab fa-line"></i>
+                <span data-i18n="vip.cta">加入LINE群組報名</span>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div class="vip-cta-wrap">
-          <a href="https://line.me/R/ti/p/@050gvmxr"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="btn vip-cta-btn"
-             data-i18n="vip.cta">加入LINE群組報名</a>
-        </div>
+        <!-- Footer note -->
+        <p class="vip-footer-note">
+          Cuore Coffee Roaster · 科雷精品咖啡館<br>
+          花蓮市中美路 · SPECIALTY COFFEE &amp; ROASTERY · HUALIEN, TAIWAN
+        </p>
+
       </div>
     </section>
 
