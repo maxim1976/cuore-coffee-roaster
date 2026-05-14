@@ -1553,148 +1553,273 @@ html[lang="en"] .section-title [data-i18n$=".title.en"] {
    VIP Plan Section
    ========================================================================== */
 .vip-section {
-  background-color: #2c1810;
+  background-color: #1e0e08;
+  background-image:
+    radial-gradient(ellipse 55% 45% at 18% 15%, rgba(196, 165, 116, 0.11) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 55% at 85% 85%, rgba(45, 90, 74, 0.07) 0%, transparent 60%);
+  position: relative;
 }
 
-.vip-section-title {
-  color: #f5e6d3;
+/* Same crosshatch texture as the hero — visual family resemblance */
+.vip-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C4A574' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
 }
+
+/* Decorative oversized ring watermark — bottom-right */
+.vip-section::after {
+  content: "";
+  position: absolute;
+  bottom: -120px;
+  right: -120px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  border: 70px solid rgba(196, 165, 116, 0.035);
+  pointer-events: none;
+}
+
+/* Section title */
+.vip-section-title { color: #f0e0cc; }
 .vip-section-title span {
-  color: rgba(245, 230, 211, 0.6);
+  color: rgba(240, 224, 204, 0.38);
+  letter-spacing: 4px;
 }
 .vip-section-title::after {
-  background: linear-gradient(90deg, #8b6914, #c4a574);
+  background: linear-gradient(90deg, #c4a574, rgba(196, 165, 116, 0));
+  width: 80px;
+  height: 2px;
 }
 
+/* ── Unified inner card ─────────────────────────────────── */
+
+/* Gold-gradient top border via padding + background trick */
 .vip-layout {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 28px;
-  margin-bottom: 40px;
+  grid-template-columns: 290px 1fr;
+  gap: 0;
+  margin-bottom: 0;
+  background:
+    linear-gradient(#1e0e08, #1e0e08) padding-box,
+    linear-gradient(90deg, #8b6914 0%, #c4a574 50%, #8b6914 100%) border-box;
+  border: 1px solid transparent;
+  border-top-width: 3px;
+  border-bottom: none;
+  border-radius: 2px 2px 0 0;
 }
 
+/* Base card reset */
 .vip-card {
-  border: 1px solid rgba(139, 105, 20, 0.4);
-  border-radius: var(--radius-lg);
-  padding: 32px;
-  background: rgba(255, 255, 255, 0.04);
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  padding: 44px 40px;
 }
 
-/* Left card */
-.vip-deadline-badge {
-  display: inline-flex;
-  flex-direction: column;
-  background: rgba(139, 105, 20, 0.25);
-  border: 1px solid #8b6914;
-  border-radius: 8px;
-  padding: 8px 16px;
-  margin-bottom: 28px;
-  font-size: 0.82rem;
-  color: #c4a574;
-}
-.vip-deadline-badge strong {
-  font-size: 1rem;
-  color: #f5e6d3;
-  margin-top: 2px;
-}
-
-.vip-price-block {
+/* ── Left: price card ───────────────────────────────────── */
+.vip-card--left {
+  border-right: 1px solid rgba(196, 165, 116, 0.13);
+  background: rgba(196, 165, 116, 0.04);
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
+}
+
+/* Deadline: tight horizontal pill */
+.vip-deadline-badge {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  background: transparent;
+  border: 1px solid rgba(201, 162, 39, 0.38);
+  border-radius: 2px;
+  padding: 5px 11px;
+  margin-bottom: 36px;
+  font-size: 0.72rem;
+  color: rgba(201, 162, 39, 0.75);
+  letter-spacing: 0.3px;
+  width: fit-content;
+}
+.vip-deadline-badge strong {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: rgba(240, 224, 204, 0.9);
+  margin-top: 0;
+}
+
+/* Price */
+.vip-price-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 32px;
 }
 .vip-price-label {
-  font-size: 0.8rem;
-  color: rgba(245, 230, 211, 0.6);
-  letter-spacing: 1px;
+  font-size: 0.66rem;
+  color: rgba(240, 224, 204, 0.35);
+  letter-spacing: 3px;
   text-transform: uppercase;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 .vip-price {
   font-family: var(--font-display);
-  font-size: 2.8rem;
+  font-size: 3.8rem;
   font-weight: 700;
   color: #c4a574;
-  line-height: 1;
+  line-height: 0.95;
+  letter-spacing: -2px;
 }
 
+/* Period */
 .vip-period {
+  border-top: 1px solid rgba(196, 165, 116, 0.15);
+  padding-top: 22px;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid rgba(139, 105, 20, 0.3);
-  padding-top: 16px;
 }
 .vip-period-label {
-  font-size: 0.78rem;
-  color: rgba(245, 230, 211, 0.5);
-  margin-bottom: 4px;
+  font-size: 0.66rem;
+  color: rgba(240, 224, 204, 0.3);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
 }
 .vip-period-value {
-  font-size: 0.95rem;
-  color: #f5e6d3;
+  font-size: 0.87rem;
+  color: rgba(240, 224, 204, 0.65);
+  line-height: 1.7;
 }
 
-/* Right card: benefits */
+/* ── Right: numbered benefits ───────────────────────────── */
+.vip-card--right {
+  padding: 44px 48px;
+  display: flex;
+  align-items: center;
+}
+
 .vip-benefits {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-}
-.vip-benefit {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  color: #f5e6d3;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-.vip-check {
-  color: #c4a574;
-  font-weight: 700;
-  font-size: 1rem;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-.vip-benefit--caveat {
-  color: rgba(245, 230, 211, 0.55);
-}
-.vip-check--caveat {
-  color: rgba(196, 165, 116, 0.55);
+  gap: 0;
+  counter-reset: vip-counter;
+  width: 100%;
 }
 
-/* CTA button */
+.vip-benefit {
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  gap: 14px;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(196, 165, 116, 0.08);
+  color: rgba(240, 224, 204, 0.78);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  counter-increment: vip-counter;
+}
+.vip-benefit:first-child { padding-top: 2px; }
+.vip-benefit:last-child  { border-bottom: none; padding-bottom: 0; }
+
+/* Elegant Playfair number in col 1 */
+.vip-benefit::before {
+  content: counter(vip-counter, decimal-leading-zero);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(196, 165, 116, 0.28);
+  line-height: 1.65;
+}
+
+/* Hide original spans — the ::before pseudo-element carries col 1 */
+.vip-check { display: none; }
+
+/* Caveat row — dashed separator, muted, no counter */
+.vip-benefit--caveat {
+  counter-increment: none;
+  border-top: 1px dashed rgba(196, 165, 116, 0.11);
+  margin-top: 10px;
+  padding-top: 16px;
+  color: rgba(240, 224, 204, 0.28);
+  font-size: 0.8rem;
+}
+.vip-benefit--caveat::before {
+  content: "※";
+  font-family: var(--font-primary);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: rgba(196, 165, 116, 0.2);
+  line-height: 1.65;
+}
+.vip-check--caveat { display: none; }
+
+/* ── CTA row — visually attached to card ───────────────── */
 .vip-cta-wrap {
   text-align: center;
-}
-.vip-cta-btn {
-  display: inline-block;
-  background: #8b6914;
-  color: #f5e6d3;
-  padding: 14px 40px;
-  border-radius: var(--radius-md);
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background var(--transition-normal), transform var(--transition-normal);
-}
-.vip-cta-btn:hover {
-  background: #c4a574;
-  color: #2c1810;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  padding: 28px 40px 32px;
+  background:
+    linear-gradient(#1e0e08, #1e0e08) padding-box,
+    linear-gradient(90deg, #8b6914 0%, #c4a574 50%, #8b6914 100%) border-box;
+  border: 1px solid transparent;
+  border-top: 1px solid rgba(196, 165, 116, 0.13);
+  border-radius: 0 0 2px 2px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* LINE-branded ghost button */
+.vip-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 1px solid rgba(6, 199, 85, 0.5);
+  color: rgba(6, 199, 85, 0.85);
+  padding: 13px 52px;
+  border-radius: 3px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+.vip-cta-btn:hover {
+  background: rgba(6, 199, 85, 0.12);
+  border-color: #06c755;
+  color: #06c755;
+  transform: none;
+  box-shadow: 0 0 20px rgba(6, 199, 85, 0.1);
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width: 820px) {
   .vip-layout {
     grid-template-columns: 1fr;
   }
-  .vip-price {
-    font-size: 2.2rem;
+  .vip-card--left {
+    border-right: none;
+    border-bottom: 1px solid rgba(196, 165, 116, 0.13);
+    padding: 36px 32px;
   }
+  .vip-card--right {
+    padding: 36px 32px;
+    align-items: flex-start;
+  }
+  .vip-price { font-size: 3rem; letter-spacing: -1px; }
+  .vip-cta-wrap { padding: 24px 32px 28px; }
   .vip-cta-btn {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    letter-spacing: 1px;
   }
+}
+
+@media (max-width: 480px) {
+  .vip-card--left, .vip-card--right { padding: 28px 24px; }
+  .vip-price { font-size: 2.6rem; }
+  .vip-cta-wrap { padding: 20px 24px 24px; }
 }
