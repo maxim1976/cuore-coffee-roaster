@@ -1,1424 +1,605 @@
-<!doctype html>
-<html lang="zh-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Hualien's specialty coffee roaster — rated 4.9 ★ on Google. House-roasted single origin pour-over, espresso &amp; seasonal drinks. English-friendly · Open Tue–Sun 11:00–19:00 · 花蓮精品咖啡"
-    />
-    <meta
-      name="keywords"
-      content="科雷咖啡,花蓮咖啡,精品咖啡,手沖咖啡,單品咖啡,自家烘焙,Cuore Coffee,Hualien Coffee,Specialty Coffee,Pour Over"
-    />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="科雷精品咖啡館 Cuore Coffee Roaster" />
-    <title>Specialty Coffee in Hualien, Taiwan | Cuore Coffee Roaster</title>
-    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cuore-coffee.com — This Domain Is For Sale</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-    <!-- Canonical & hreflang -->
-    <link rel="canonical" href="https://cuore-coffee.com/" />
-    <link rel="alternate" hreflang="zh-TW" href="https://cuore-coffee.com/" />
-    <link
-      rel="alternate"
-      hreflang="en"
-      href="https://cuore-coffee.com/?lang=en"
-    />
-    <link
-      rel="alternate"
-      hreflang="ja"
-      href="https://cuore-coffee.com/?lang=ja"
-    />
-    <link
-      rel="alternate"
-      hreflang="ko"
-      href="https://cuore-coffee.com/?lang=ko"
-    />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://cuore-coffee.com/"
-    />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <!-- Geo -->
-    <meta name="geo.region" content="TW-HUA" />
-    <meta name="geo.placename" content="Hualien, Taiwan" />
-    <meta name="ICBM" content="23.9851, 121.6202" />
+    :root {
+      --green:      #2D5A4A;
+      --green-dark: #1E3F35;
+      --green-mid:  #3D7A5A;
+      --wood:       #C4A574;
+      --wood-dark:  #8B7355;
+      --wood-light: #D4BC94;
+      --cream:      #F5F2EB;
+      --cream-dark: #E8E4DC;
+      --dark:       #1a1a1a;
+      --dark-2:     #141414;
+      --gray-muted: rgba(255,255,255,0.45);
+    }
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://cuore-coffee.com/" />
-    <meta
-      property="og:site_name"
-      content="科雷精品咖啡館 Cuore Coffee Roaster"
-    />
-    <meta
-      property="og:title"
-      content="Specialty Coffee in Hualien, Taiwan | Cuore Coffee Roaster"
-    />
-    <meta
-      property="og:description"
-      content="Hualien's specialty coffee roaster — rated 4.9 ★ on Google. House-roasted single origin pour-over, espresso &amp; seasonal drinks. English-friendly · Open Tue–Sun 11:00–19:00"
-    />
-    <meta
-      property="og:image"
-      content="https://cuore-coffee.com/assets/images/about_us.jpg"
-    />
-    <meta property="og:image:alt" content="科雷精品咖啡館店內環境" />
-    <meta property="og:locale" content="zh_TW" />
-    <meta property="og:locale:alternate" content="en_US" />
-    <meta property="og:locale:alternate" content="ja_JP" />
-    <meta property="og:locale:alternate" content="ko_KR" />
+    html, body {
+      height: 100%;
+    }
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Specialty Coffee in Hualien, Taiwan | Cuore Coffee Roaster"
-    />
-    <meta
-      name="twitter:description"
-      content="Hualien's specialty coffee roaster — rated 4.9 ★ on Google. House-roasted single origin pour-over, espresso &amp; seasonal drinks. English-friendly · Open Tue–Sun 11:00–19:00"
-    />
-    <meta
-      name="twitter:image"
-      content="https://cuore-coffee.com/assets/images/about_us.jpg"
-    />
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background: var(--dark-2);
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
 
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "CafeOrCoffeeShop",
-        "name": "Cuore Coffee Roaster",
-        "alternateName": ["科雷精品咖啡館", "科雷咖啡", "Cuore Coffee"],
-        "description": "Cuore Coffee Roaster is a specialty coffee shop and home roastery in Hualien, Taiwan. We serve house-roasted single origin pour-over coffee, espresso, and seasonal drinks.",
-        "url": "https://cuore-coffee.com/",
-        "image": "https://cuore-coffee.com/assets/images/about_us.jpg",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "No. 19, Zhongmei Rd",
-          "addressLocality": "Hualien City",
-          "addressRegion": "Hualien County",
-          "postalCode": "970",
-          "addressCountry": "TW"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 23.9851,
-          "longitude": 121.6202
-        },
-        "telephone": "+886-965-012925",
-        "openingHours": ["Mo 10:00-18:00", "We-Su 10:00-18:00"],
-        "servesCuisine": [
-          "Coffee",
-          "Specialty Coffee",
-          "Pour Over",
-          "Espresso"
-        ],
-        "priceRange": "NT$60–NT$250",
-        "sameAs": ["https://www.facebook.com/profile.php?id=61565747011244"]
-      }
-    </script>
+    /* ── Background layers ── */
+    .bg-layer {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background:
+        linear-gradient(160deg, rgba(30,63,53,0.55) 0%, rgba(26,26,26,0.85) 55%, rgba(10,10,10,0.95) 100%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C4A574' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    .bg-vignette {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      background: radial-gradient(ellipse 80% 80% at 50% 50%, transparent 30%, rgba(0,0,0,0.6) 100%);
+    }
 
-    <!-- Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+    /* ── Layout ── */
+    .page {
+      position: relative;
+      z-index: 2;
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+    }
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css?v=20260510" />
-  </head>
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-      <div class="container">
-        <a href="#" class="logo">
-          <span class="logo-icon">☕</span>
-          <div class="logo-text">
-            <span class="logo-zh">科雷精品咖啡</span>
-            <span class="logo-en">CUORE COFFEE ROASTER</span>
-          </div>
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 24px 60px;
+    }
+
+    /* ── Eyebrow ── */
+    .eyebrow {
+      font-family: "Inter", sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--wood);
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.2s ease forwards;
+    }
+
+    .eyebrow::before,
+    .eyebrow::after {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--wood);
+      opacity: 0.5;
+    }
+
+    /* ── Domain name ── */
+    .domain-name {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(3rem, 8vw, 7rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1;
+      color: #fff;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.4s ease forwards;
+    }
+
+    .domain-name .tld {
+      color: var(--wood);
+      font-style: italic;
+    }
+
+    /* ── Tagline ── */
+    .tagline {
+      font-family: "Inter", sans-serif;
+      font-size: clamp(0.85rem, 2vw, 1rem);
+      font-weight: 300;
+      letter-spacing: 0.12em;
+      color: rgba(255,255,255,0.45);
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.6s ease forwards;
+    }
+
+    /* ── Rule ── */
+    .rule {
+      display: block;
+      width: 56px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--wood), var(--green-mid));
+      border-radius: 2px;
+      margin: 0 auto 52px;
+      opacity: 0;
+      animation: fadeUp 0.6s 0.7s ease forwards;
+    }
+
+    /* ── Price card ── */
+    .price-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 40px 56px;
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      max-width: 520px;
+      width: 100%;
+      margin: 0 auto 52px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.9s ease forwards;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .price-card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(196,165,116,0.4), transparent);
+    }
+
+    .price-label {
+      font-family: "Inter", sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 10px;
+    }
+
+    .price-amount {
+      font-family: "Playfair Display", serif;
+      font-size: 4rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .price-amount sup {
+      font-size: 1.5rem;
+      vertical-align: super;
+      margin-right: 4px;
+      color: var(--wood-light);
+    }
+
+    .price-or {
+      font-family: "Inter", sans-serif;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin: 16px 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .price-or::before,
+    .price-or::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: rgba(255,255,255,0.1);
+    }
+
+    .price-offer {
+      font-family: "Inter", sans-serif;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.45);
+    }
+
+    /* ── CTA buttons ── */
+    .cta-group {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.7s 1.1s ease forwards;
+      margin-bottom: 56px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 36px;
+      border-radius: 999px;
+      font-family: "Inter", sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--green);
+      color: #fff;
+      box-shadow: 0 4px 24px rgba(45,90,74,0.45);
+    }
+
+    .btn-primary:hover {
+      background: var(--green-mid);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(45,90,74,0.6);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: rgba(255,255,255,0.7);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--wood);
+      color: var(--wood-light);
+      transform: translateY(-2px);
+    }
+
+    /* ── Value props ── */
+    .props-row {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0;
+      animation: fadeUp 0.7s 1.3s ease forwards;
+    }
+
+    .prop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      max-width: 140px;
+      text-align: center;
+    }
+
+    .prop-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(45,90,74,0.2);
+      border: 1px solid rgba(45,90,74,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .prop-icon i {
+      font-size: 0.9rem;
+      color: var(--green-mid);
+    }
+
+    .prop-label {
+      font-family: "Inter", sans-serif;
+      font-size: 0.7rem;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 0.06em;
+      line-height: 1.4;
+    }
+
+    /* ── Regret bar ── */
+    .regret-bar {
+      background: rgba(196,165,116,0.07);
+      border-top: 1px solid rgba(196,165,116,0.12);
+      padding: 20px 24px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .regret-bar i {
+      color: var(--wood);
+      font-size: 0.8rem;
+    }
+
+    .regret-bar p {
+      font-family: "Inter", sans-serif;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.3);
+      letter-spacing: 0.06em;
+    }
+
+    .regret-bar strong {
+      color: var(--wood);
+      font-weight: 500;
+    }
+
+    /* ── Offer modal overlay ── */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(0,0,0,0.75);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .modal-overlay.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .modal {
+      background: #1e1e1e;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 440px;
+      width: 100%;
+      position: relative;
+      transform: translateY(16px);
+      transition: transform 0.3s ease;
+    }
+
+    .modal-overlay.open .modal {
+      transform: translateY(0);
+    }
+
+    .modal::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--green-mid), transparent);
+    }
+
+    .modal h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    .modal p {
+      font-family: "Inter", sans-serif;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 28px;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 16px; right: 16px;
+      width: 32px; height: 32px;
+      background: rgba(255,255,255,0.06);
+      border: none;
+      border-radius: 50%;
+      color: rgba(255,255,255,0.5);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      transition: background 0.2s ease;
+    }
+
+    .modal-close:hover { background: rgba(255,255,255,0.12); }
+
+    .field {
+      margin-bottom: 16px;
+    }
+
+    .field label {
+      display: block;
+      font-family: "Inter", sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 7px;
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-family: "Inter", sans-serif;
+      font-size: 0.9rem;
+      color: #fff;
+      outline: none;
+      transition: border-color 0.2s ease;
+      resize: none;
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      border-color: var(--green-mid);
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder {
+      color: rgba(255,255,255,0.2);
+    }
+
+    .modal-submit {
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    /* ── Animations ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 540px) {
+      .price-card { padding: 32px 28px; }
+      .price-amount { font-size: 3rem; }
+      .cta-group { flex-direction: column; align-items: center; }
+      .btn { width: 100%; max-width: 300px; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-layer"></div>
+  <div class="bg-vignette"></div>
+
+  <div class="page">
+    <div class="hero">
+
+      <p class="eyebrow">Premium Domain For Sale</p>
+
+      <h1 class="domain-name">cuore-coffee<span class="tld">.com</span></h1>
+
+      <p class="tagline">Specialty Coffee &middot; Roastery</p>
+
+      <span class="rule"></span>
+
+      <!-- Price card -->
+      <div class="price-card">
+        <p class="price-label">Asking Price</p>
+        <p class="price-amount"><sup>$</sup>500 <span style="font-size:1.2rem;color:rgba(255,255,255,0.3);font-weight:300;">USD</span></p>
+        <div class="price-or">or</div>
+        <p class="price-offer">Name your price — serious offers considered</p>
+      </div>
+
+      <!-- CTA -->
+      <div class="cta-group">
+        <a href="mailto:offer@cuore-coffee.com?subject=Domain Purchase — cuore-coffee.com ($500)&body=Hello,%0A%0AI'd like to purchase cuore-coffee.com at the listed price of $500 USD.%0A%0AName:%0AContact:%0A" class="btn btn-primary">
+          <i class="fas fa-bolt"></i>
+          Buy for $500 now
         </a>
-        <button class="nav-toggle" aria-label="toggle navigation">
-          <span class="hamburger"></span>
+        <button class="btn btn-ghost" onclick="document.getElementById('offerModal').classList.add('open')">
+          <i class="fas fa-envelope-open-text"></i>
+          Make an offer
         </button>
-        <ul class="nav-links">
-          <li><a href="#home" data-i18n="nav.home">首頁</a></li>
-          <li><a href="#about" data-i18n="nav.about">關於我們</a></li>
-          <li>
-            <a href="#single-origin" data-i18n="nav.single-origin">單品咖啡</a>
-          </li>
-          <li><a href="#espresso" data-i18n="nav.espresso">義式咖啡</a></li>
-          <li><a href="#drinks" data-i18n="nav.drinks">其他飲品</a></li>
-          <li><a href="#dessert" data-i18n="nav.dessert">點心</a></li>
-          <li><a href="#beans" data-i18n="nav.beans">咖啡豆</a></li>
-          <li><a href="#contact" data-i18n="nav.contact">聯絡我們</a></li>
-          <li class="nav-lang-item">
-            <div class="language-switcher">
-              <button class="lang-btn active" data-lang="zh-TW">中文</button>
-              <button class="lang-btn" data-lang="en">EN</button>
-              <button class="lang-btn" data-lang="ja">日本語</button>
-              <button class="lang-btn" data-lang="ko">한국어</button>
-            </div>
-          </li>
-        </ul>
       </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <div class="hero-logo">
-          <svg
-            viewBox="20 13 160 392"
-            class="cuore-logo"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              fill="currentColor"
-              d="
-                        M 32,18 L 168,18 L 168,60
-                        C 172,74 140,182 118,205
-                        C 116,215 119,228 127,248
-                        C 116,248 172,288 172,325
-                        C 172,365 140,397 100,397
-                        C 60,397 28,365 28,325
-                        C 28,288 84,248 73,248
-                        C 81,228 84,215 82,205
-                        C 60,182 28,74 32,60
-                        Z
-                        M 50,52 L 150,52 L 150,102 L 50,66
-                        Z
-                        M 100,285
-                        C 112,285 140,306 140,325
-                        C 140,347 122,365 100,365
-                        C 78,365 60,347 60,325
-                        C 60,306 88,285 100,285
-                        Z
-                    "
-            />
-          </svg>
+      <!-- Value props -->
+      <div class="props-row">
+        <div class="prop">
+          <div class="prop-icon"><i class="fas fa-heart"></i></div>
+          <p class="prop-label">Cuore — Italian for "heart"</p>
         </div>
-        <h1 data-i18n="hero.title">科雷精品咖啡館</h1>
-        <p class="hero-subtitle" data-i18n="hero.subtitle">
-          CUORE COFFEE ROASTER
-        </p>
-        <p class="hero-tagline" data-i18n="hero.tagline">用心烘焙・品味生活</p>
-        <p class="hero-location">
-          Specialty Coffee &amp; Roastery &middot; Hualien, Taiwan
-        </p>
-        <a href="#beans" class="btn btn-primary" data-i18n="hero.cta"
-          >選購咖啡豆</a
-        >
-      </div>
-      <div class="scroll-indicator">
-        <span></span>
-      </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-      <div class="container">
-        <div class="about-content">
-          <div class="about-text">
-            <h2 class="section-title">
-              <span data-i18n="about.title">關於科雷</span>
-              <span data-i18n="about.title.en">About Us</span>
-            </h2>
-            <p class="about-description" data-i18n="about.desc1">
-              科雷精品咖啡館座落於花蓮，是一間專注於精品咖啡的自家烘焙咖啡館。
-              我們甄選來自世界各地的優質生豆，以專業的烘焙技術呈現每支咖啡獨特的風味。
-            </p>
-            <p class="about-description" data-i18n="about.desc2">
-              無論是追求果香花香的淺焙單品，或是醇厚濃郁的中深焙豆，
-              在科雷都能找到適合您的那一杯。
-            </p>
-            <div class="about-features">
-              <div class="feature">
-                <i class="fas fa-seedling"></i>
-                <span data-i18n="about.feature1">精選產區</span>
-              </div>
-              <div class="feature">
-                <i class="fas fa-fire"></i>
-                <span data-i18n="about.feature2">自家烘焙</span>
-              </div>
-              <div class="feature">
-                <i class="fas fa-hand-holding-heart"></i>
-                <span data-i18n="about.feature3">用心沖煮</span>
-              </div>
-            </div>
-          </div>
-          <div class="about-image">
-            <div class="image-frame">
-              <img
-                src="assets/images/about_us.jpg"
-                alt="科雷精品咖啡館店內環境"
-                loading="lazy"
-              />
-            </div>
-          </div>
+        <div class="prop">
+          <div class="prop-icon"><i class="fas fa-globe-asia"></i></div>
+          <p class="prop-label">4.9★ brand equity already built</p>
+        </div>
+        <div class="prop">
+          <div class="prop-icon"><i class="fas fa-seedling"></i></div>
+          <p class="prop-label">Perfect for specialty coffee worldwide</p>
+        </div>
+        <div class="prop">
+          <div class="prop-icon"><i class="fas fa-fire"></i></div>
+          <p class="prop-label">Short, memorable, brandable</p>
+        </div>
+        <div class="prop">
+          <div class="prop-icon"><i class="fas fa-shield-alt"></i></div>
+          <p class="prop-label">Clean history, no spam record</p>
         </div>
       </div>
-    </section>
 
-    <!-- Single Origin Section -->
-    <section id="single-origin" class="menu-section section">
-      <div class="container">
-        <h2 class="section-title">
-          <span data-i18n="single-origin.title">單品咖啡</span>
-          <span data-i18n="single-origin.title.en">Single Origin</span>
-        </h2>
-        <p class="section-subtitle" data-i18n="single-origin.iced-note">
-          手沖冰鎮 Iced Pour-Over +NT$20
-        </p>
+    </div>
 
-        <!-- Standard Menu -->
-        <div class="menu-category">
-          <h3 class="category-title">
-            <span data-i18n="single-origin.category">精選單品</span>
-          </h3>
+    <!-- Regret footer bar -->
+    <div class="regret-bar">
+      <i class="fas fa-hourglass-half"></i>
+      <p>
+        Someone else <strong>will</strong> own this. The only question is whether it's you.
+        &nbsp;·&nbsp; <strong>cuore-coffee.com</strong> &nbsp;·&nbsp; Transfer within 24 hrs
+      </p>
+      <i class="fas fa-hourglass-half"></i>
+    </div>
+  </div>
 
-          <div class="coffee-cards">
-            <!-- Coffee A -->
-            <div class="coffee-card card-burnt-orange" data-aos="fade-up">
-              <div class="card-header">
-                <span class="coffee-id">A</span>
-                <div class="roast-level light" data-i18n="roast.light">
-                  淺焙
-                </div>
-                <span class="price-tag">NT$ 170</span>
-              </div>
-              <div class="card-body">
-                <h4 class="coffee-name" data-i18n="coffee.a.name">
-                  科雷獨寶——《2025 西夏之花》
-                </h4>
-                <p class="coffee-name-en">Cuore Special Blend Coffee</p>
-                <div class="coffee-details">
-                  <div class="detail-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span data-i18n="coffee.a.origin"
-                      >衣索比亞 西達摩、夏奇索</span
-                    >
-                  </div>
-                  <div class="detail-item">
-                    <i class="fas fa-cog"></i>
-                    <span data-i18n="coffee.a.process">水洗、日曬</span>
-                  </div>
-                </div>
-                <div class="flavor-notes">
-                  <span class="flavor-tag" data-i18n="flavor.melon">甜瓜</span>
-                  <span class="flavor-tag" data-i18n="flavor.peach">蜜桃</span>
-                  <span class="flavor-tag" data-i18n="flavor.bergamot"
-                    >佛手柑</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.berry">莓果</span>
-                  <span class="flavor-tag" data-i18n="flavor.violet"
-                    >紫羅蘭</span
-                  >
-                </div>
-              </div>
-            </div>
+  <!-- Offer Modal -->
+  <div class="modal-overlay" id="offerModal">
+    <div class="modal">
+      <button class="modal-close" onclick="document.getElementById('offerModal').classList.remove('open')">
+        <i class="fas fa-times"></i>
+      </button>
+      <h3>Make Your Offer</h3>
+      <p>We'll review every serious offer. Fast response guaranteed.</p>
 
-            <!-- Coffee B -->
-            <div
-              class="coffee-card card-warm-tan"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="card-header">
-                <span class="coffee-id">B</span>
-                <div class="roast-level medium" data-i18n="roast.medium">
-                  中焙
-                </div>
-                <span class="price-tag">NT$ 170</span>
-              </div>
-              <div class="card-body">
-                <h4 class="coffee-name" data-i18n="coffee.b.name">
-                  《安提瓜 經典花神》
-                </h4>
-                <p class="coffee-name-en">
-                  Guatemala Antigua Bella Carmona Classico
-                </p>
-                <div class="coffee-details">
-                  <div class="detail-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span data-i18n="coffee.b.origin"
-                      >瓜地馬拉 安提瓜 貝拉卡摩娜莊園</span
-                    >
-                  </div>
-                  <div class="detail-item">
-                    <i class="fas fa-cog"></i>
-                    <span data-i18n="coffee.b.process">經典水洗</span>
-                  </div>
-                </div>
-                <div class="flavor-notes">
-                  <span class="flavor-tag" data-i18n="flavor.floral"
-                    >淡雅花香</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.chocolate"
-                    >巧克力</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.citrus">柑橘</span>
-                  <span class="flavor-tag" data-i18n="flavor.peanut"
-                    >炒花生</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Coffee C -->
-            <div
-              class="coffee-card card-dark-olive"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="card-header">
-                <span class="coffee-id">C</span>
-                <div
-                  class="roast-level light-medium"
-                  data-i18n="roast.light-medium"
-                >
-                  淺中焙
-                </div>
-                <span class="price-tag">NT$ 170</span>
-              </div>
-              <div class="card-body">
-                <h4 class="coffee-name" data-i18n="coffee.c.name">
-                  《肯亞 AA 涅里 蔚藍》
-                </h4>
-                <p class="coffee-name-en">Kenya Nyeri Wakamata Washed AA</p>
-                <div class="coffee-details">
-                  <div class="detail-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span data-i18n="coffee.c.origin">肯亞｜SL28、SL34</span>
-                  </div>
-                  <div class="detail-item">
-                    <i class="fas fa-cog"></i>
-                    <span data-i18n="coffee.c.process">傳統肯亞式水洗</span>
-                  </div>
-                </div>
-                <div class="flavor-notes">
-                  <span class="flavor-tag" data-i18n="flavor.blackberry"
-                    >黑莓</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.grapefruit"
-                    >葡萄柚</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.hawthorn"
-                    >仙楂</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.roselle"
-                    >洛神</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.brown.sugar"
-                    >紅糖</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Coffee D -->
-            <div
-              class="coffee-card card-dark-teal"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="card-header">
-                <span class="coffee-id">D</span>
-                <div class="roast-level medium" data-i18n="roast.medium">
-                  中焙
-                </div>
-                <span class="price-tag">NT$ 170</span>
-              </div>
-              <div class="card-body">
-                <h4 class="coffee-name" data-i18n="coffee.d.name">
-                  《迦佑黃金曼特寧》20目
-                </h4>
-                <p class="coffee-name-en">
-                  Indonesia Sumatra Gayo Golden Mandheling
-                </p>
-                <div class="coffee-details">
-                  <div class="detail-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span data-i18n="coffee.d.origin"
-                      >印尼 蘇門答臘 亞齊 迦佐</span
-                    >
-                  </div>
-                  <div class="detail-item">
-                    <i class="fas fa-cog"></i>
-                    <span data-i18n="coffee.d.process">濕剝法</span>
-                  </div>
-                </div>
-                <div class="flavor-notes">
-                  <span class="flavor-tag" data-i18n="flavor.caramel"
-                    >焦糖</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.almond">杏仁</span>
-                  <span class="flavor-tag" data-i18n="flavor.dark.chocolate"
-                    >黑巧克力</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.butter">奶油</span>
-                  <span class="flavor-tag" data-i18n="flavor.grass.jelly"
-                    >仙草乾</span
-                  >
-                </div>
-                <p class="flavor-description" data-i18n="coffee.d.desc">
-                  濃醇的奶香與堅果
-                </p>
-              </div>
-            </div>
-
-            <!-- Coffee E -->
-            <div
-              class="coffee-card card-warm-amber"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="card-header">
-                <span class="coffee-id">E</span>
-                <div class="roast-level light" data-i18n="roast.light">
-                  淺焙
-                </div>
-                <span class="price-tag">NT$ 170</span>
-              </div>
-              <div class="card-body">
-                <h4 class="coffee-name" data-i18n="coffee.e.name">
-                  《柏娜小珍珠》74110
-                </h4>
-                <p class="coffee-name-en">
-                  Ethiopia Sidamo Bona Zuria 74110 G1 Specialized Washed
-                </p>
-                <div class="coffee-details">
-                  <div class="detail-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span data-i18n="coffee.e.origin"
-                      >衣索比亞 西達摩 柏娜</span
-                    >
-                  </div>
-                  <div class="detail-item">
-                    <i class="fas fa-cog"></i>
-                    <span data-i18n="coffee.e.process">山泉水洗</span>
-                  </div>
-                </div>
-                <div class="flavor-notes">
-                  <span class="flavor-tag" data-i18n="flavor.strawberry"
-                    >草莓</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.white.peach"
-                    >白桃</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.tropical"
-                    >熱帶水果</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.flower">花香</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Seasonal Special -->
-        <div class="menu-category seasonal">
-          <h3 class="category-title">
-            <i class="fas fa-star"></i>
-            <span data-i18n="single-origin.seasonal">季節限定・稀有競標</span>
-            <span class="en" data-i18n="single-origin.seasonal.en"
-              >Seasonal Special</span
-            >
-          </h3>
-          <p class="category-note" data-i18n="single-origin.iced-note">
-            手沖冰鎮 Iced Pour-Over +NT$20
-          </p>
-
-          <div class="coffee-cards special">
-            <!-- Special 1 -->
-            <div class="coffee-card special card-deep-rust" data-aos="fade-up">
-              <div class="card-header">
-                <span class="coffee-id">1</span>
-                <div class="roast-level light" data-i18n="roast.light">
-                  淺焙
-                </div>
-                <span class="price-tag">NT$ 250</span>
-              </div>
-              <div class="award-badge">
-                <i class="fas fa-trophy"></i>
-                <span data-i18n="special.1.award">2025 非洲水洗組冠軍</span>
-              </div>
-              <div class="card-body">
-                <h4 class="coffee-name" data-i18n="special.1.name">
-                  《古吉 布穀瓦特》
-                </h4>
-                <p class="coffee-name-en">
-                  Ethiopia Guji Dimtu Hambella Wate Buku G1 Washed
-                </p>
-                <div class="coffee-details">
-                  <div class="detail-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span data-i18n="special.1.origin">衣索比亞 古吉</span>
-                  </div>
-                  <div class="detail-item">
-                    <i class="fas fa-cog"></i>
-                    <span data-i18n="special.1.process">水洗</span>
-                  </div>
-                </div>
-                <div class="flavor-notes">
-                  <span class="flavor-tag" data-i18n="flavor.jasmine"
-                    >茉莉花</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.bergamot"
-                    >佛手柑</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.plum">雪梅</span>
-                  <span class="flavor-tag" data-i18n="flavor.honey">蜂蜜</span>
-                  <span class="flavor-tag" data-i18n="flavor.choco.cream"
-                    >巧克力奶油香氣</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Special 2 -->
-            <div
-              class="coffee-card special card-dark-olive"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div class="card-header">
-                <span class="coffee-id">2</span>
-                <div class="roast-level light" data-i18n="roast.light">
-                  淺焙
-                </div>
-                <span class="price-tag">NT$ 230</span>
-              </div>
-              <div class="award-badge">
-                <i class="fas fa-trophy"></i>
-                <span data-i18n="special.2.award">衣索比亞 日曬組年度冠軍</span>
-              </div>
-              <div class="card-body">
-                <h4 class="coffee-name" data-i18n="special.2.name">
-                  《紫色克拉摩》
-                </h4>
-                <p class="coffee-name-en">
-                  Ethiopia Sidamo Bensa Karamo Natural
-                </p>
-                <div class="coffee-details">
-                  <div class="detail-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span data-i18n="special.2.origin"
-                      >衣索比亞 西達摩 斑莎</span
-                    >
-                  </div>
-                  <div class="detail-item">
-                    <i class="fas fa-cog"></i>
-                    <span data-i18n="special.2.process">日曬</span>
-                  </div>
-                </div>
-                <div class="flavor-notes">
-                  <span class="flavor-tag" data-i18n="flavor.cantaloupe"
-                    >哈密瓜</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.cranberry"
-                    >蔓越莓</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.raspberry"
-                    >覆盆莓</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.purple.floral"
-                    >紫色花香</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.wine">酒香</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Special 3 -->
-            <div
-              class="coffee-card special popular card-warm-amber"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div class="card-header">
-                <span class="coffee-id">3</span>
-                <div
-                  class="roast-level light-medium"
-                  data-i18n="roast.light-medium"
-                >
-                  淺中焙
-                </div>
-                <span class="price-tag">NT$ 200</span>
-              </div>
-              <div class="popular-badge">
-                <i class="fas fa-heart"></i>
-                <span data-i18n="special.3.badge">本館人氣冠軍</span>
-              </div>
-              <div class="card-body">
-                <h4 class="coffee-name" data-i18n="special.3.name">
-                  《艷夏花荔》
-                </h4>
-                <p class="coffee-name-en">
-                  Colombia Cauca Finca El Paraiso Double Anaerobic
-                </p>
-                <div class="coffee-details">
-                  <div class="detail-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span data-i18n="special.3.origin"
-                      >哥倫比亞 考卡 天堂莊園</span
-                    >
-                  </div>
-                  <div class="detail-item">
-                    <i class="fas fa-cog"></i>
-                    <span data-i18n="special.3.process">雙重厭氧</span>
-                  </div>
-                </div>
-                <p class="iced-note">
-                  <i class="fas fa-snowflake"></i>
-                  <span data-i18n="special.3.note">冰熱皆宜</span>
-                </p>
-                <div class="flavor-notes">
-                  <span class="flavor-tag" data-i18n="flavor.lychee">荔枝</span>
-                  <span class="flavor-tag" data-i18n="flavor.water.peach"
-                    >水蜜桃</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.yogurt"
-                    >乳酸飲料</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.rose"
-                    >玫瑰香氣</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <!-- Special 4 -->
-            <div
-              class="coffee-card special card-dark-teal"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div class="card-header">
-                <span class="coffee-id">4</span>
-                <div
-                  class="roast-level light-medium"
-                  data-i18n="roast.light-medium"
-                >
-                  淺中焙
-                </div>
-                <span class="price-tag">NT$ 200</span>
-              </div>
-              <div class="award-badge">
-                <i class="fas fa-award"></i>
-                <span data-i18n="special.4.award">瓜地馬拉最常奪冠莊園</span>
-              </div>
-              <div class="card-body">
-                <h4 class="coffee-name" data-i18n="special.4.name">
-                  《茵赫特 頂級波旁》
-                </h4>
-                <p class="coffee-name-en">
-                  Guatemala Huehuetenango El Injerto Bourbon Washed
-                </p>
-                <div class="coffee-details">
-                  <div class="detail-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span data-i18n="special.4.origin"
-                      >瓜地馬拉 微薇特南果 茵赫特莊園 SHB</span
-                    >
-                  </div>
-                  <div class="detail-item">
-                    <i class="fas fa-cog"></i>
-                    <span data-i18n="special.4.process">水洗</span>
-                  </div>
-                </div>
-                <div class="flavor-notes">
-                  <span class="flavor-tag" data-i18n="flavor.currant"
-                    >黑嘉麗軟糖</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.berry">莓果</span>
-                  <span class="flavor-tag" data-i18n="flavor.hazelnut"
-                    >榛果巧克力</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.syrup">糖漿</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Special 5 -->
-            <div
-              class="coffee-card special card-warm-tan"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="card-header">
-                <span class="coffee-id">5</span>
-                <div
-                  class="roast-level light-medium"
-                  data-i18n="roast.light-medium"
-                >
-                  淺中焙
-                </div>
-                <span class="price-tag">NT$ 200</span>
-              </div>
-              <div class="card-body">
-                <h4 class="coffee-name" data-i18n="special.5.name">
-                  《艾爾托 大師之作》
-                </h4>
-                <p class="coffee-name-en">Ethiopia Sidamo 74158 Natural</p>
-                <p class="coffee-note" data-i18n="special.5.note">
-                  西達摩產區經典日曬豆
-                </p>
-                <div class="coffee-details">
-                  <div class="detail-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span data-i18n="special.5.origin"
-                      >衣索比亞 西達摩｜品種：74158</span
-                    >
-                  </div>
-                  <div class="detail-item">
-                    <i class="fas fa-cog"></i>
-                    <span data-i18n="special.5.process">日曬</span>
-                  </div>
-                </div>
-                <div class="flavor-notes">
-                  <span class="flavor-tag" data-i18n="flavor.flower">花香</span>
-                  <span class="flavor-tag" data-i18n="flavor.strawberry"
-                    >草莓</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.tropical"
-                    >熱帶水果</span
-                  >
-                  <span class="flavor-tag" data-i18n="flavor.chocolate"
-                    >巧克力</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="field">
+        <label>Your Name</label>
+        <input type="text" placeholder="Name or company" />
       </div>
-    </section>
-
-    <!-- Espresso Section -->
-    <section id="espresso" class="menu-section section alt-bg">
-      <div class="container">
-        <h2 class="section-title">
-          <span data-i18n="espresso.title">義式咖啡</span>
-          <span data-i18n="espresso.title.en">Espresso Based</span>
-        </h2>
-
-        <div class="drink-grid">
-          <!-- Cold Brew -->
-          <div class="drink-card" data-aos="fade-up">
-            <div class="drink-header">
-              <h4 data-i18n="drink.coldbrew">精選冷萃</h4>
-              <span class="drink-name-en">Cold Brew</span>
-            </div>
-            <div class="drink-price">
-              <span class="single-price">NT$ 200</span>
-            </div>
-            <span class="drink-note" data-i18n="common.limited">限量供應</span>
-          </div>
-
-          <!-- Milk Brew -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="50">
-            <div class="drink-header">
-              <h4 data-i18n="drink.milkbrew">奶萃咖啡</h4>
-              <span class="drink-name-en">Milk Brew</span>
-            </div>
-            <div class="drink-price">
-              <span class="single-price">NT$ 220</span>
-            </div>
-            <span class="drink-note" data-i18n="common.limited">限量供應</span>
-          </div>
-
-          <!-- Americano -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="drink-header">
-              <h4 data-i18n="drink.americano">美式咖啡</h4>
-              <span class="drink-name-en">Americano</span>
-            </div>
-            <div class="drink-price">
-              <span class="hot"><i class="fas fa-mug-hot"></i> NT$ 100</span>
-              <span class="iced"><i class="fas fa-snowflake"></i> NT$ 120</span>
-            </div>
-          </div>
-
-          <!-- Shakerato -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="150">
-            <div class="drink-header">
-              <h4 data-i18n="drink.shakerato">冰搖咖啡</h4>
-              <span class="drink-name-en">Shakerato</span>
-            </div>
-            <div class="drink-price">
-              <span class="iced"><i class="fas fa-snowflake"></i> NT$ 130</span>
-            </div>
-          </div>
-
-          <!-- Espresso -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="drink-header">
-              <h4 data-i18n="drink.espresso">濃縮咖啡</h4>
-              <span class="drink-name-en">Espresso</span>
-            </div>
-            <div class="drink-price">
-              <span class="single-price">NT$ 60</span>
-            </div>
-            <span class="drink-note" data-i18n="common.dine-in">限內用</span>
-          </div>
-
-          <!-- Piccolo -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="250">
-            <div class="drink-header">
-              <h4 data-i18n="drink.piccolo">短笛</h4>
-              <span class="drink-name-en">Piccolo</span>
-            </div>
-            <div class="drink-price">
-              <span class="single-price">NT$ 110</span>
-            </div>
-            <span class="drink-note" data-i18n="drink.piccolo.note"
-              >100ml 附餅乾，限內用</span
-            >
-          </div>
-
-          <!-- Cortado -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="drink-header">
-              <h4 data-i18n="drink.cortado">西班牙小拿鐵</h4>
-              <span class="drink-name-en">Cortado</span>
-            </div>
-            <div class="drink-price">
-              <span class="single-price">NT$ 110</span>
-            </div>
-            <span class="drink-note" data-i18n="drink.cortado.note"
-              >100ml 附餅乾，限內用</span
-            >
-          </div>
-
-          <!-- Cappuccino -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="350">
-            <div class="drink-header">
-              <h4 data-i18n="drink.cappuccino">卡布奇諾</h4>
-              <span class="drink-name-en">Cappuccino</span>
-            </div>
-            <div class="drink-price">
-              <span class="hot"><i class="fas fa-mug-hot"></i> NT$ 120</span>
-              <span class="iced"><i class="fas fa-snowflake"></i> NT$ 130</span>
-            </div>
-          </div>
-
-          <!-- Single Origin Cappuccino -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="drink-header">
-              <h4 data-i18n="drink.cappuccino.so">單品卡布奇諾</h4>
-              <span class="drink-name-en">Cappuccino (Single Origin)</span>
-            </div>
-            <div class="drink-price">
-              <span class="hot"><i class="fas fa-mug-hot"></i> NT$ 130</span>
-              <span class="iced"><i class="fas fa-snowflake"></i> NT$ 140</span>
-            </div>
-          </div>
-
-          <!-- Marbling Cappuccino -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="450">
-            <div class="drink-header">
-              <h4 data-i18n="drink.cappuccino.marble">大理石卡布</h4>
-              <span class="drink-name-en">Marbling Cappuccino</span>
-            </div>
-            <div class="drink-price">
-              <span class="single-price">NT$ 150</span>
-            </div>
-          </div>
-
-          <!-- Flat White -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="500">
-            <div class="drink-header">
-              <h4 data-i18n="drink.flatwhite">澳白</h4>
-              <span class="drink-name-en">Flat White</span>
-            </div>
-            <div class="drink-price">
-              <span class="single-price">NT$ 140</span>
-            </div>
-          </div>
-
-          <!-- Latte -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="550">
-            <div class="drink-header">
-              <h4 data-i18n="drink.latte">拿鐵</h4>
-              <span class="drink-name-en">Coffee Latte</span>
-            </div>
-            <div class="drink-price">
-              <span class="hot"><i class="fas fa-mug-hot"></i> NT$ 140</span>
-              <span class="iced"><i class="fas fa-snowflake"></i> NT$ 150</span>
-            </div>
-          </div>
-
-          <!-- Single Origin Latte -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="600">
-            <div class="drink-header">
-              <h4 data-i18n="drink.latte.so">單品拿鐵</h4>
-              <span class="drink-name-en">Coffee Latte (Single Origin)</span>
-            </div>
-            <div class="drink-price">
-              <span class="hot"><i class="fas fa-mug-hot"></i> NT$ 160</span>
-              <span class="iced"><i class="fas fa-snowflake"></i> NT$ 170</span>
-            </div>
-          </div>
-
-          <!-- Honey Latte -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="650">
-            <div class="drink-header">
-              <h4 data-i18n="drink.latte.honey">蜂蜜咖啡拿鐵</h4>
-              <span class="drink-name-en">Cafe Latte Con Miel</span>
-            </div>
-            <div class="drink-price">
-              <span class="hot"><i class="fas fa-mug-hot"></i> NT$ 150</span>
-              <span class="iced"><i class="fas fa-snowflake"></i> NT$ 170</span>
-            </div>
-          </div>
-
-          <!-- Espresso Romano -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="700">
-            <div class="drink-header">
-              <h4 data-i18n="drink.romano">橙香西西里</h4>
-              <span class="drink-name-en">Espresso Romano</span>
-            </div>
-            <div class="drink-price">
-              <span class="single-price">NT$ 160</span>
-            </div>
-          </div>
-
-          <!-- Osmanthus Café au Lait -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="750">
-            <div class="drink-header">
-              <h4 data-i18n="drink.osmanthus">桂花咖啡歐蕾</h4>
-              <span class="drink-name-en">Osmanthus Café au Lait</span>
-            </div>
-            <div class="drink-price">
-              <span class="hot"><i class="fas fa-mug-hot"></i> NT$ 150</span>
-              <span class="iced"><i class="fas fa-snowflake"></i> NT$ 170</span>
-            </div>
-          </div>
-        </div>
+      <div class="field">
+        <label>Email</label>
+        <input type="email" placeholder="you@email.com" />
       </div>
-    </section>
-
-    <!-- Other Drinks Section -->
-    <section id="drinks" class="menu-section section">
-      <div class="container">
-        <h2 class="section-title">
-          <span data-i18n="drinks.title">其他飲品</span>
-          <span data-i18n="drinks.title.en">Other Drinks</span>
-        </h2>
-
-        <div class="drink-grid">
-          <!-- Chocolate Milk -->
-          <div class="drink-card" data-aos="fade-up">
-            <div class="drink-header">
-              <h4 data-i18n="drink.chocolate">可可</h4>
-              <span class="drink-name-en">Chocolate Milk</span>
-            </div>
-            <div class="drink-price">
-              <span class="hot"><i class="fas fa-mug-hot"></i> NT$ 120</span>
-              <span class="iced"><i class="fas fa-snowflake"></i> NT$ 130</span>
-            </div>
-          </div>
-
-          <!-- Taiwan High Mountain Tea -->
-          <div
-            class="drink-card featured"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="drink-header">
-              <h4 data-i18n="drink.taiwan.tea">台灣高山茶</h4>
-              <span class="drink-name-en">Taiwan High Mountain Tea</span>
-            </div>
-            <div class="drink-price">
-              <span class="single-price">NT$ 220</span>
-            </div>
-            <span class="drink-note" data-i18n="drink.taiwan.tea.note"
-              >阿里山金萱、杉林溪凍頂烏龍</span
-            >
-          </div>
-
-          <!-- Hualien Wuhe Tea -->
-          <div
-            class="drink-card featured"
-            data-aos="fade-up"
-            data-aos-delay="150"
-          >
-            <div class="drink-header">
-              <h4 data-i18n="drink.wuhe.tea">舞鶴蜜香紅茶</h4>
-              <span class="drink-name-en"
-                >Hualien Wuhe Honey Scented Black Tea</span
-              >
-            </div>
-            <div class="drink-price">
-              <span class="single-price">NT$ 200</span>
-            </div>
-          </div>
-
-          <!-- Matcha Latte -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="drink-header">
-              <h4 data-i18n="drink.matcha">抹茶拿鐵</h4>
-              <span class="drink-name-en">Matcha Latte</span>
-            </div>
-            <div class="drink-price">
-              <span class="hot"><i class="fas fa-mug-hot"></i> NT$ 140</span>
-              <span class="iced"><i class="fas fa-snowflake"></i> NT$ 150</span>
-            </div>
-          </div>
-
-          <!-- Hojicha Latte -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="250">
-            <div class="drink-header">
-              <h4 data-i18n="drink.hojicha">焙茶拿鐵</h4>
-              <span class="drink-name-en">Hojicha Latte</span>
-            </div>
-            <div class="drink-price">
-              <span class="hot"><i class="fas fa-mug-hot"></i> NT$ 140</span>
-              <span class="iced"><i class="fas fa-snowflake"></i> NT$ 150</span>
-            </div>
-          </div>
-
-          <!-- Apple Sparkling -->
-          <div class="drink-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="drink-header">
-              <h4 data-i18n="drink.apple">蘋果氣泡飲</h4>
-              <span class="drink-name-en">Apple Sparkling</span>
-            </div>
-            <div class="drink-price">
-              <span class="single-price">NT$ 110</span>
-            </div>
-            <span class="drink-note" data-i18n="common.dine-in">限內用</span>
-          </div>
-        </div>
+      <div class="field">
+        <label>Your Offer (USD)</label>
+        <input type="number" placeholder="e.g. 350" min="1" />
       </div>
-    </section>
-
-    <!-- Dessert Section -->
-    <section id="dessert" class="menu-section section alt-bg">
-      <div class="container">
-        <h2 class="section-title">
-          <span data-i18n="dessert.title">點心</span>
-          <span data-i18n="dessert.title.en">Dessert</span>
-        </h2>
-
-        <div class="dessert-grid">
-          <!-- Cheese Cake -->
-          <div class="dessert-card" data-aos="fade-up">
-            <div class="dessert-icon">🧀</div>
-            <h4 data-i18n="dessert.cheesecake">烤乳酪蛋糕</h4>
-            <span class="dessert-name-en">Cheese Cake</span>
-            <span class="dessert-price">NT$ 80</span>
-          </div>
-
-          <!-- Passion Fruit Cheese Cake -->
-          <div class="dessert-card" data-aos="fade-up" data-aos-delay="50">
-            <div class="dessert-icon">🍰</div>
-            <h4 data-i18n="dessert.cheesecake.passion">百香果起司蛋糕</h4>
-            <span class="dessert-name-en">Cheese Cake (Passion Fruit)</span>
-            <span class="dessert-price">NT$ 95</span>
-          </div>
-
-          <!-- Bagel Cheese -->
-          <div class="dessert-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="dessert-icon">🥯</div>
-            <h4 data-i18n="dessert.bagel.cheese">貝果 (起司)</h4>
-            <span class="dessert-name-en">Bagel (Cheese)</span>
-            <span class="dessert-price">NT$ 80</span>
-          </div>
-
-          <!-- Bagel Black Sesame -->
-          <div class="dessert-card" data-aos="fade-up" data-aos-delay="150">
-            <div class="dessert-icon">🥯</div>
-            <h4 data-i18n="dessert.bagel.sesame">貝果 (黑芝麻)</h4>
-            <span class="dessert-name-en">Bagel (Black Sesame)</span>
-            <span class="dessert-price">NT$ 80</span>
-          </div>
-
-          <!-- Bagel Grains -->
-          <div class="dessert-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="dessert-icon">🥯</div>
-            <h4 data-i18n="dessert.bagel.grains">貝果 (雜糧)</h4>
-            <span class="dessert-name-en">Bagel (Grains)</span>
-            <span class="dessert-price">NT$ 70</span>
-          </div>
-
-          <!-- Croissant -->
-          <div class="dessert-card" data-aos="fade-up" data-aos-delay="250">
-            <div class="dessert-icon">🥐</div>
-            <h4 data-i18n="dessert.croissant">可頌</h4>
-            <span class="dessert-name-en">Croissant</span>
-            <span class="dessert-price">NT$ 85</span>
-          </div>
-
-          <!-- Cinnamon Roll -->
-          <div class="dessert-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="dessert-icon">🍩</div>
-            <h4 data-i18n="dessert.cinnamon">肉桂卷</h4>
-            <span class="dessert-name-en">Cinnamon Roll</span>
-            <span class="dessert-price">NT$ 95</span>
-          </div>
-
-          <!-- Quiche -->
-          <div class="dessert-card" data-aos="fade-up" data-aos-delay="350">
-            <div class="dessert-icon">🥧</div>
-            <h4 data-i18n="dessert.quiche">鹹派</h4>
-            <span class="dessert-name-en">Quiche</span>
-            <span class="dessert-price">NT$ 110</span>
-          </div>
-
-          <!-- Palmiers -->
-          <div class="dessert-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="dessert-icon">🦋</div>
-            <h4 data-i18n="dessert.palmiers">手工蝴蝶酥</h4>
-            <span class="dessert-name-en">Handmade Palmiers</span>
-            <span class="dessert-price">NT$ 60</span>
-          </div>
-        </div>
+      <div class="field">
+        <label>Message (optional)</label>
+        <textarea rows="3" placeholder="Tell us about your project…"></textarea>
       </div>
-    </section>
+      <button class="btn btn-primary modal-submit"
+        onclick="
+          const inputs = this.closest('.modal').querySelectorAll('input,textarea');
+          const name  = inputs[0].value || '(no name)';
+          const email = inputs[1].value || '';
+          const price = inputs[2].value || '(no price)';
+          const msg   = inputs[3].value || '';
+          window.location.href = 'mailto:service2076@outlook.com?subject=Domain Offer — $'+price+' — '+name+'&body=Name: '+name+'%0AEmail: '+email+'%0AOffer: $'+price+'%0A%0A'+msg;
+        ">
+        <i class="fas fa-paper-plane"></i>
+        Send Offer
+      </button>
+    </div>
+  </div>
 
-    <!-- Coffee Beans Retail Section -->
-    <section id="beans" class="beans-section section alt-bg">
-      <div class="container">
-        <h2 class="section-title">
-          <span data-i18n="beans.title">咖啡豆零售</span>
-          <span data-i18n="beans.title.en">Coffee Beans</span>
-        </h2>
-        <p class="section-subtitle" data-i18n="beans.subtitle">
-          自家烘焙・每包 200g・可指定研磨度
-        </p>
+  <!-- Close modal on overlay click -->
+  <script>
+    document.getElementById('offerModal').addEventListener('click', function(e) {
+      if (e.target === this) this.classList.remove('open');
+    });
+  </script>
 
-        <div id="beansPromo"></div>
-
-        <div id="beansGrid" class="beans-grid"></div>
-
-        <div class="beans-order-cta">
-          <p class="boc-text" data-i18n="beans.order.text">如需訂購，請透過以下方式聯繫我們</p>
-          <div class="boc-buttons">
-            <a href="https://www.facebook.com/profile.php?id=61565747011244"
-               target="_blank" rel="noopener noreferrer" class="boc-btn boc-btn--fb">
-              <i class="fab fa-facebook"></i> Facebook
-            </a>
-            <a href="https://line.me/R/ti/p/@cuorecoffee"
-               target="_blank" rel="noopener noreferrer" class="boc-btn boc-btn--line">
-              <i class="fab fa-line"></i> LINE
-            </a>
-          </div>
-          <p class="boc-note" data-i18n="beans.order.note">
-            免運門檻 NT$1,500・超商取貨 NT$60・宅配到府 NT$100
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- VIP Plan Section -->
-    <section id="vip-plan" class="vip-section section">
-      <div class="container">
-
-        <!-- Section heading -->
-        <p class="vip-eyebrow" data-i18n="vip.title.en">VIP Annual Membership</p>
-        <h2 class="section-title">
-          <span data-i18n="vip.title">2026年度VIP年繳制優惠方案</span>
-        </h2>
-
-        <!-- Plan card -->
-        <div class="vip-card">
-
-          <!-- Header band -->
-          <div class="vip-card-header">
-            <div class="vip-card-header-left">
-              <p class="vip-plan-label" data-i18n="vip.price.label">年繳預付</p>
-              <p class="vip-plan-name">科雷精品咖啡 VIP 會員</p>
-            </div>
-            <div class="vip-price-block">
-              <p class="vip-price-ann">Annual Fee</p>
-              <p class="vip-price">NT$&nbsp;11,000<span class="vip-price-unit">/ 年</span></p>
-            </div>
-          </div>
-
-          <!-- Meta row -->
-          <div class="vip-meta-row">
-            <div class="vip-meta-item">
-              <i class="fas fa-calendar-alt"></i>
-              <span><span data-i18n="vip.signup.label">報名期間</span>&ensp;<strong data-i18n="vip.signup.value">即日起至 2026.06.25</strong></span>
-            </div>
-            <div class="vip-meta-item">
-              <i class="fas fa-clock"></i>
-              <span><span data-i18n="vip.period.label">有效期間</span>&ensp;<strong data-i18n="vip.period.value">2026年7月 ～ 2027年6月（一年）</strong></span>
-            </div>
-          </div>
-
-          <!-- Card body -->
-          <div class="vip-card-body">
-            <p class="vip-benefits-label">Member Benefits</p>
-
-            <ul class="vip-benefits">
-              <li class="vip-benefit">
-                <span class="vip-benefit-icon"><i class="fas fa-check"></i></span>
-                <p class="vip-benefit-text" data-i18n="vip.benefit.1">每月5號前公布5款精品咖啡（定價NT$600–$800），任選兩款，15日前寄出</p>
-              </li>
-              <li class="vip-benefit">
-                <span class="vip-benefit-icon"><i class="fas fa-check"></i></span>
-                <p class="vip-benefit-text" data-i18n="vip.benefit.2">生日當月收到驚喜生日禮</p>
-              </li>
-              <li class="vip-benefit">
-                <span class="vip-benefit-icon"><i class="fas fa-check"></i></span>
-                <p class="vip-benefit-text" data-i18n="vip.benefit.3">加選咖啡豆一律85折</p>
-              </li>
-              <li class="vip-benefit">
-                <span class="vip-benefit-icon"><i class="fas fa-check"></i></span>
-                <p class="vip-benefit-text" data-i18n="vip.benefit.4">免運費（7-11店到店 或 新瑞宅配到府）</p>
-              </li>
-            </ul>
-
-            <hr class="vip-divider" />
-
-            <!-- Disclaimer -->
-            <div class="vip-disclaimer">
-              <i class="fas fa-info-circle"></i>
-              <p data-i18n="vip.benefit.5">不適用於年節禮採購及買五送一方案</p>
-            </div>
-
-            <!-- CTA -->
-            <div class="vip-cta-row">
-              <a href="https://line.me/R/ti/p/@050gvmxr"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 class="vip-btn-line">
-                <i class="fab fa-line"></i>
-                <span data-i18n="vip.cta">加入LINE群組報名</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Footer note -->
-        <p class="vip-footer-note">
-          Cuore Coffee Roaster · 科雷精品咖啡館<br>
-          花蓮市中美路 · SPECIALTY COFFEE &amp; ROASTERY · HUALIEN, TAIWAN
-        </p>
-
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <div class="container">
-        <h2 class="section-title">
-          <span data-i18n="contact.title">聯絡我們</span>
-          <span data-i18n="contact.title.en">Contact</span>
-        </h2>
-
-        <div class="contact-content">
-          <div class="contact-info">
-            <div class="info-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <h4 data-i18n="contact.address">地址</h4>
-                <p data-i18n="contact.address.value">花蓮縣花蓮市中美路19號</p>
-                <p class="address-en">
-                  No. 19 Zhongmei Rd, Hualien City, Taiwan 970
-                </p>
-              </div>
-            </div>
-            <div class="info-item">
-              <i class="fas fa-clock"></i>
-              <div>
-                <h4 data-i18n="contact.hours">營業時間</h4>
-                <p data-i18n="contact.hours.value">
-                  10:00～18:00（每週二店休）
-                </p>
-              </div>
-            </div>
-            <div class="info-item">
-              <i class="fas fa-phone"></i>
-              <div>
-                <h4 data-i18n="contact.phone">電話</h4>
-                <p>0965-012925</p>
-              </div>
-            </div>
-            <div class="social-links">
-              <a
-                href="https://www.facebook.com/profile.php?id=61565747011244"
-                aria-label="Facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" aria-label="Instagram"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a
-                href="https://line.me/R/ti/p/@cuorecoffee"
-                aria-label="LINE"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fab fa-line"></i
-              ></a>
-            </div>
-          </div>
-          <div class="contact-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d500!2d121.62018131069513!3d23.98513781234503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU5JzA2LjYiTiAxMjHCsDM3JzEyLjUiRQ!5e0!3m2!1szh-TW!2stw!4v1"
-              width="100%"
-              height="300"
-              style="border: 0; border-radius: 12px"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <span class="logo-icon">☕</span>
-            <span>科雷精品咖啡館</span>
-          </div>
-          <p class="copyright">
-            © 2026 Cuore Coffee Roaster. All Rights Reserved.
-          </p>
-          <p class="footer-credit" data-i18n="footer.credit">
-            Designed by
-            <a
-              href="https://hualienvibe.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              >HualienVibe Digital Studio</a
-            >
-          </p>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Back to Top -->
-    <a href="#home" class="back-to-top" id="backToTop">
-      <i class="fas fa-chevron-up"></i>
-    </a>
-
-    <!-- Scripts -->
-    <script src="assets/js/i18n.js?v=20260510"></script>
-    <script src="assets/js/main.js?v=20260510"></script>
-    <script src="assets/js/beans.js?v=20260510"></script>
-  </body>
+</body>
 </html>
